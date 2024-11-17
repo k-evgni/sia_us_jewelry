@@ -19,6 +19,16 @@ body{
         bottom: 4265px;
     }
 
+    .back2 {
+            /* фон для текста */
+        position: absolute;
+        width: 1657px;
+        height: 899px;
+        left: 121px;
+        top: 95px;
+        border-radius: 50px;
+        background: url("\static\фон для текста.png");
+    }
     .Name1 {
         /* SIA_US_JEWELRY */
         position: absolute;
@@ -73,6 +83,36 @@ body{
         width: 194px;
         height: 44px;
         left: 1132px;
+        top: 26px;
+        color: rgb(79, 57, 34);
+        font-family: Alegreya SC;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .name5{
+        /* Отзывы */
+        position: absolute;
+        width: 117px;
+        height: 44px;
+        left: 1409px;
+        top: 26px;
+        color: rgb(79, 57, 34);
+        font-family: Alegreya SC;
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .name6{
+        /* Соц.сети */
+        position: absolute;
+        width: 160.57px;
+        height: 44px;
+        left: 1609px;
         top: 26px;
         color: rgb(79, 57, 34);
         font-family: Alegreya SC;
@@ -545,4 +585,36 @@ body{
         right: 137px;
         top: 3644px;
         bottom: 1124px;
+    }
+
+    .text18{
+        /* “Здравствуйте!  Серёжки очень понравились!! Они невероятно красивые и аккуратные) Качество материалов на высшем уровне!  Что особенно порадовало, так это их лёгкость-совершенно не чувствуются на ушах!  Спасибо большое!” */
+        position: absolute;
+        width: 667px;
+        height: 317.23px;
+        left: 206px;
+        top: 3847.57px;
+        color: rgba(79, 57, 34, 0.7);
+        font-family: Alegreya SC;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 41px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+
+    .text19{
+        /* “Добрый вечер Да, всë понравилось, сережки классные, на фотке крупнее было, думала большие такие, оказывается нормально  И застежка вообще кайфовая, не надо 5 минут зацеплять что-то куда-то! Кстати, длина тоже хорошая)” */
+        position: absolute;
+        width: 667px;
+        height: 266.9px;
+        left: 1110px;
+        top: 3847.57px;
+        color: rgba(79, 57, 34, 0.7);
+        font-family: Alegreya SC;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 41px;
+        letter-spacing: 0%;
+        text-align: left;
     }
