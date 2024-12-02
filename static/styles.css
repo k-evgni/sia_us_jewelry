@@ -238,31 +238,23 @@
         }
 
         .Bestsellers .square1 {
-            top: 20%; /* Положение сверху */
-            left: 0%; /* Положение слева */
             width: 18.86rem;
             height: 19.81rem;
         }
 
         .Bestsellers .square2 {
-            top: 20%;
-            left: 40%;
             width: 18.86rem;
             height: 19.81rem;
             margin-top: 40px;
         }
 
-		.Bestsellers .square3 {
-            top: 20%;
-            left: 0%;
+	.Bestsellers .square3 {
             width: 18.86rem;
             height: 19.81rem;
             margin-top: 40px;
         }
 
         .Bestsellers .square4 {
-            top: 20%;
-            left: 40%;
             width: 18.86rem;
             height: 19.81rem;
             margin-top: 40px;
@@ -530,7 +522,14 @@
             	background-color: rgba(181, 152, 98, 0.6);
                 transform: translateX(-50%);/* Убираем смещение */
             }
-
+		
+	   .Bestsellers .squares-container {
+		display: flex; 
+	        flex-direction: column; 
+	        justify-content: center; 
+	        align-items: center;
+	         width: 100%; 
+	    }
     }
 
 	/*  Маленькие ноутбуки (1024px) */
