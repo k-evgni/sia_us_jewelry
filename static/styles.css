@@ -195,6 +195,15 @@
             z-index: 3;
         }
 
+	.Bestsellers .squares-container {
+            display: flex; /* Горизонтальное расположение */
+            gap: 20px; /* Отступ между квадратами */
+            flex-direction: colum; /* Элементы располагаются в строку */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
+        }
+
         .Bestsellers .square1,
         .Bestsellers .square2,
         .Bestsellers .square3,
