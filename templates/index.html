@@ -168,10 +168,6 @@
             line-height: 3rem;
          }
 
-
-
-
-
  /* Бестселлеры */
         .Bestsellers {
             display: flex;
@@ -189,7 +185,7 @@
 
         .Bestsellers h1{
             /* Работы */
-			margin-top: 20;
+	    margin-top: 20;
             position: relative;
             text-align: right;
             margin-left: 0;
@@ -203,6 +199,15 @@
             z-index: 3;
         }
 
+	.Bestsellers .squares-container {
+            display: flex; /* Горизонтальное расположение */
+            gap: 20px; /* Отступ между квадратами */
+            flex-direction: colum; /* Элементы располагаются в строку */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
+        }
+	    
         .Bestsellers .square1,
         .Bestsellers .square2,
         .Bestsellers .square3,
@@ -251,7 +256,7 @@
             margin-top: 40px;
         }
 
-		.Bestsellers .square3 {
+	.Bestsellers .square3 {
             top: 20%;
             left: 0%;
             width: 18.86rem;
@@ -688,8 +693,8 @@
          .Bestsellers .square6 .text15,
          .Bestsellers .square7 .text16,
          .Bestsellers .square8 .text17{
-         	  display: block;
-          	  position: relative; /* Абсолютное позиционирование внутри родителя */
+              display: block;
+              position: relative; /* Абсолютное позиционирование внутри родителя */
               top: 89%; /* Центрирование по вертикали */
               left: 50%; /* Центрирование по горизонтали */
               transform: translate(-50%, -50%); /* Смещение для точного центрирования */
