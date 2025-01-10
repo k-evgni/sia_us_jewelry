@@ -46,11 +46,15 @@
             justify-content: center;
             align-items: center;
             background: url(static/fon_dla_texta_ryka.png) no-repeat center center/cover; /* ФОТО ВСТАВИТЬ СЮДА */
+            background-size: cover;
+        	border-radius: 50px
         	height: 100vh;
             width: 100%;
             position: relative;
             order: 2;
             z-index: 0;
+            padding: 1cm; /* Добавляем отступ в 1 сантиметр */
+            box-sizing: border-box;
         }
 
         .cover h1,
