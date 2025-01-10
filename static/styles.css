@@ -1,620 +1,1243 @@
-body{
-    /* Landing */
-        position: relative;
-        width: 1920px;
-        height: 5343px;
-        background: rgb(255, 255, 255);
-    }
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #fff;
+            color: #333;
+        }
+
+        header {
+            /*background: #f4f4f4;*/
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            order: 1;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            color: #c78a17;
+            font-family: "Cormorant Garamond", serif;
+        }
+
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #4f3922;
+            font-size: 1rem;
+            font-family: "Alegreya SC", serif;
+        }
 
 
 /* ОБЛОЖКА */
-    .header {
-        /* Header */
-        position: absolute;
-        width: 1683px;
-        height: 1056px;
-        left: 121px;
-        right: 116px;
-        top: 22px;
-        bottom: 4265px;
-    }
+    	.cover{
+            display: flex;
+            flex-direction: column; /* Расположить элементы в колонку */
+            justify-content: center;
+            align-items: center;
+            background: url(static/Van.jpg) no-repeat center center/cover; /* ФОТО ВСТАВИТЬ СЮДА */
+        	height: 100vh;
+            width: 100%;
+            position: relative;
+            order: 2;
+            z-index: 0;
+        }
 
-    .back2 {
-            /* фон для текста */
-        position: absolute;
-        width: 1657px;
-        height: 899px;
-        left: 121px;
-        top: 95px;
-        border-radius: 50px;
-        background: url("\static\фон для текста.png");
-    }
-    .Name1 {
-        /* SIA_US_JEWELRY */
-        position: absolute;
-        width: 310px;
-        height: 48px;
-        left: 137px;
-        top: 22px;
-        color: rgb(199, 138, 23);
-        font-family: Cormorant Garamond;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 48px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
+        .cover h1,
+        .cover h2,
+        .cover h3,
+        .cover h4 {
+            margin: 0; /* Убираем отступы */
+            color: rgb(204, 204, 204); /* Цвет текста */
+        }
 
-    .name2 {
-        /* О себе */
-        position: absolute;
-        width: 105.47px;
-        height: 44px;
-        left: 646px;
-        top: 26px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 44px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
+        .cover h1 {
+            font-size: 1.88rem;
+            font-family: Cormorant Garamond;
+        }
 
-    .name3{
-        /* Преимущества */
-        position: absolute;
-        width: 232px;
-        height: 44px;
-        left: 826px;
-        top: 26px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 44px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
+        .cover h2 {
+            font-size: 1.56rem;
+            font-family: Alice;
+            color: rgb(230, 204, 139);
+            margin-bottom: 289px;
+        }
 
-    .name4{
-        /* Бестселлеры */
-        position: absolute;
-        width: 194px;
-        height: 44px;
-        left: 1132px;
-        top: 26px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 44px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
-    .name5{
-        /* Отзывы */
-        position: absolute;
-        width: 117px;
-        height: 44px;
-        left: 1409px;
-        top: 26px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 44px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
-    .name6{
-        /* Соц.сети */
-        position: absolute;
-        width: 160.57px;
-        height: 44px;
-        left: 1609px;
-        top: 26px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 44px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
+        .cover h3 {
+        	margin-top: 70px;
+            font-size: 1.88rem;
+            font-family: Alice;
+        }
 
-
-
-    .text1 {
-    /* Откройте ... */
-        position: absolute;
-        width: 748px;
-        height: 151px;
-        left: 183px;
-        top: 430px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: rgb(204, 204, 204);
-        font-family: Alegreya SC;
-        font-size: 50px;
-        font-weight: 400;
-        line-height: 100%;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-
-    .text2{
-        /* Красота в мелочах: */
-        position: absolute;
-        width: 712px;
-        height: 113px;
-        left: 197px;
-        top: 287px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        color: rgb(204, 204, 204);
-        font-family: Alice;
-        font-size: 77px;
-        font-weight: 400;
-        line-height: 150%;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-
-    .text3{
-        /* SIA_US_JEWELRY */
-        position: absolute;
-        width: 546px;
-        height: 90px;
-        left: 1066px;
-        top: 441px;
-        color: rgb(204, 204, 204);
-        font-family: Cormorant Garamond;
-        font-size: 70px;
-        font-weight: 700;
-        line-height: 85px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
-
-    .text4{
-        /* Украшения ручной работы */
-        position: absolute;
-        width: 512px;
-        height: 74px;
-        left: 1083px;
-        top: 531px;
-        color: rgb(230, 204, 139);
-        font-family: Alice;
-        font-size: 40px;
-        font-weight: 400;
-        line-height: 46px;
-        letter-spacing: 0%;
-        text-align: center;
-    }
+        .cover h4 {
+        	margin-top: 50px;
+            font-size: 1.56rem;
+            font-family: Alegreya SC, serif;
+            text-align: center;
+        }
 
 
 
 /* О СЕБЕ */
-    .Testimonials  {
-        /* Testimonials */
-        position: absolute;
-        width: 1657px;
-        height: 738px;
-        left: 121px;
-        right: 142px;
-        top: 1179px;
-        bottom: 3426px;
-    }
+        .Testimonials  {
+            position: relative;
+            width: 100%; /* Подгоняем по ширине родительского контейнера */
+            padding: 20px; /* Добавили отступы внутри блока */
+            margin-top: 50px; /* Определяем отступ сверху от предыдущего блока */
+            box-sizing: border-box; /* Учет отступов */
+            order: 3;
+        }
 
-    text5{
-      /* О СЕБЕ */
-      position: absolute;
-      width: 279px;
-      height: 72px;
-      left: 800px;
-      top: 1209px;
-      color: rgb(199, 138, 23);
-      font-family: Cormorant Garamond;
-      font-size: 60px;
-      font-weight: 700;
-      line-height: 73px;
-      letter-spacing: 0%;
-      text-align: center;
-    }
+        .Testimonials h1 {
+        	/* О СЕБЕ */
+            text-align: center;
+            margin-bottom: 20px; /* Добавили отступ снизу */
+            color: rgb(199, 138, 23);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 2.3rem;
+            font-weight: 700;
+            line-height: 3rem;
+        }
 
-    text6{
-        /* Усова Анастасия */
-        position: absolute;
-        width: 498px;
-        height: 96px;
-        left: 701px;
-        right: 458px;
-        top: 1295px;
-        bottom: -653px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 60px;
-        font-weight: 400;
-        line-height: 160%;
-        letter-spacing: 2%;
-        text-align: center;
-    }
+        .Testimonials h2 {
+        	/* Усова Анастасия */
+            margin-top: 110px;
+            position: relative;
+            text-align: right;
+            margin-left: 0;
+            padding-left: 10px;
+            margin-bottom: 20px; /* Добавили отступ снизу */
+            color: rgb(79, 57, 34);
+            font-family: Alegreya SC;
+            font-size: 2.0rem;
+            font-weight: 400;
+            line-height: 160%;
+        }
 
-    text7{
-        /* Занятие украшениями... */
-        position: absolute;
-        width: 531px;
-        height: 296px;
-        left: 684px;
-        right: 442px;
-        top: 1391px;
-        bottom: -949px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 41px;
-        letter-spacing: 0%;
-        text-align: center;
-    }
+        .Testimonials h3 {
+         /* Занятие украшениями... */
+            margin-top: 110px;
+            margin-bottom: 70px;
+            font-size: 1.35rem;
+            font-weight: normal;
+            color: rgb(79, 57, 34);
+            font-family: Alegreya SC;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
 
 
 /* Преимущества */
-    .Our_Success {
-        /* Our Success */
-        position: absolute;
-        width: 1559px;
-        height: 311.16px;
-        left: 170px;
-        right: 191px;
-        top: 2023px;
-        bottom: 3008.84px;
-    }
+        .Our_Success {
+            position: relative;
+            width: 100%; /* Подгоняем по ширине родительского контейнера */
+            padding: 20px; /* Добавили отступы внутри блока */
+            margin-top: 50px; /* Определяем отступ сверху от предыдущего блока */
+            box-sizing: border-box; /* Учет отступов */
+            order: 4;
+        }
 
-    text8{
+        .Our_Success h1 {
         /* SIA_US_JEWELRY */
-        position: absolute;
-        width: 681px;
-        height: 86.54px;
-        left: 608px;
-        top: 2023px;
-        color: rgb(199, 138, 23);
-        font-family: Cormorant Garamond;
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 73px;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-
-
-/* Бестселлеры */
-    .Bestsellers{
-        position: absolute;
-        width: 1920.99px;
-        height: 1287.15px;
-        left: 0;
-        right: -0.99px;
-        top: 2283px;
-        bottom: 1772.85px;
-    }
-
-    back1{
-        /* Rectangle 96 */
-        position: absolute;
-        width: 1920px;
-        height: 1118px;
-        left: 0;
-        top: 2452px;
-        box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25),0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        background: rgba(229, 204, 139, 0.53);
-        z-index: 0;
-    }
-
-    text9{
-        /* Работы */
-        position: absolute;
-        width: 251px;
-        height: 71px;
-        left: 1454px;
-        top: 2496px;
-        color: rgb(79, 57, 34);
-        font-family: Cormorant Garamond;
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 73px;
-        letter-spacing: 0%;
-        text-align: right;
-        z-index: 3;
-    }
-
-
-    .square1{
-        /* Rectangle 1 */
-        position: absolute;
-        width: 386px;
-        height: 437.57px;
-        left: 112px;
-        top: 2592px;
-        border-radius: 20px;
-        box-shadow: 0px 18.83px 47.08px 0px rgba(47, 50, 125, 0.1);
-        background: rgb(255, 255, 255);
-        z-index: 2;
-    }
-
-    .square2{
-        /* Rectangle 2 */
-        position: absolute;
-        width: 386px;
-        height: 437.57px;
-        left: 112px;
-        top: 3075.68px;
-        border-radius: 20px;
-        box-shadow: 0px 18.83px 47.08px 0px rgba(47, 50, 125, 0.1);
-        background: rgb(255, 255, 255);
-        z-index: 2;
-    }
-
-    .square3{
-        /* Rectangle 3 */
-        position: absolute;
-        width: 386px;
-        height: 437.57px;
-        left: 541px;
-        top: 2592px;
-        border-radius: 20px;
-        box-shadow: 0px 18.83px 47.08px 0px rgba(47, 50, 125, 0.1);
-        background: rgb(255, 255, 255);
-        z-index: 2;
-    }
-
-    .square4{
-        /* Rectangle 4 */
-        position: absolute;
-        width: 386px;
-        height: 437.57px;
-        left: 542px;
-        top: 3075.68px;
-        border-radius: 20px;
-        box-shadow: 0px 18.83px 47.08px 0px rgba(47, 50, 125, 0.1);
-        background: rgb(255, 255, 255);
-        z-index: 2;
-    }
-
-    .square5{
-        /* Rectangle 5 */
-        position: absolute;
-        width: 386px;
-        height: 437.57px;
-        left: 970px;
-        top: 2592px;
-        border-radius: 20px;
-        box-shadow: 0px 18.83px 47.08px 0px rgba(47, 50, 125, 0.1);
-        background: rgb(255, 255, 255);
-        z-index: 2;
-    }
-
-
-    .square6{
-        /* Rectangle 6 */
-        position: absolute;
-        width: 386px;
-        height: 437.57px;
-        left: 970px;
-        top: 3075.68px;
-        border-radius: 20px;
-        box-shadow: 0px 18.83px 47.08px 0px rgba(47, 50, 125, 0.1);
-        background: rgb(255, 255, 255);
-        z-index: 2;
-    }
-
-    .square7{
-        /* Rectangle 7 */
-        position: absolute;
-        width: 386px;
-        height: 437.57px;
-        left: 1401px;
-        top: 2592px;
-        border-radius: 20px;
-        box-shadow: 0px 18.83px 47.08px 0px rgba(47, 50, 125, 0.1);
-        background: rgb(255, 255, 255);
-        z-index: 2;
-    }
-
-    .square8{
-        /* Rectangle 9 */
-        position: absolute;
-        width: 386px;
-        height: 437.57px;
-        left: 1401px;
-        top: 3075.68px;
-        border-radius: 20px;
-        box-shadow: 0px 18.83px 47.08px 0px rgba(47, 50, 125, 0.1);
-        background: rgb(255, 255, 255);
-        z-index: 2;
-    }
-
-    .text10{
-    /* Позолоченная фурнитура, сердолик */
-        position: absolute;
-        width: 285px;
-        height: 47.14px;
-        left: 163px;
-        top: 2972.18px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 27px;
-        letter-spacing: 2%;
-        text-align: center;
-        z-index: 3;
-    }
-
-    .text11{
-        /* Позолоченная фурнитура, кошачий глаз */
-        position: absolute;
-        width: 285px;
-        height: 47.14px;
-        left: 163px;
-        top: 3455.86px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 27px;
-        letter-spacing: 2%;
-        text-align: center;
-        z-index: 3;
-    }
-
-    .text12{
-        /* Родированная фурнитура, майорка */
-        position: absolute;
-        width: 285px;
-        height: 47.14px;
-        left: 588px;
-        top: 2972.18px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 27px;
-        letter-spacing: 2%;
-        text-align: center;
-        z-index: 3;
-    }
-
-    .text13{
-        /* Родированная фурнитура, белый агат, майорка */
-        position: absolute;
-        width: 285px;
-        height: 47.14px;
-        left: 588px;
-        top: 3450.74px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 27px;
-        letter-spacing: 2%;
-        text-align: center;
-        z-index: 3;
-    }
-
-    .text14{
-        /* Позолоченная фурнитура, сердолик */
-        position: absolute;
-        width: 285px;
-        height: 47.14px;
-        left: 1020px;
-        top: 2972.18px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 27px;
-        letter-spacing: 2%;
-        text-align: center;
-        z-index: 3;
-    }
-
-    .text15{
-        /* Сатинированная позолота, майорка */
-        position: absolute;
-        width: 285px;
-        height: 47.14px;
-        left: 1020px;
-        top: 3455.86px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 27px;
-        letter-spacing: 2%;
-        text-align: center;
-        z-index: 3;
-    }
-
-    .text16{
-        /* Чернённая фурнитура, шунгит */
-        position: absolute;
-        width: 285px;
-        height: 47.14px;
-        left: 1451px;
-        top: 2972.18px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 27px;
-        letter-spacing: 2%;
-        text-align: center;
-        z-index: 3;
-    }
-
-    .text17{
-        /* Позолоченная фурнитура */
-        position: absolute;
-        width: 285px;
-        height: 23.57px;
-        left: 1451px;
-        top: 3467.13px;
-        color: rgb(79, 57, 34);
-        font-family: Alegreya SC;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 27px;
-        letter-spacing: 2%;
-        text-align: center;
-        z-index: 3;
-    }
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(199, 138, 23);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 1.88rem;
+            font-weight: 700;
+            line-height: 3rem;
+         }
 
 
 
+
+
+ /* Бестселлеры */
+        .Bestsellers {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            margin-top: 50px;
+            box-sizing: border-box; /* Учет отступов */
+            box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25),0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+			background: rgba(229, 204, 139, 0.53);
+            order: 4;
+        }
+
+        .Bestsellers h1{
+            /* Работы */
+			margin-top: 20;
+            position: relative;
+            text-align: right;
+            margin-left: 0;
+            padding-left: 10px;
+            margin-bottom: 20px; /* Добавили отступ снизу */
+            color: rgb(79, 57, 34);
+            font-family: Cormorant Garamond;
+            font-size: 2.3rem;
+            font-weight: 700;
+            line-height: 160%;
+            z-index: 3;
+        }
+
+	.Bestsellers .squares-container {
+            display: flex; /* Горизонтальное расположение */
+            gap: 20px; /* Отступ между квадратами */
+            flex-direction: colum; /* Элементы располагаются в строку */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
+        }
+
+        .Bestsellers .square1,
+        .Bestsellers .square2,
+        .Bestsellers .square3,
+        .Bestsellers .square4{
+            position: relative;
+            width: 100px; /* Задайте нужную ширину */
+            height: 100px; /* Задайте нужную высоту */
+            border-radius: 1.25rem;
+            box-shadow: 0rem 1.18rem 2.94rem 0rem rgba(47, 50, 125, 0.1);
+            background: rgb(255, 255, 255);
+            z-index: 1;
+        }
+
+        .Bestsellers .square1 .text10,
+        .Bestsellers .square2 .text11,
+        .Bestsellers .square3 .text12,
+        .Bestsellers .square4 .text13{
+            position: absolute; /* Абсолютное позиционирование внутри родителя */
+            top: 89%; /* Центрирование по вертикали */
+            left: 50%; /* Центрирование по горизонтали */
+            transform: translate(-50%, -50%); /* Смещение для точного центрирования */
+            color: rgb(79, 57, 34);
+            font-family: Alegreya SC;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            white-space: normal; /* Разрешить перенос строк */
+            word-wrap: break-word; /* Переносить слова, если они длинные */
+            width: 80%; /* Задайте ширину текста */
+            line-height: 1.5; /* Интервал между строками */
+            z-index: 3;
+        }
+
+        .Bestsellers .square1 {
+            width: 18.86rem;
+            height: 19.81rem;
+        }
+
+        .Bestsellers .square2 {
+            width: 18.86rem;
+            height: 19.81rem;
+            margin-top: 40px;
+        }
+
+	.Bestsellers .square3 {
+            width: 18.86rem;
+            height: 19.81rem;
+            margin-top: 40px;
+        }
+
+        .Bestsellers .square4 {
+            width: 18.86rem;
+            height: 19.81rem;
+            margin-top: 40px;
+        }
+
+        .Bestsellers .square5,
+        .Bestsellers .square6,
+        .Bestsellers .square7,
+        .Bestsellers .square8 { display: none; }
+
+        .Bestsellers .square5 .text14,
+        .Bestsellers .square6 .text15,
+        .Bestsellers .square7 .text16,
+        .Bestsellers .square8 .text17{ display: none; }
 
     /* ОТЗЫВЫ */
-    .reviews{
-        position: absolute;
-        width: 1666px;
-        height: 575px;
-        left: 117px;
-        right: 137px;
-        top: 3644px;
-        bottom: 1124px;
+        .reviews{
+            display: flex; /* Устанавливает контейнер flex */
+            flex-direction: column;
+            align-items: center; /* Выравнивание элементов по вертикали */
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            margin-top: 50px; /* Отступ сверху */
+            box-sizing: border-box; /* Учет отступов */
+            order: 5;
+
+        }
+
+        .reviews h1 {
+        	/* ОТЗЫВЫ */
+            text-align: center;
+            margin-bottom: 20px;
+            color: rgb(199, 138, 23);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 2.3rem;
+            font-weight: 700;
+            line-height: 3rem;
+
+        }
+
+       .reviews .square1,
+       .reviews .square2{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 1.25rem;
+            box-shadow: 0.13rem 0.25rem 3.75rem 0rem rgba(41, 44, 124, 0.1);
+            background: rgb(255, 255, 255);
+            z-index: 1;
+        }
+
+        .reviews .square1 {
+            top: 5%; /* Положение сверху */
+            left: 0%;
+            width: 32.44rem;
+            height: 14.94rem;
+
+          }
+
+         .reviews .square2 {
+            top: 5%; /* Положение сверху */
+            left: 0%;
+            width: 32.44rem;
+            height: 14.94rem;
+            margin-top: 40px;
+         }
+
+         .reviews .square1 .text1,
+         .reviews .square2 .text2{
+            position: absolute;
+            width: 100%;
+            top: 50%; /* Центр по вертикали */
+            left: 60%; /* Центр по горизонтали */
+            transform: translate(-50%, -50%); /* Корректировка центрирования */
+            font-family: "Alegreya SC", serif;
+            font-size: 1.15rem;
+            color: rgba(79, 57, 34, 0.7);
+            text-align: left;
+            z-index: 3;
+         }
+
+         .reviews .square3{
+            position: relative; /* или absolute, если нужно */
+            width: 1rem; /* Задайте нужную ширину */
+            height: 14.94rem; /* Задайте нужную высоту */
+            border-radius: 1.25rem 0rem 0rem 1.25rem;
+            box-shadow: 0.13rem 0.25rem 3.75rem 0rem rgba(41, 44, 124, 0.1);
+            background: rgb(123, 82, 39);
+            z-index: 2;
+        }
+
+
+
+/* Контакты */
+        .social {
+            display: flex; /* Устанавливает контейнер flex */
+            flex-direction: column;
+            align-items: center; /* Выравнивание элементов по вертикали */
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            margin-top: 50px; /* Отступ сверху */
+            box-sizing: border-box; /* Учет отступов */
+            order: 6;
+        }
+
+        .social .square1{
+            position: relative; /* или absolute, если нужно */
+            width: 33rem; /* Задайте нужную ширину */
+            height: 37.31rem; /* Задайте нужную высоту */
+            border-radius: 2.31rem;
+            background: rgba(229, 204, 139, 0.53);
+            z-index: 1;
+        }
+
+        .social .square1 .text1{
+              position: absolute;
+              width: 100%;
+              top: 11%; /* Центр по вертикали */
+              left: 50%; /* Центр по горизонтали */
+              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              font-family: Alice;
+              font-size: 1.88rem;
+              color: rgb(79, 57, 34);
+              text-align: center;
+              line-height: 2.13rem;
+              z-index: 2;
+        }
+
+        .social .square1 .text2{
+              position: absolute;
+              width: 100%;
+              top: 75%; /* Центр по вертикали */
+              left: 50%; /* Центр по горизонтали */
+              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              font-family: Alice;
+              font-size: 1.88rem;
+              color: rgb(79, 57, 34);
+              text-align: center;
+              line-height: 2.13rem;
+              z-index: 2;
+        }
+
+        .button2 {
+            position: absolute;
+            width: 15rem;
+            height: 3.31rem;
+            left: 50%; /* Центрирование по горизонтали */
+            transform: translateX(-50%); /* Смещение для центрирования */
+            top: 80%; /* Между h4 (40%) и h1 (60%) */
+            color: #fff;
+            background-color: rgba(217, 181, 113, 0.6);
+            border-radius: 5rem;
+            border: none; /* Убирает границу */
+            text-align: center; /* Для содержания кнопки */
+            z-index: 2; /* Убедиться, что кнопка отображается поверх */
+
+            line-height: 3.31rem; /* Вертикальное выравнивание текста */
+            font-family: Cormorant Garamond;
+            font-size: 1.50rem;
+            font-weight: 400; /* Толщина текста */
+        }
+
+        .button2:hover {background-color: rgba(181, 152, 98, 0.6);}
+
+        .button2:active {
+        	background-color: rgba(181, 152, 98, 0.6);
+            transform: translateX(-50%);/* Убираем смещение */
+        }
+
+
+/* Нижняя шапка */
+        .footer {
+          display: flex; /* Устанавливает контейнер flex */
+          flex-direction: column;
+          align-items: center; /* Выравнивание элементов по вертикали */
+          justify-content: space-between;
+          position: relative;
+          width: 100%;
+          padding: 20px;
+          margin-top: 50px; /* Отступ сверху */
+          background: rgb(229, 204, 139);
+          order: 7; /* Позиция относительно других элементов */
+        }
+
+        .footer h1, .footer h2, .footer h3 {
+          margin: 0; /* Убирает отступы */
+          color: rgb(79, 57, 34);
+          line-height: 2.25rem;
+        }
+
+        .footer h1 {
+          font-family: "Cormorant Garamond", serif;
+          font-size: 1.5rem;
+          font-weight: 600;
+        }
+
+        .footer h2 {
+          font-family: Alice;
+          font-size: 1.25rem;
+          font-weight: 400;
+          left: 60%;
+          line-height: 1.5rem;
+        }
+
+        .footer h3 {
+          font-family: Poppins;
+          font-size: 1.13rem;
+          font-weight: 600;
+          left: 50%;
+          line-height: 1.5rem;
+        }
+
+        .nav1 {
+          display: flex;
+          gap: 15px;
+          margin-top: 15px;
+        }
+
+        .nav1 a {
+          text-decoration: none;
+          color: #4f3922;
+          font-size: 1rem;
+          font-family: "Alegreya SC", serif;
+        }
+
+
+/* Медиазапросы для разных экранов */
+   /* Мобильные устройства (320px) */
+        @media screen and (max-width: 768px) {
+            .logo {
+                font-size: 1.2rem;
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .button1 {
+                position: absolute;
+                width: 15rem;
+                height: 3.31rem;
+                left: 50%; /* Центрирование по горизонтали */
+                transform: translateX(-50%); /* Смещение для центрирования */
+                top: calc((40% + 60%) / 2); /* Между h4 (40%) и h1 (60%) */
+                color: #fff;
+                background-color: rgba(217, 181, 113, 0.6);
+                border-radius: 5rem;
+                border: none; /* Убирает границу */
+                text-align: center; /* Для содержания кнопки */
+                z-index: 2; /* Убедиться, что кнопка отображается поверх */
+                line-height: 3.31rem; /* Вертикальное выравнивание текста */
+                font-family: Cormorant Garamond;
+                font-size: 1.50rem;
+                font-weight: 400; /* Толщина текста */
+            }
+
+            .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
+
+            .button1:active {
+            	background-color: rgba(181, 152, 98, 0.6);
+                transform: translateX(-50%);/* Убираем смещение */
+            }
+		
+	   .Bestsellers .squares-container {
+		display: flex; 
+	        flex-direction: column; 
+	        justify-content: center; 
+	        align-items: center;
+	         width: 100%; 
+	    }
     }
 
-    .text18{
-        /* “Здравствуйте!  Серёжки очень понравились!! Они невероятно красивые и аккуратные) Качество материалов на высшем уровне!  Что особенно порадовало, так это их лёгкость-совершенно не чувствуются на ушах!  Спасибо большое!” */
-        position: absolute;
-        width: 667px;
-        height: 317.23px;
-        left: 206px;
-        top: 3847.57px;
-        color: rgba(79, 57, 34, 0.7);
-        font-family: Alegreya SC;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 41px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
+	/*  Маленькие ноутбуки (1024px) */
+        @media screen and (min-width: 768px) and (max-width: 1400px) {
+           .logo {
+                font-size: 2.5rem;
+            }
 
-    .text19{
-        /* “Добрый вечер Да, всë понравилось, сережки классные, на фотке крупнее было, думала большие такие, оказывается нормально  И застежка вообще кайфовая, не надо 5 минут зацеплять что-то куда-то! Кстати, длина тоже хорошая)” */
-        position: absolute;
-        width: 667px;
-        height: 266.9px;
-        left: 1110px;
-        top: 3847.57px;
-        color: rgba(79, 57, 34, 0.7);
-        font-family: Alegreya SC;
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 41px;
-        letter-spacing: 0%;
-        text-align: left;
-    }
+           .nav a {
+                font-size: 2rem;
+            }
+
+          .cover {
+            display: flex;
+            justify-content: space-between; /* Распределяет элементы по левому и правому краю */
+        	height: 60%; /* 100% от высоты окна */
+            width: 100%;
+            position: relative;
+            order: 2;
+            z-index: 0;
+          }
+
+          .cover h1,
+          .cover h2,
+          .cover h3,
+          .cover h4 {
+              margin: 0; /* Убираем отступы */
+              color: rgb(204, 204, 204); /* Цвет текста */
+          }
+
+          /* Индивидуальные стили для заголовков */
+          .cover h1 {
+              font-size: 2.5rem;
+              margin-left: 50%;
+              margin-top: 150px;
+              font-family: Cormorant Garamond;
+          }
+
+          .cover h2 {
+              font-size: 2rem;
+              margin-left: 50%;
+              font-family: Alice;
+              color: rgb(230, 204, 139);
+          }
+
+          .cover h3 {
+          	  margin-top: -110px;
+              margin-right: 50%;
+              font-size: 1.88rem;
+              font-family: Alice;
+          }
+
+          .cover h4 {
+              margin-top: 50px;
+              margin-right: 50%;
+              font-size: 1.56rem;
+              font-family: Alegreya SC, serif;
+              text-align: center;
+          }
+
+          .button1 {
+            width: 15rem;
+            height: 3.31rem;
+            color: #fff;
+            background-color: rgba(217, 181, 113, 0.6);
+            border-radius: 5rem;
+            border: none;
+            text-align: center;
+            z-index: 2;
+            line-height: 3.31rem;
+            font-family: Cormorant Garamond;
+            font-size: 1.50rem;
+            font-weight: 400;
+            margin-right: 50%;
+            margin-top: 5%;
+
+        }
+
+        .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
+
+        .button1:active {background-color: rgba(181, 152, 98, 0.6);}
+
+        .Testimonials h1 {
+        	/* О СЕБЕ */
+            text-align: center;
+            color: rgb(199, 138, 23);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 3rem;
+        }
+
+        .Testimonials h2 {
+        	/* Усова Анастасия */
+            position: relative;
+            text-align: center;
+            margin-left: 0;
+            padding-left: 10px;
+            color: rgb(79, 57, 34);
+            font-family: Alegreya SC;
+            font-size: 2.3rem;
+            font-weight: 400;
+            line-height: 160%;
+        }
+
+         .Testimonials h3 {
+         /* Занятие украшениями... */
+
+            font-size: 1.8rem;
+            color: rgb(79, 57, 34);
+            font-family: Alegreya SC;
+            text-align: center;
+            z-index: 1;
+            position: relative;
+        }
+
+        .Bestsellers h1{
+            /* Работы */
+            text-align: right;
+            color: rgb(79, 57, 34);
+            font-family: Cormorant Garamond;
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 160%;
+            z-index: 3;
+            margin-bottom: 40;
+        }
+
+        .Bestsellers .squares-container {
+            display: flex; /* Flexbox для размещения квадратов */
+            flex-wrap: wrap; /* Разрешаем перенос строк */
+            gap: 20px; /* Расстояние между элементами */
+            justify-content: center; /* Центрируем квадраты */
+            align-items: flex-start;
+            width: 100%;
+        }
+
+	    .Bestsellers .square1,
+        .Bestsellers .square2,
+        .Bestsellers .square3,
+        .Bestsellers .square4,
+        .Bestsellers .square5,
+        .Bestsellers .square6,
+        .Bestsellers .square7,
+        .Bestsellers .square8{
+            display: block;
+            width: 18.86rem;
+    		height: 19.81rem;
+            border-radius: 1.25rem;
+            box-shadow: 0rem 1.18rem 2.94rem 0rem rgba(47, 50, 125, 0.1);
+            background: rgb(255, 255, 255);
+            z-index: 1;
+        }
+
+         .Bestsellers .square5 .text14,
+         .Bestsellers .square6 .text15,
+         .Bestsellers .square7 .text16,
+         .Bestsellers .square8 .text17{
+         	  display: block;
+          	  position: relative; /* Абсолютное позиционирование внутри родителя */
+              top: 89%; /* Центрирование по вертикали */
+              left: 50%; /* Центрирование по горизонтали */
+              transform: translate(-50%, -50%); /* Смещение для точного центрирования */
+              color: rgb(79, 57, 34);
+              font-family: Alegreya SC;
+              font-size: 20px;
+              font-weight: 500;
+              text-align: center;
+              white-space: normal; /* Разрешить перенос строк */
+              word-wrap: break-word; /* Переносить слова, если они длинные */
+              width: 80%; /* Задайте ширину текста */
+              line-height: 1.5; /* Интервал между строками */
+              z-index: 3;
+          }
+
+          .Bestsellers .square1 {
+          /* Позолоченная фурнитура, сердолик */
+              top: 20%; /* Положение сверху */
+              left: 0%; /* Положение слева */
+              width: 18.86rem;
+              height: 19.81rem;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square2 {
+          /* Родированная фурнитура, майорка */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 18.86rem;
+              height: 19.81rem;
+              margin-top: 70px;
+          }
+
+		  .Bestsellers .square3 {
+          /* Позолоченная фурнитура, кошачий глаз */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 18.86rem;
+              height: 19.81rem;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square4 {
+          /* Родированная фурнитура, белый агат, майорка */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 18.86rem;
+              height: 19.81rem;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square5 {
+          /* Позолоченная фурнитура, сердолик */
+              top: 20%; /* Положение сверху */
+              left: 0%; /* Положение слева */
+              width: 18.86rem;
+              height: 19.81rem;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square6 {
+          /* Сатинированная позолота, майорка */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 18.86rem;
+              height: 19.81rem;
+              margin-top: 70px;
+          }
+
+		  .Bestsellers .square7 {
+          /* Чернённая фурнитура, шунгит */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 18.86rem;
+              height: 19.81rem;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square8 {
+          /* Позолоченная фурнитура */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 18.86rem;
+              height: 19.81rem;
+              margin-top: 70px;
+          }
+
+        .reviews h1 {
+        	/* ОТЗЫВЫ */
+            text-align: center;
+            margin-bottom: 20px; /* Добавили отступ снизу */
+            color: rgb(199, 138, 23);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 2.3rem;
+            font-weight: 700;
+            line-height: 3rem;
+        }
+
+        .reviews .squares-container {
+            display: flex; /* Горизонтальное расположение */
+            gap: 20px; /* Отступ между квадратами */
+            flex-direction: row; /* Элементы располагаются в строку */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
+        }
+
+          .reviews .square1,
+          .reviews .square2 {
+              margin: 0; /* Убираем любые отступы */
+    	      padding: 0;
+              position: relative;
+              width: 32.44rem;
+              height: 20.94rem;
+              border-radius: 1.25rem;
+              box-shadow: 0.13rem 0.25rem 3.75rem 0rem rgba(41, 44, 124, 0.1);
+              background: rgb(255, 255, 255);
+              z-index: 1;
+          }
+
+          .reviews .square1 {
+              top: 0%; /* Положение сверху */
+              left: 0%;
+              width: 32.44rem;
+              height: 18.94rem;
+
+          }
+
+         .reviews .square2 {
+              top: 0%; /* Положение сверху */
+              left: 0%;
+              width: 32.44rem;
+              height: 18.94rem;
+          }
+
+          .reviews .square1 .text1,
+          .reviews .square2 .text2{
+              position: absolute;
+              width: 100%;
+              top: 50%; /* Центр по вертикали */
+              left: 60%; /* Центр по горизонтали */
+              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              font-family: "Alegreya SC", serif;
+              font-size:  1.25rem;
+              color: rgba(79, 57, 34, 0.7);
+              text-align: left;
+              z-index: 3;
+          }
+
+         .reviews .square3{
+            position: relative; /* или absolute, если нужно */
+            width: 0.88rem; /* Задайте нужную ширину */
+            height: 18.94rem; /* Задайте нужную высоту */
+            border-radius: 1.25rem 0rem 0rem 1.25rem;
+            box-shadow: 0.13rem 0.25rem 3.75rem 0rem rgba(41, 44, 124, 0.1);
+            background: rgb(123, 82, 39);
+            z-index: 2;
+        }
+
+        .social .square1{
+            position: relative; /* или absolute, если нужно */
+            width: 60rem; /* Задайте нужную ширину */
+            height: 33.88rem; /* Задайте нужную высоту */
+            border-radius: 2.31rem;
+            background: rgba(229, 204, 139, 0.53);
+            z-index: 1;
+        }
+
+        .social .square1 .text1{
+              position: absolute;
+              width: 100%;
+              top: 11%; /* Центр по вертикали */
+              left: 50%; /* Центр по горизонтали */
+              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              font-family: Alice;
+              font-size: 2.5rem;
+              color: rgb(79, 57, 34);
+              text-align: center;
+              line-height: 2.13rem;
+              z-index: 2;
+        }
+
+        .social .square1 .text2{
+              position: absolute;
+              width: 100%;
+              top: 70%; /* Центр по вертикали */
+              left: 50%; /* Центр по горизонтали */
+              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              font-family: Alice;
+              font-size: 2.5rem;
+              color: rgb(79, 57, 34);
+              text-align: center;
+              line-height: 2.13rem;
+              z-index: 2;
+        }
+
+   }
+
+
+/* Большие экраны (1440px и выше) */
+      @media screen and (min-width: 1440px) {
+         .logo {
+             font-size: 4rem;
+         }
+
+         .nav a {
+             font-size: 3rem;
+         }
+
+         .nav {
+         	gap:30px;
+         }
+
+         .cover {
+             display: flex;
+             justify-content: space-between;
+             height: 70%; /* Увеличиваем высоту */
+             width: 100%;
+             position: relative;
+             order: 2;
+             z-index: 0;
+         }
+
+         .cover h1 {
+             font-size: 3.5rem; /* Увеличиваем размер заголовка */
+             margin-left: 40%;
+             margin-top: 120px;
+         }
+
+         .cover h2 {
+             font-size: 2.5rem;
+             margin-left: 40%;
+         }
+
+         .cover h3 {
+             margin-top: -450px;
+             margin-right: 40%;
+             font-size: 2.2rem;
+         }
+
+         .cover h4 {
+             margin-top: 30px;
+             margin-right: 40%;
+             font-size: 1.9rem;
+         }
+
+  		.button1 {
+              width:20rem;
+              height: 5.31rem;
+              color: #fff;
+              background-color: rgba(217, 181, 113, 0.6);
+              border-radius: 5rem;
+              border: none;
+              text-align: center;
+              z-index: 2;
+              line-height: 3.31rem;
+              font-family: Cormorant Garamond;
+              font-size: 2.5rem;
+              font-weight: 400;
+              margin-right: 40%;
+              margin-top: 3%;
+
+          }
+
+          .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
+
+          .button1:active {background-color: rgba(181, 152, 98, 0.6);}
+
+         .Testimonials h1 {
+             font-size: 3rem;
+             line-height: 3.5rem;
+         }
+
+         .Testimonials h2 {
+            position: relative;
+            text-align: center;
+            margin-left: 0;
+            padding-left: 10px;
+            color: rgb(79, 57, 34);
+            font-family: Alegreya SC;
+            font-weight: 400;
+            line-height: 160%;
+            font-size: 2.7rem;
+         }
+
+         .Testimonials h3 {
+             font-size: 2.2rem;
+         }
+
+         .Bestsellers h1 {
+             font-size: 3rem;
+         }
+
+        .Bestsellers .squares-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+	    .Bestsellers .square1,
+        .Bestsellers .square2,
+        .Bestsellers .square3,
+        .Bestsellers .square4,
+        .Bestsellers .square5,
+        .Bestsellers .square6,
+        .Bestsellers .square7,
+        .Bestsellers .square8{
+            display: block;
+            width: 30rem;
+            height: 31rem;
+            border-radius: 1.25rem;
+            box-shadow: 0rem 1.18rem 2.94rem 0rem rgba(47, 50, 125, 0.1);
+            background: rgb(255, 255, 255);
+            z-index: 1;
+        }
+
+         .Bestsellers .square1 .text10,
+         .Bestsellers .square2 .text11,
+         .Bestsellers .square3 .text12,
+         .Bestsellers .square4 .text13,
+         .Bestsellers .square5 .text14,
+         .Bestsellers .square6 .text15,
+         .Bestsellers .square7 .text16,
+         .Bestsellers .square8 .text17{
+         	  display: block;
+          	  position: relative; /* Абсолютное позиционирование внутри родителя */
+              top: 89%; /* Центрирование по вертикали */
+              left: 50%; /* Центрирование по горизонтали */
+              transform: translate(-50%, -50%); /* Смещение для точного центрирования */
+              color: rgb(79, 57, 34);
+              font-family: Alegreya SC;
+              font-size: 2rem;
+              font-weight: 500;
+              text-align: center;
+              white-space: normal; /* Разрешить перенос строк */
+              word-wrap: break-word; /* Переносить слова, если они длинные */
+              width: 80%; /* Задайте ширину текста */
+              line-height: 1.5; /* Интервал между строками */
+              z-index: 3;
+          }
+
+          .Bestsellers .square1 {
+          /* Позолоченная фурнитура, сердолик */
+              top: 20%; /* Положение сверху */
+              left: 0%; /* Положение слева */
+              width: 30rem;
+              height: 31rem;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square2 {
+          /* Родированная фурнитура, майорка */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 30rem;
+              height: 31rem;
+              margin-top: 70px;
+          }
+
+		  .Bestsellers .square3 {
+          /* Позолоченная фурнитура, кошачий глаз */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 30rem;
+              height: 31rem;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square4 {
+          /* Родированная фурнитура, белый агат, майорка */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 30rem;
+              height: 31rem;;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square5 {
+          /* Позолоченная фурнитура, сердолик */
+              top: 20%; /* Положение сверху */
+              left: 0%; /* Положение слева */
+              width: 30rem;
+              height: 31rem;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square6 {
+          /* Сатинированная позолота, майорка */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 30rem;
+              height: 31rem;
+              margin-top: 70px;
+          }
+
+
+		  .Bestsellers .square7 {
+          /* Чернённая фурнитура, шунгит */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 30rem;
+              height: 31rem;
+              margin-top: 70px;
+          }
+
+          .Bestsellers .square8 {
+          /* Позолоченная фурнитура */
+              top: 20%; /* Измените по необходимости */
+              left: 0%; /* Измените по необходимости */
+              width: 30rem;
+              height: 31rem;
+              margin-top: 70px;
+          }
+
+          .reviews {
+             margin-top: 70px;
+             gap: 50px;
+         }
+
+          .reviews h1 {
+        	/* ОТЗЫВЫ */
+            text-align: center;
+            margin-bottom: 20px; /* Добавили отступ снизу */
+            color: rgb(199, 138, 23);
+            font-family: "Cormorant Garamond", serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 3rem;
+        }
+
+        .reviews .squares-container {
+            display: flex; /* Горизонтальное расположение */
+            gap: 20px; /* Отступ между квадратами */
+            flex-direction: row; /* Элементы располагаются в строку */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
+        }
+
+          .reviews .square1,
+          .reviews .square2 {
+              margin: 0; /* Убираем любые отступы */
+    	      padding: 0;
+              position: relative;
+              width: 80rem;
+              height: 40rem;
+              border-radius: 1.25rem;
+              box-shadow: 0.13rem 0.25rem 3.75rem 0rem rgba(41, 44, 124, 0.1);
+              background: rgb(255, 255, 255);
+              z-index: 1;
+          }
+
+          .reviews .square1 {
+              width: 80rem;
+              height: 40rem;
+          }
+
+         .reviews .square2 {
+              width: 80rem;
+              height: 40rem;
+          }
+
+          .reviews .square1 .text1,
+          .reviews .square2 .text2{
+              position: absolute;
+              width: 100%;
+              top: 50%; /* Центр по вертикали */
+              left: 60%; /* Центр по горизонтали */
+              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              font-family: "Alegreya SC", serif;
+              font-size: 2.3rem;
+              color: rgba(79, 57, 34, 0.7);
+              text-align: left;
+              z-index: 3;
+          }
+
+         .reviews .square3{
+            height: 40rem;
+        }
+
+        .social .square1{
+            position: relative; /* или absolute, если нужно */
+            width: 80rem;
+            height: 50rem; /* Задайте нужную высоту */
+            border-radius: 2.31rem;
+            background: rgba(229, 204, 139, 0.53);
+            z-index: 1;
+        }
+
+        .social .square1 .text1{
+              position: absolute;
+              width: 100%;
+              top: 11%; /* Центр по вертикали */
+              left: 50%; /* Центр по горизонтали */
+              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              font-family: Alice;
+              font-size: 3rem;
+              color: rgb(79, 57, 34);
+              text-align: center;
+              line-height: 2.13rem;
+              z-index: 2;
+        }
+
+        .social .square1 .text2{
+              font-size: 3rem;
+        }
+
+        .button2 {
+            width: 30rem;
+            height: 7.31rem;
+            font-size: 2.5rem;;
+        }
+
+        .footer h1 {
+          font-family: "Cormorant Garamond", serif;
+          font-size: 3rem;
+          font-weight: 600;
+        }
+
+        .footer h2 {
+          font-family: Alice;
+          font-size: 2rem;
+          font-weight: 400;
+          left: 60%;
+          line-height: 1.5rem;
+        }
+
+        .footer h3 {
+          font-family: Poppins;
+          font-size: 2rem;
+          font-weight: 600;
+          left: 50%;
+          line-height: 1.5rem;
+        }
+
+        .nav1 {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .nav1 a {
+            text-decoration: none;
+            color: #4f3922;
+            font-size: 2rem;
+            font-family: "Alegreya SC", serif;
+        }
+   }

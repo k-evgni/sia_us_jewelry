@@ -168,10 +168,6 @@
             line-height: 3rem;
          }
 
-
-
-
-
  /* Бестселлеры */
         .Bestsellers {
             display: flex;
@@ -189,7 +185,7 @@
 
         .Bestsellers h1{
             /* Работы */
-			margin-top: 20;
+	    margin-top: 20;
             position: relative;
             text-align: right;
             margin-left: 0;
@@ -203,6 +199,15 @@
             z-index: 3;
         }
 
+	.Bestsellers .squares-container {
+            display: flex; /* Горизонтальное расположение */
+            gap: 20px; /* Отступ между квадратами */
+            flex-direction: colum; /* Элементы располагаются в строку */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
+        }
+	    
         .Bestsellers .square1,
         .Bestsellers .square2,
         .Bestsellers .square3,
@@ -237,31 +242,23 @@
         }
 
         .Bestsellers .square1 {
-            top: 20%; /* Положение сверху */
-            left: 0%; /* Положение слева */
             width: 18.86rem;
             height: 19.81rem;
         }
 
         .Bestsellers .square2 {
-            top: 20%;
-            left: 40%;
             width: 18.86rem;
             height: 19.81rem;
             margin-top: 40px;
         }
 
-		.Bestsellers .square3 {
-            top: 20%;
-            left: 0%;
+	.Bestsellers .square3 {
             width: 18.86rem;
             height: 19.81rem;
             margin-top: 40px;
         }
 
         .Bestsellers .square4 {
-            top: 20%;
-            left: 40%;
             width: 18.86rem;
             height: 19.81rem;
             margin-top: 40px;
@@ -530,6 +527,13 @@
                 transform: translateX(-50%);/* Убираем смещение */
             }
 
+	.Bestsellers .squares-container {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            width: 100%; 
+        }
     }
 
 	/*  Маленькие ноутбуки (1024px) */
@@ -688,8 +692,8 @@
          .Bestsellers .square6 .text15,
          .Bestsellers .square7 .text16,
          .Bestsellers .square8 .text17{
-         	  display: block;
-          	  position: relative; /* Абсолютное позиционирование внутри родителя */
+              display: block;
+              position: relative; /* Абсолютное позиционирование внутри родителя */
               top: 89%; /* Центрирование по вертикали */
               left: 50%; /* Центрирование по горизонтали */
               transform: translate(-50%, -50%); /* Смещение для точного центрирования */
