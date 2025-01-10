@@ -65,12 +65,6 @@
             box-sizing: border-box;
         }
 
-        .img1 {
-            max-width: 100%;
-            height: auto;
-            z-index: 1;
-        }
-
         .cover h1,
         .cover h2,
         .cover h3,
@@ -89,6 +83,15 @@
             font-family: Alice;
             color: rgb(230, 204, 139);
             margin-bottom: 289px;
+        }
+
+        /* Стили для изображения */
+        .cover-image {
+            width: 80%; /* Изображение занимает 80% ширины окна */
+            height: auto; /* Сохраняет пропорции */
+            max-width: 600px; /* Ограничиваем максимальную ширину */
+            margin: 20px 0; /* Отступы сверху и снизу */
+            z-index: 1; /* Отображается под текстом */
         }
 
         .cover h3 {
@@ -537,6 +540,10 @@
                 transform: translateX(-50%);/* Убираем смещение */
             }
 
+            .cover-image {
+                width: 90%; /* Увеличиваем ширину для небольших экранов */
+            }
+
 	.Bestsellers .squares-container {
             display: flex; 
             flex-direction: column; 
@@ -938,11 +945,9 @@
              margin-left: 40%;
          }
 
-          .img1 {
-              margin-left: 40%;
-              margin-top: 120px;
-              z-index: 1;
-          }
+         .cover-image {
+             width: 60%; /* Уменьшаем ширину для больших экранов */
+         }
 
          .cover h3 {
              margin-top: -450px;
@@ -977,6 +982,7 @@
           .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
 
           .button1:active {background-color: rgba(181, 152, 98, 0.6);}
+
 
          .Testimonials h1 {
              font-size: 3rem;
@@ -1281,6 +1287,7 @@
     <div class="cover" >
        <h1>SIA_US_JEWELRY</h1>
        <h2>Украшения ручной работы</h2>
+        <img src="static/solnce_lyna.png" alt="Jewelry Image" class="cover-image">
        <h3>Красота в мелочах: </h3>
        <h4>Откройте для себя бесконечное<br>великолепие украшений</h4>
        <button class="button1" onclick="redirectToForm()">Заказать</button>
