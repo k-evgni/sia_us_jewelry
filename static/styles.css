@@ -57,6 +57,12 @@
             box-sizing: border-box;
         }
 
+        .img1 {
+            max-width: 100%;
+            height: auto;
+            z-index: 1;
+        }
+
         .cover h1,
         .cover h2,
         .cover h3,
@@ -927,6 +933,12 @@
              font-size: 2.5rem;
              margin-left: 40%;
          }
+
+          .img1 {
+              margin-left: 40%;
+              margin-top: 120px;
+              z-index: 1;
+          }
 
          .cover h3 {
              margin-top: -450px;
