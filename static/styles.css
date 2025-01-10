@@ -34,7 +34,7 @@
         .nav a {
             text-decoration: none;
             color: #4f3922;
-            font-size: 1rem;
+            font-size: 0.8rem;
             font-family: "Alegreya SC", serif;
         }
 
@@ -539,7 +539,7 @@
             }
 
            .nav a {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
           .cover {
@@ -896,7 +896,7 @@
          }
 
          .nav a {
-             font-size: 3rem;
+             font-size: 2.8rem;
          }
 
          .nav {
