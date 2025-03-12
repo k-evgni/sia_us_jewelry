@@ -81,15 +81,15 @@
 	    z-index: 1; /* Отображается под текстом */
         }
 
-        /* Возмножно нужно будет вернуть! 
+        
 	.cover h1,
         .cover h2,
         .cover h3,
         .cover h4 {
-            margin: 0; /* Убираем отступы 
-            color: rgb(204, 204, 204); /* Цвет текста 
+            margin: 0; /* Убираем отступы */
+            color: rgb(204, 204, 204); /* Цвет текста */
 	    z-index: 2;
-        }*/
+        }
 
         .cover h1 {
             font-size: 1.88rem;
@@ -102,17 +102,17 @@
             font-size: 1.56rem;
             font-family: Alice;
             color: rgb(230, 204, 139);
-            margin-bottom: 20px; /* Было изменение: 289px */
+            margin-bottom: 189px; /* Было изменение: 289px */
         }
 
         .cover h3 {
-        	margin-top: 20px; /* Было изменение: 70px */
+        	margin-top: 70px; /* Было изменение: 70px */
             font-size: 1.88rem;
             font-family: Alice;
         }
 
         .cover h4 {
-        	margin-top: 10px; /* Было изменение: 50px */
+        	margin-top: 50px; /* Было изменение: 50px */
             font-size: 1.56rem;
             font-family: Alegreya SC, serif;
             text-align: center;
@@ -584,6 +584,22 @@
             z-index: 0;
           }
 
+	.cover-image {
+            position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);  
+		
+	    width: 80%; /* Изображение занимает 80% ширины окна */
+            height: auto; /* Сохраняет пропорции */
+            max-width: 600px; /* Ограничиваем максимальную ширину */
+            
+	    margin: 20px 0; /* Отступы сверху и снизу */
+            margin-left: 20px; /* Отступ слева от изображения */
+		
+	    z-index: 1; /* Отображается под текстом */
+        }
+		
           .cover h1,
           .cover h2,
           .cover h3,
