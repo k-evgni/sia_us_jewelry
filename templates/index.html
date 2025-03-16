@@ -616,6 +616,19 @@
 		
 	    z-index: 1; /* Отображается под текстом */
         }
+
+	/* Стили для изображения - ВЕКТОР */
+        .cover-image1 {
+            position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);  
+	    width: 80%; /* Изображение занимает 80% ширины окна */
+            height: auto; /* Сохраняет пропорции */
+            max-width: 600px; /* Ограничиваем максимальную ширину */
+	    /* margin: 20px 0; /* Отступы сверху и снизу */
+	    z-index: 1; /* Отображается под текстом */
+        }
 		
           .cover h1,
           .cover h2,
@@ -1333,6 +1346,7 @@
        <h2>Украшения ручной работы</h2>
         <img src="static/solnce_lyna.png" alt="Jewelry Image" class="cover-image">
        <h3>Красота в мелочах: </h3>
+	<img src="static/vector-so-zvezdothkoi.png" alt="Vector" class="cover-image1">
        <h4>Откройте для себя бесконечное<br>великолепие украшений</h4>
        <button class="button1" onclick="redirectToForm()">Заказать</button>
     </div>
