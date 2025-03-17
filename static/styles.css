@@ -170,6 +170,21 @@
             z-index: 1; /* Уровень слоя изображения (1), чтобы оно отображалось под текстом, если текст имеет более высокий z-index */
         }
 
+          .Testimonials-image2 {
+            position: absolute;
+            top: 49%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+
+            width: 80%;
+            height: auto;
+            max-width: 500px;
+
+            margin: 20px 0;
+
+            z-index: 1;
+        }
+
 
 
 /* Преимущества */
