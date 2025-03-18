@@ -92,7 +92,7 @@
             height: auto; /* Сохраняет пропорции */
             max-width: 400px; /* Ограничиваем максимальную ширину. Было 600 */
 	    /* margin: 20px 0; /* Отступы сверху и снизу */
-	    z-index: 0; /* Отображается под текстом */
+	    z-index: 1; /* Отображается под текстом */
         }
 
         
@@ -646,7 +646,7 @@
             width: 95%; /* Уменьшаем ширину. Было 100% */
             position: relative;
             order: 2;
-            z-index: 1; 		  
+            z-index: 0; 		  
           }
 
 	.cover-image {
@@ -675,7 +675,7 @@
             height: auto; /* Сохраняет пропорции */
             max-width: 400px; /* Ограничиваем максимальную ширину. Было 600 */
 	    /* margin: 20px 0; /* Отступы сверху и снизу */
-	    z-index: 0; /* Отображается под текстом */
+	    z-index: 1; /* Отображается под текстом */
         }
 
 	/* Кнопка */
@@ -688,7 +688,7 @@
             border-radius: 5rem;
             border: none;
             text-align: center;
-            z-index: 0;
+            z-index: 1;
             line-height: 3.31rem;
             font-family: Cormorant Garamond;
             font-size: 1.50rem;
@@ -709,7 +709,7 @@
               margin-right: 50%;  /*Было 50 */
               font-size: 2.125rem; /* Было 1.88 rem*/
               font-family: Alice;
-		z-index: 3;
+		z-index: 2;
           }
 
           .cover h4 {   /*Откройте ...*/
@@ -718,7 +718,7 @@
               font-size: 1.56rem;
               font-family: Alegreya SC, serif;
               text-align: center;
-		  z-index: 3;
+		  z-index: 2;
           }
 		
 	.cover h1 {  /*SIA_US_JEWELRY*/
