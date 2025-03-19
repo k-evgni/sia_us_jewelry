@@ -82,6 +82,19 @@
 	    z-index: 1; /* Отображается под текстом */
         }
 
+	/* Стили для изображения - ВЕКТОР */
+        .cover-image1 {
+            position: absolute;
+	    top: 40%;
+	    left: 27%;
+	    transform: translate(-50%, -50%);  
+	    width: 50%; /* Изображение занимает 80% ширины окна. Было 80 */
+            height: auto; /* Сохраняет пропорции */
+            max-width: 400px; /* Ограничиваем максимальную ширину. Было 600 */
+	    /* margin: 20px 0; /* Отступы сверху и снизу */
+	    z-index: 1; /* Отображается под текстом */
+        }
+
         
 	.cover h1,
         .cover h2,
@@ -665,42 +678,8 @@
 	    z-index: 1; /* Отображается под текстом */
         }
 
-          /* Индивидуальные стили для заголовков */		
-	.cover h1 {  /*SIA_US_JEWELRY*/
-              font-size: 2.5rem;
-              margin-left: 50%;
-              margin-top: 150px;
-              font-family: Cormorant Garamond;
-		z-index: 3;
-          }
-
-          .cover h2 {  /*Укр. руч. раб*/
-              font-size: 2rem;
-	      margin-top: -30px;
-              margin-left: 50%;
-              font-family: Alice;
-              color: rgb(230, 204, 139);
-		  z-index: 3;
-          }
-
-	.cover h3 {   /*Красота в мелочах:*/  /*Переместили выше*/
-              margin-top: 50px; /*Было -110 и -200*/
-              margin-right: 50%;  /*Было 50 */
-              font-size: 2.125rem; /* Было 1.88 rem*/
-              font-family: Alice;
-		z-index: 3;
-          }
-
-          .cover h4 {   /*Откройте ...*/
-              margin-top: 20px; /*Было 20 */
-              margin-right: 50%;  /*Было 50 */
-              font-size: 1.56rem;
-              font-family: Alegreya SC, serif;
-              text-align: center;
-		  z-index: 3;
-          }
-
-          .button1 {
+	/* Кнопка */
+	.button1 {
             position: absolute; 
 	    width: 15rem;
             height: 3.31rem;
@@ -716,14 +695,51 @@
             font-weight: 400;
 	    top: 70%; /* Поднимаем кнопку выше (регулируйте это значение) */
             left: 27%; /* Центрируем по горизонтали */
-            transform: translate(-50%, -50%);  /* Смещение для точного центрирования */
-            
-
+            transform: translate(-50%, -50%);  /* Смещение для точного центрирования */     
         }
 
         .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
 
         .button1:active {background-color: rgba(181, 152, 98, 0.6);}
+
+
+          /* Индивидуальные стили для заголовков */		
+	.cover h3 {   /*Красота в мелочах:*/  /*Переместили выше*/
+              margin-top: -100px; /*Было -110 и -200*/
+              margin-right: 50%;  /*Было 50 */
+              font-size: 2.125rem; /* Было 1.88 rem*/
+              font-family: Alice;
+		z-index: 2;
+          }
+
+          .cover h4 {   /*Откройте ...*/
+              margin-top: -100px; /*Было 20 */
+              margin-right: 50%;  /*Было 50 */
+              font-size: 1.56rem;
+              font-family: Alegreya SC, serif;
+              text-align: center;
+		  z-index: 2;
+          }
+		
+	.cover h1 {  /*SIA_US_JEWELRY*/
+              font-size: 2.5rem;
+              margin-left: 50%;
+              margin-top: 150px;
+              font-family: Cormorant Garamond;
+		z-index: 2;
+          }
+
+          .cover h2 {  /*Укр. руч. раб*/
+              font-size: 2rem;
+	      margin-top: -30px;
+              margin-left: 50%;
+              font-family: Alice;
+              color: rgb(230, 204, 139);
+		  z-index: 2;
+          }
+
+
+
 
         .Testimonials h1 {
         	/* О СЕБЕ */
