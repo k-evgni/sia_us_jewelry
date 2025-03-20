@@ -289,21 +289,20 @@
         .Bestsellers .square2 .image2,
         .Bestsellers .square3 .image3,
         .Bestsellers .square4 .image4{
-            position: absolute; /* Абсолютное позиционирование внутри родителя */
-            top: 89%; /* Центрирование по вертикали */
-            left: 50%; /* Центрирование по горизонтали */
-            transform: translate(-50%, -50%); /* Смещение для точного центрирования */
-            color: rgb(79, 57, 34);
-            font-family: Alegreya SC;
-            font-size: 20px;
-            font-weight: 500;
-            text-align: center;
-            white-space: normal; /* Разрешить перенос строк */
-            word-wrap: break-word; /* Переносить слова, если они длинные */
-            width: 80%; /* Задайте ширину текста */
-            line-height: 1.5; /* Интервал между строками */
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 80%;
+            height: auto;
+            max-width: 600px;
+
+            margin: 20px 0;
+
             z-index: 3;
         }
+
 
         .Bestsellers .square1 {
             width: 18.86rem;
