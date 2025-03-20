@@ -308,6 +308,26 @@
             z-index: 3;
         }
 
+        .Bestsellers .square1 .image1,
+        .Bestsellers .square2 .image2,
+        .Bestsellers .square3 .image3,
+        .Bestsellers .square4 .image4{
+            position: absolute; /* Абсолютное позиционирование внутри родителя */
+            top: 89%; /* Центрирование по вертикали */
+            left: 50%; /* Центрирование по горизонтали */
+            transform: translate(-50%, -50%); /* Смещение для точного центрирования */
+            color: rgb(79, 57, 34);
+            font-family: Alegreya SC;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            white-space: normal; /* Разрешить перенос строк */
+            word-wrap: break-word; /* Переносить слова, если они длинные */
+            width: 80%; /* Задайте ширину текста */
+            line-height: 1.5; /* Интервал между строками */
+            z-index: 3;
+        }
+
         .Bestsellers .square1 {
             width: 18.86rem;
             height: 19.81rem;
@@ -331,35 +351,7 @@
             margin-top: 40px;
         }
 
-        .Bestsellers-image1 {
-            position: absolute;
-            top: 29%;
-            left: 18.3%;
-            transform: translate(-50%, -50%);
 
-            width: 80%;
-            height: auto;
-            max-width: 275px;
-
-            margin: 20px 0;
-
-            z-index: 1;
-        }
-
-         .Bestsellers-image2 {
-            position: absolute;
-            top: 29%;
-            left: 39.2%;
-            transform: translate(-50%, -50%);
-
-            width: 80%;
-            height: auto;
-            max-width: 275px;
-
-            margin: 20px 0;
-
-            z-index: 1;
-        }
 
         .Bestsellers .square5,
         .Bestsellers .square6,
@@ -1453,16 +1445,14 @@
     <div class="Bestsellers" id="bestsellers">
    		<h1>Работы</h1>
         <div class="squares-container">
-          <div class="square1"> <div class="text10">Позолоченная фурнитура, сердолик </div> </div>
-          <div class="square2"> <div class="text11">Родированная фурнитура, майорка</div> </div>
+          <div class="square1"> <div class="text10">Позолоченная фурнитура, сердолик </div> <img src="static/pozoloth-furnityra-serdolik.png" alt="Jewelry Image" class="Bestsellers-image1"> </div>
+          <div class="square2"> <div class="text11">Родированная фурнитура, майорка</div> <img src="static/rodir-furnityra-maiorka.png" alt="Jewelry Image" class="Bestsellers-image2"> </div>
           <div class="square3"> <div class="text12">Позолоченная фурнитура, кошачий глаз</div></div>
           <div class="square4"> <div class="text13">Родированная фурнитура, белый агат, майорка</div> </div>
           <div class="square5"> <div class="text14">Позолоченная фурнитура, сердолик</div> </div>
           <div class="square6"> <div class="text15">Сатинированная позолота, майорка </div> </div>
           <div class="square7"><div class="text16">Чернённая фурнитура, шунгит</div></div>
           <div class="square8"><div class="text17">Позолоченная фурнитура</div></div>
-          <img src="static/pozoloth-furnityra-serdolik.png" alt="Jewelry Image" class="Bestsellers-image1">
-          <img src="static/rodir-furnityra-maiorka.png" alt="Jewelry Image" class="Bestsellers-image2">
         </div>
     </div>
 
