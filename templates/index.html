@@ -313,14 +313,14 @@
         .Bestsellers .square3 .image3,
         .Bestsellers .square4 .image4{
             position: absolute;
-            top: 0%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
 
             width: 80%; /* Изображение будет занимать всю ширину квадрата */
             height: auto; /* Автоматическая высота для сохранения пропорций */
             max-width: 80%; /* Ограничение по ширине */
-
+	    object-fit: contain; /* Сохраняем пропорции без искажений */
             /* margin: 20px 0; */
 
             z-index: 3;
