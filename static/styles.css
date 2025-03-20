@@ -323,6 +323,21 @@
             z-index: 1;
         }
 
+        .Bestsellers-image2 {
+            position: absolute;
+            top: 29%;
+            left: 31%;
+            transform: translate(-50%, -50%);
+
+            width: 80%;
+            height: auto;
+            max-width: 275px;
+
+            margin: 20px 0;
+
+            z-index: 1;
+        }
+
         .Bestsellers .square5,
         .Bestsellers .square6,
         .Bestsellers .square7,
