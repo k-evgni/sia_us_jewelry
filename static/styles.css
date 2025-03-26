@@ -412,6 +412,22 @@
             z-index: 3;
          }
 
+         .reviews .square1 .image1,
+         .reviews .square2 .image2{
+            position: absolute;
+            top: 87%;
+            left: 81%;
+            transform: translate(-50%, -50%);
+
+            width: 28%; /* Изображение будет занимать всю ширину квадрата */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            max-width: 90%; /* Ограничение по ширине */
+	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
+            /* margin: 20px 0; */
+
+            z-index: 2;
+        }
+
          .reviews .square3{
             position: relative; /* или absolute, если нужно */
             width: 1rem; /* Задайте нужную ширину */

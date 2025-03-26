@@ -530,6 +530,22 @@
               z-index: 2;
         }
 
+        .social .square1 .image1,
+        .social .square1 .image2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 75%; /* Изображение будет занимать всю ширину квадрата */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            max-width: 90%; /* Ограничение по ширине */
+	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
+            /* margin: 20px 0; */
+
+            z-index: 2;
+        }
+
         .button2 {
             position: absolute;
             width: 15rem;
@@ -1536,6 +1552,8 @@
         <div class="square1">
             <div class="text1">Следите за новинками в наших социальных сетях</div>
             <div class="text2">Сделать заказ прямо сейчас</div>
+            </div> <img src="static/OR-vk.png" alt="Jewelry Image" class="image1"> </div>
+            </div> <img src="static/QR-tg.png" alt="Jewelry Image" class="image2"> </div>
             <button class="button2" onclick="redirectToForm()">Заказать</button>
       	</div>
  	</div>
