@@ -69,16 +69,14 @@
 	        /* Стили для изображения */
         .cover-image {
             position: absolute;
-	    top: 50%;
-	    left: 50%;
+	    top: 40%;
+	    left: 72%;
 	    transform: translate(-50%, -50%);  
-		
 	    width: 80%; /* Изображение занимает 80% ширины окна */
             height: auto; /* Сохраняет пропорции */
-            max-width: 600px; /* Ограничиваем максимальную ширину */
-            
-	    /* margin: 20px 0; /* Отступы сверху и снизу */
-            
+            max-width: 580px; /* Ограничиваем максимальную ширину */
+	    margin: 30px 0; /* Отступы сверху и снизу */
+            margin-left: 20px; /* Отступ слева от изображения */
 	    z-index: 1; /* Отображается под текстом */
         }
 
@@ -95,7 +93,30 @@
 	    z-index: 1; /* Отображается под текстом */
         }
 
-        
+	/* Кнопка */
+	.button1 {
+            position: absolute; 
+	    width: 15rem;
+            height: 3.31rem;
+            color: #fff;
+            background-color: rgba(217, 181, 113, 0.6);
+            border-radius: 5rem;
+            border: none;
+            text-align: center;
+            z-index: 1;
+            line-height: 3.31rem;
+            font-family: Cormorant Garamond;
+            font-size: 1.50rem;
+            font-weight: 400;
+	    top: 70%; /* Поднимаем кнопку выше (регулируйте это значение) */
+            left: 27%; /* Центрируем по горизонтали */
+            transform: translate(-50%, -50%);  /* Смещение для точного центрирования */     
+        }
+
+        .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
+
+        .button1:active {background-color: rgba(181, 152, 98, 0.6);}
+	    
 	.cover h1,
         .cover h2,
         .cover h3,
@@ -110,9 +131,11 @@
             font-family: Cormorant Garamond;
 	    margin-bottom: 20px;*/ 
 
-	    margin-top: 70px; /* Было изменение: 70px */
-            font-size: 1.88rem;
-            font-family: Alice;
+	     margin-top: 100px; /*Было -110 и -200 */
+             margin-right: 50%;  /*Было 50 */
+             font-size: 2.125rem; /* Было 1.88 rem */
+             font-family: Alice;
+	     z-index: 2;
         }
 
         .cover h2 {
@@ -121,10 +144,12 @@
             color: rgb(230, 204, 139);
             margin-bottom: 189px; /* Было изменение: 289px */
 
-            margin-top: 50px; /* Было изменение: 50px */
-            font-size: 1.56rem;
-            font-family: Alegreya SC, serif;
-            text-align: center;	    
+	      margin-top: 35px; /*Было 20 */
+              margin-right: 50%;  /*Было 50 */
+              font-size: 1.56rem;
+              font-family: Alegreya SC, serif;
+              text-align: center;
+	      z-index: 2;	    
         }
 
 	.cover h3 { /* БПереместили выше */
@@ -132,9 +157,11 @@
             font-size: 1.88rem;
             font-family: Alice;*/
 
-	    font-size: 1.88rem;
-            font-family: Cormorant Garamond;
-	    margin-bottom: 20px;
+	    font-size: 2.5rem;
+              margin-left: 50%;
+              margin-top: -150px;
+              font-family: Cormorant Garamond;
+	      z-index: 2;
         }
 
         .cover h4 {
@@ -143,10 +170,12 @@
             font-family: Alegreya SC, serif;
             text-align: center;*/
 
-	    font-size: 1.56rem;
-            font-family: Alice;
-            color: rgb(230, 204, 139);
-            margin-bottom: 189px; /* Было изменение: 289px */
+	    font-size: 2rem;
+	      margin-top: -100px;
+              margin-left: 50%;
+              font-family: Alice;
+              color: rgb(230, 204, 139);
+		  z-index: 2;
         }
 
 
