@@ -695,13 +695,10 @@
                 font-size: 1.8rem;
             }
 
-
+/*  Раздел: ОБЛОЖКА */
 	.cover {
             display: flex; 
-            
-	    justify-content: space-between; /* Распределяет элементы по левому и правому краю */
-           /* height: 60%; /* 100% от высоты окна */
-            
+	    justify-content: space-between; /* Распределяет элементы по левому и правому краю */           
 	    height: 60vh; /* Увеличиваем высоту. Было 60vh*/
             width: 95%; /* Уменьшаем ширину. Было 100% */
             position: relative;
@@ -710,23 +707,18 @@
           }
 
 	.cover-image {
-            /* position: absolute; */
 	    top: 40%;
 	    left: 72%;
 	    transform: translate(-50%, -50%);  
-		
 	    width: 80%; /* Изображение занимает 80% ширины окна */
             height: auto; /* Сохраняет пропорции */
             max-width: 580px; /* Ограничиваем максимальную ширину */
-            
 	    margin: 30px 0; /* Отступы сверху и снизу - было 20 */
             margin-left: 20px; /* Отступ слева от изображения */
-		
 	    z-index: 1; /* Отображается под текстом */
         }
 
-	/* Стили для изображения - ВЕКТОР */
-        .cover-image1 {
+        .cover-image1 { /* Стили для изображения - ВЕКТОР */
             position: absolute;
 	    top: 40%;
 	    left: 27%;
@@ -738,8 +730,7 @@
 	    z-index: 1; /* Отображается под текстом */
         }
 
-	/* Кнопка */
-	.button1 {
+	.button1 { /* Кнопка */
             position: absolute; 
 	    width: 15rem;
             height: 3.31rem;
@@ -761,27 +752,25 @@
         .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
         .button1:active {background-color: rgba(181, 152, 98, 0.6);}
 
-
-          /* Индивидуальные стили для заголовков */		
-	.cover h3 { 
+    /* Индивидуальные стили для заголовков */      		
+	.cover h3 { /*SIA_US_JEWERLY */ 
               font-size: 2.5rem;
               margin-left: 50%;
               margin-top: -160px; /*Было 145*/
               font-family: Cormorant Garamond;
-	      z-index: 2;
-	      
+	      z-index: 2;   
           }
 
-          .cover h4 { 
+          .cover h4 { /* Украшения ручной работы */ 
 	      font-size: 2rem;
 	      margin-top: -50px;
               margin-left: 50%;
               font-family: Alice;
               color: rgb(230, 204, 139);
-		  z-index: 2;
+	      z-index: 2;
           }
 		
-	.cover h1 {  /* Тут h3*/ 
+	.cover h1 {  /* Красота в мелочах */
 	     margin-top: 100px; /*Было 100 */
               margin-right: 50%;  /*Было 50 */
               font-size: 2.125rem; /* Было 1.88 rem */
@@ -789,15 +778,16 @@
 	      z-index: 2;
           }
 
-          .cover h2 {  /*Укр. руч. раб Тут h4*/
+          .cover h2 {  /* Откройте для себя ... */
 	      margin-top: 20px; /*Было 50 */
               margin-right: 50%;  /*Было 50 */
               font-size: 1.56rem;
               font-family: Alegreya SC, serif;
               text-align: center;
-		  z-index: 2;
+	      z-index: 2;
           }
 
+/*  Раздел: О СЕБЕ */		
 	.Testimonials .imagev { /* Вектор */
             position: absolute;
 	    top: 0;
@@ -819,8 +809,7 @@
             margin: 44px 0;
         }
 
-        .Testimonials h2 {
-        	/* Усова Анастасия */
+        .Testimonials h2 { /* Усова Анастасия */
             position: relative;
             text-align: center;
             margin-left: 0;
@@ -841,10 +830,9 @@
             position: relative;
         }
 
-	
 
-        .Bestsellers h1{
-            /* Работы */
+/*  Раздел: БЕСТСЕЛЛЕРЫ */		
+        .Bestsellers h1{ /* Работы */
             text-align: right;
             color: rgb(79, 57, 34);
             font-family: Cormorant Garamond;
@@ -864,7 +852,7 @@
             width: 100%;
         }
 
-	    .Bestsellers .square1,
+	.Bestsellers .square1,
         .Bestsellers .square2,
         .Bestsellers .square3,
         .Bestsellers .square4,
@@ -874,7 +862,7 @@
         .Bestsellers .square8{
             display: block;
             width: 18.86rem;
-    		height: 19.81rem;
+    	    height: 19.81rem;
             border-radius: 1.25rem;
             box-shadow: 0rem 1.18rem 2.94rem 0rem rgba(47, 50, 125, 0.1);
             background: rgb(255, 255, 255);
@@ -902,8 +890,7 @@
               z-index: 3;
           }
 
-          .Bestsellers .square1 {
-          /* Позолоченная фурнитура, сердолик */
+          .Bestsellers .square1 { /* Позолоченная фурнитура, сердолик */
               top: 20%; /* Положение сверху */
               left: 0%; /* Положение слева */
               width: 18.70rem;
@@ -911,8 +898,7 @@
               margin-top: 70px;
           }
 
-          .Bestsellers .square2 {
-          /* Родированная фурнитура, майорка */
+          .Bestsellers .square2 { /* Родированная фурнитура, майорка */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
               width: 18.70rem;
@@ -920,8 +906,7 @@
               margin-top: 70px;
           }
 
-		  .Bestsellers .square3 {
-          /* Позолоченная фурнитура, кошачий глаз */
+	   .Bestsellers .square3 { /* Позолоченная фурнитура, кошачий глаз */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
               width: 18.70rem;
@@ -929,8 +914,7 @@
               margin-top: 70px;
           }
 
-          .Bestsellers .square4 {
-          /* Родированная фурнитура, белый агат, майорка */
+          .Bestsellers .square4 { /* Родированная фурнитура, белый агат, майорка */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
               width: 18.70rem;
@@ -938,8 +922,7 @@
               margin-top: 70px;
           }
 
-          .Bestsellers .square5 {
-          /* Позолоченная фурнитура, сердолик */
+          .Bestsellers .square5 { /* Позолоченная фурнитура, сердолик */
               top: 20%; /* Положение сверху */
               left: 0%; /* Положение слева */
               width: 18.70rem;
@@ -947,8 +930,7 @@
               margin-top: 70px;
           }
 
-          .Bestsellers .square6 {
-          /* Сатинированная позолота, майорка */
+          .Bestsellers .square6 { /* Сатинированная позолота, майорка */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
               width: 18.70rem;
@@ -956,8 +938,7 @@
               margin-top: 70px;
           }
 
-		  .Bestsellers .square7 {
-          /* Чернённая фурнитура, шунгит */
+	   .Bestsellers .square7 { /* Чернённая фурнитура, шунгит */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
               width: 18.70rem;
@@ -965,8 +946,7 @@
               margin-top: 70px;
           }
 
-          .Bestsellers .square8 {
-          /* Позолоченная фурнитура */
+          .Bestsellers .square8 { /* Позолоченная фурнитура */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
               width: 18.70rem;
