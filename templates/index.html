@@ -182,6 +182,19 @@
             order: 3;
         }
 
+		/* Стили для изображения - ВЕКТОР */
+        .Testimonials image1 {
+            position: absolute;
+	    top: 50%;
+	    left: 27%;
+	    transform: translate(-50%, -50%);  
+	    width: 50%; /* Изображение занимает 80% ширины окна. Было 80 */
+            height: auto; /* Сохраняет пропорции */
+            max-width: 400px; /* Ограничиваем максимальную ширину. Было 600 */
+	    /* margin: 20px 0; /* Отступы сверху и снизу */
+	    
+        }
+
         .Testimonials h1 {
         	/* О СЕБЕ */
             text-align: center;
@@ -806,7 +819,7 @@
 		
               font-size: 2.5rem;
               margin-left: 50%;
-              margin-top: -200px; /*Было 145*/
+              margin-top: -250px; /*Было 145*/
               font-family: Cormorant Garamond;
 	      z-index: 2;
 	      
@@ -835,7 +848,7 @@
               font-family: Cormorant Garamond;
 		z-index: 2; */
 
-	     margin-top: 100px; /*Было 100 */
+	     margin-top: 120px; /*Было 100 */
               margin-right: 50%;  /*Было 50 */
               font-size: 2.125rem; /* Было 1.88 rem */
               font-family: Alice;
@@ -850,7 +863,7 @@
               color: rgb(230, 204, 139);
 		  z-index: 2; */
 
-	      margin-top: 50px; /*Было 20 */
+	      margin-top: 80px; /*Было 50 */
               margin-right: 50%;  /*Было 50 */
               font-size: 1.56rem;
               font-family: Alegreya SC, serif;
@@ -1527,6 +1540,7 @@
     </div>
 
   	<div class="Testimonials" id="about">
+	<img src="static/Vector-pered-o-cebe.png" alt="Vector" class="image1">
         <h1>О СЕБЕ</h1>
         <h2>Усова <br> Анастасия</h2>
         <h3>
