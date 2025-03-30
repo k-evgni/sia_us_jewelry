@@ -46,7 +46,7 @@
         }
 
 	    
-/* ОБЛОЖКА */
+/*  Раздел: ОБЛОЖКА */
     	.cover{
             display: flex;
             flex-direction: column; /* Расположить элементы в колонку */
@@ -115,46 +115,32 @@
 	.cover h1,
         .cover h2,
         .cover h3,
-        .cover h4 {
+        .cover h4 { /* Обобщенные стили для всех текстов */
             margin: 0; /* Убираем отступы */
             color: rgb(204, 204, 204); /* Цвет текста */
 	    z-index: 2;
         }
    
-	.cover h1 {
+	.cover h1 { /* Красота в мелочах */
 	    margin-top: 70px; /* Было изменение: 70px */
             font-size: 1.88rem;
             font-family: Alice;
         }
 
-        .cover h2 {
-	    /*font-size: 1.56rem;
-            font-family: Alice;
-            color: rgb(230, 204, 139);
-            margin-bottom: 189px; /* Было изменение: 289px */
-
+        .cover h2 { /* Откройте для себя ... */
 	    margin-top: 50px; /* Было изменение: 50px */
             font-size: 1.56rem;
             font-family: Alegreya SC, serif;
             text-align: center;	    
         }
 
-	.cover h3 { /* БПереместили выше */
-	    /*margin-top: 70px; /* Было изменение: 70px 
-            font-size: 1.88rem;
-            font-family: Alice;*/
-
+	.cover h3 { /* SIA_US_JEWERLY */
 	    font-size: 1.88rem;
             font-family: Cormorant Garamond;
 	    margin-bottom: 20px;
         }
 
-        .cover h4 {
-            /* margin-top: 50px; /* Было изменение: 50px 
-            font-size: 1.56rem;
-            font-family: Alegreya SC, serif;
-            text-align: center;*/
-
+        .cover h4 { /* Укашения ручной работы */
 	    font-size: 1.56rem;
             font-family: Alice;
             color: rgb(230, 204, 139);
@@ -162,8 +148,7 @@
         }
 
 
-
-/* О СЕБЕ */
+/* Раздел: О СЕБЕ */
         .Testimonials  {
             position: relative;
             width: 100%; /* Подгоняем по ширине родительского контейнера */
@@ -172,9 +157,8 @@
             box-sizing: border-box; /* Учет отступов */
             order: 3;
         }
-
-		/* Стили для изображения - ВЕКТОР */
-        .Testimonials .imagev {
+	
+        .Testimonials .imagev { /* Стили для изображения - ВЕКТОР */
             position: absolute;
 	    top: 50%;
 	    left: 50%;
@@ -183,12 +167,10 @@
             height: auto; /* Сохраняет пропорции */
             max-width: 100px; /* Ограничиваем максимальную ширину. Было 600 */
 	    max-height: 100px;
-	    /* margin: 20px 0; /* Отступы сверху и снизу */
-	    
+	    /* margin: 20px 0; /* Отступы сверху и снизу */    
         }
 
-        .Testimonials h1 {
-        	/* О СЕБЕ */
+        .Testimonials h1 { /* О СЕБЕ */
             text-align: center;
             margin-bottom: 20px; /* Добавили отступ снизу */
             color: rgb(199, 138, 23);
@@ -198,8 +180,7 @@
             line-height: 3rem;
         }
 
-        .Testimonials h2 {
-        	/* Усова Анастасия */
+        .Testimonials h2 { /* Усова Анастасия */
             margin-top: 110px;
             position: relative;
             text-align: right;
@@ -213,8 +194,7 @@
             line-height: 160%;
         }
 
-        .Testimonials h3 {
-         /* Занятие украшениями... */
+        .Testimonials h3 { /* Занятие украшениями... */
             margin-top: 110px;
             margin-bottom: 70px;
             font-size: 1.35rem;
@@ -225,18 +205,16 @@
             z-index: 1;
             position: relative;
         }
-        .Testimonials-image1 {
+	    
+        .Testimonials-image1 { /* Занятие украшениями... */
             position: absolute; /* Позиционирование абсолютное, чтобы изображение можно было точно разместить относительно родительского контейнера */
             top: 49%; /* Позиционирование изображения на 80% от верха родительского контейнера */
             left: 19%; /* Позиционирование изображения на 50% от левого края родительского контейнера */
             transform: translate(-50%, -50%); /* Смещение изображения на -50% по X и Y, чтобы центрировать его относительно указанных координат (top и left) */
-
             width: 80%; /* Изображение занимает 80% ширины родительского контейнера */
             height: auto; /* Высота изображения автоматически подстраивается под ширину, сохраняя пропорции */
             max-width: 485px; /* Максимальная ширина изображения ограничена 600 пикселями, чтобы оно не становилось слишком большим на широких экранах */
-
             margin: 20px 0; /* Отступы сверху и снизу от изображения по 20 пикселей */
-
             z-index: 1; /* Уровень слоя изображения (1), чтобы оно отображалось под текстом, если текст имеет более высокий z-index */
         }
 
@@ -245,13 +223,10 @@
             top: 49%;
             left: 81%;
             transform: translate(-50%, -50%);
-
             width: 80%;
             height: auto;
             max-width: 485px;
-
             margin: 20px 0;
-
             z-index: 1;
         }
 
@@ -843,8 +818,8 @@
 	    transform: translateX(-50%);  
 	    width: auto; 
             height: auto; /* Сохраняет пропорции */
-            max-width: 500px; /* Ограничиваем максимальную ширину. Было 600 */
-	     margin: 0 10px; /* Отступы сверху и снизу */   
+            max-width: 600px; /* Ограничиваем максимальную ширину. Было 600 */
+	     margin: 0 20px; /* Отступы сверху и снизу */   
         }
 
         .Testimonials h1 { /* О СЕБЕ */
