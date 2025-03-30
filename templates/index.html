@@ -390,7 +390,7 @@
         }
 
 	    
-    /* Раздел: ОТЗЫВЫ */
+/* Раздел: ОТЗЫВЫ */
         .reviews{
             display: flex; /* Устанавливает контейнер flex */
             flex-direction: column;
@@ -402,11 +402,9 @@
             margin-top: 50px; /* Отступ сверху */
             box-sizing: border-box; /* Учет отступов */
             order: 5;
-
         }
 
-        .reviews h1 {
-        	/* ОТЗЫВЫ */
+        .reviews h1 { /* ОТЗЫВЫ */	
             text-align: center;
             margin-bottom: 20px;
             color: rgb(199, 138, 23);
@@ -414,7 +412,6 @@
             font-size: 2.3rem;
             font-weight: 700;
             line-height: 3rem;
-
         }
 
        .reviews .square1,
@@ -433,7 +430,6 @@
             left: 0%;
             width: 32.44rem;
             height: 14.94rem;
-
           }
 
          .reviews .square2 {
@@ -464,13 +460,11 @@
             top: 87%;
             left: 81%;
             transform: translate(-50%, -50%);
-
             width: 28%; /* Изображение будет занимать всю ширину квадрата */
             height: auto; /* Автоматическая высота для сохранения пропорций */
             max-width: 90%; /* Ограничение по ширине */
 	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
             /* margin: 20px 0; */
-
             z-index: 2;
         }
 
@@ -484,9 +478,8 @@
             z-index: 2;
         }
 
-
-
-/* Контакты */
+	    
+/* Раздел: Контакты */
         .social {
             display: flex; /* Устанавливает контейнер flex */
             flex-direction: column;
@@ -543,13 +536,11 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-
             width: 75%; /* Изображение будет занимать всю ширину квадрата */
             height: auto; /* Автоматическая высота для сохранения пропорций */
             max-width: 90%; /* Ограничение по ширине */
 	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
             /* margin: 20px 0; */
-
             z-index: 2;
         }
 
@@ -566,7 +557,6 @@
             border: none; /* Убирает границу */
             text-align: center; /* Для содержания кнопки */
             z-index: 2; /* Убедиться, что кнопка отображается поверх */
-
             line-height: 3.31rem; /* Вертикальное выравнивание текста */
             font-family: Cormorant Garamond;
             font-size: 1.50rem;
@@ -574,14 +564,14 @@
         }
 
         .button2:hover {background-color: rgba(181, 152, 98, 0.6);}
-
-        .button2:active {
-        	background-color: rgba(181, 152, 98, 0.6);
+        
+	.button2:active {
+            background-color: rgba(181, 152, 98, 0.6);
             transform: translateX(-50%);/* Убираем смещение */
         }
 
 
-/* Нижняя шапка */
+/* Раздел: Нижняя шапка */
         .footer {
           display: flex; /* Устанавливает контейнер flex */
           flex-direction: column;
@@ -595,7 +585,9 @@
           order: 7; /* Позиция относительно других элементов */
         }
 
-        .footer h1, .footer h2, .footer h3 {
+        .footer h1, 
+	.footer h2, 
+	.footer h3 {
           margin: 0; /* Убирает отступы */
           color: rgb(79, 57, 34);
           line-height: 2.25rem;
@@ -636,6 +628,7 @@
           font-family: "Alegreya SC", serif;
         }
 
+	    
 
 /* Медиазапросы для разных экранов */
    /* Мобильные устройства (320px) */
@@ -688,7 +681,7 @@
         }
     }
 
-	/*  Маленькие ноутбуки (1024px) */
+/* Маленькие ноутбуки (1024px) */
         @media screen and (min-width: 768px) /* and (max-width: 1400px) */ {
            .logo {
                 font-size: 2.5rem;
@@ -701,6 +694,7 @@
 	    .nav a {
                 font-size: 1.8rem;
             }
+
 
 	.cover {
             display: flex; 
@@ -822,7 +816,7 @@
             font-size: 2.5rem;
             font-weight: 700;
             line-height: 3rem;
-            margin: 20px 0;
+            margin: 44px 0;
         }
 
         .Testimonials h2 {
