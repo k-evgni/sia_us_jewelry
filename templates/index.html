@@ -255,9 +255,10 @@
 	.Our_Success .squares-container {
             display: flex; /* Flexbox для размещения квадратов */
             flex-wrap: wrap; /* Разрешаем перенос строк */
-            gap: 15px; /* Расстояние между элементами */
-            justify-content: center; /* Центрируем квадраты */
+            gap: 10px; /* Расстояние между элементами */
+            justify-content: flex-start; /* Центрируем квадраты -было center */
             align-items: flex-start;
+	    flex-direction: row;
             width: 100%;
         }
 
@@ -266,8 +267,8 @@
         .Our_Success .square3,
         .Our_Success .square4,
 	.Our_Success .square5 {
-            display: block;
-            width: 18.86rem;
+            display: relative;
+            width: 100rem;
     	    height: 19.81rem;
             border-radius: 1.25rem;
             box-shadow: 0rem 1.18rem 2.94rem 0rem rgba(47, 50, 125, 0.1);
