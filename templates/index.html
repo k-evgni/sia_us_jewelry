@@ -234,18 +234,11 @@
 	    
 /* Раздел: Преимущества */
         .Our_Success {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-	    
 	    position: relative;
             width: 100%; /* Подгоняем по ширине родительского контейнера */
             padding: 20px; /* Добавили отступы внутри блока */
             margin-top: 50px; /* Определяем отступ сверху от предыдущего блока */
             box-sizing: border-box; /* Учет отступов */
-	    
-	    box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25),0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
-            
 	    order: 4;
         }
 
@@ -260,12 +253,12 @@
          }
 
 	.Our_Success .squares-container {
-            display: flex; /* Горизонтальное расположение */
-            gap: 20px; /* Отступ между квадратами */
-            flex-direction: column; /* Элементы располагаются в строку */
-            justify-content: center; /* Центрирование квадратов по горизонтали */
-            align-items: center; /* Центрирование квадратов по вертикали */
-            width: 100%; /* Занимает всю ширину родителя */
+            display: flex; /* Flexbox для размещения квадратов */
+            flex-wrap: wrap; /* Разрешаем перенос строк */
+            gap: 15px; /* Расстояние между элементами */
+            justify-content: center; /* Центрируем квадраты */
+            align-items: flex-start;
+            width: 100%;
         }
 
 	.Our_Success .square1,
