@@ -234,12 +234,19 @@
 	    
 /* Раздел: Преимущества */
         .Our_Success {
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+	    
+	    position: relative;
             width: 100%; /* Подгоняем по ширине родительского контейнера */
             padding: 20px; /* Добавили отступы внутри блока */
             margin-top: 50px; /* Определяем отступ сверху от предыдущего блока */
             box-sizing: border-box; /* Учет отступов */
-            order: 4;
+	    
+	    box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25),0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
+            
+	    order: 4;
         }
 
         .Our_Success h1 { /* SIA_US_JEWELRY */
