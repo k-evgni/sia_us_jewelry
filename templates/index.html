@@ -255,7 +255,7 @@
 	.Our_Success .squares-container {
             display: flex; /* Flexbox для размещения квадратов */
             flex-wrap: wrap; /* Разрешаем перенос строк */
-            gap: 40px; /* Расстояние между элементами */
+            gap: 30px; /* Расстояние между элементами */
             justify-content: center; /* Центрируем квадраты -было center */
             align-items: center;
             width: 100%;
@@ -357,6 +357,7 @@
 	.Bestsellers .squares-container {
             display: flex; /* Горизонтальное расположение */
             gap: 20px; /* Отступ между квадратами */
+	    row-gap: 20px; /* Уменьшаем расстояние между строками (было больше) */
             flex-direction: colum; /* Элементы располагаются в строку */
             justify-content: center; /* Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
@@ -970,7 +971,8 @@
         .Bestsellers .square6 .image6,
         .Bestsellers .square7 .image7,
         .Bestsellers .square8 .image8{
-            position: absolute;
+	    display: block;
+	    position: absolute;
             top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -1601,9 +1603,9 @@
           <div class="square6"> <div class="text15">Сатинированная позолота, майорка </div> <img src="static/satinir-pozolota-maiorka.png" alt="Jewelry Image" class="image6"></div>
           <div class="square7"><div class="text16">Чернённая фурнитура, шунгит</div><img src="static/chernen-furnityra-songit.png" alt="Jewelry Image" class="image7"></div>
           <div class="square8"><div class="text17">Позолоченная фурнитура</div><img src="static/pozoloyh-furnitura.png" alt="Jewelry Image" class="image8"> </div>
-          <img src="static/cvetok-fon-raboti.png" alt="Jewelry Image" class="Bestsellers-imagefon">
-          <img src="static/listya-fon-raboti.png" alt="Jewelry Image" class="Bestsellers-imagefon1">
         </div>
+	<img src="static/cvetok-fon-raboti.png" alt="Jewelry Image" class="Bestsellers-imagefon">
+        <img src="static/listya-fon-raboti.png" alt="Jewelry Image" class="Bestsellers-imagefon1">
     </div>
 
     <div class="reviews" id="review">
