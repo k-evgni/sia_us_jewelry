@@ -1,4 +1,4 @@
-* {
+        * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -12,7 +12,6 @@
         }
 
         header {
-            /*background: #f4f4f4;*/
             padding: 20px;
             display: flex;
             justify-content: space-between;
@@ -38,8 +37,8 @@
             font-family: "Alegreya SC", serif;
         }
 
-
-/* ОБЛОЖКА */
+	    
+/*  Раздел: ОБЛОЖКА */
     	.cover{
             display: flex;
             flex-direction: column; /* Расположить элементы в колонку */
@@ -47,67 +46,101 @@
             align-items: center;
             background: url(static/fon_dla_texta_ryka.png) no-repeat center center/cover; /* ФОТО ВСТАВИТЬ СЮДА */
             background-size: cover;
-        	border-radius: 50px
-        	height: 100vh;
+            border-radius: 50px;
+            height: 100vh;
             width: 100%;
             position: relative;
             order: 2;
             z-index: 0;
             padding: 1cm; /* Добавляем отступ в 1 сантиметр */
             box-sizing: border-box;
+	    margin: 0 auto; /* Центрируем по горизонтали */
         }
-
-        .cover-image {
+        
+        .cover-image { /* Стили для изображения */
             position: absolute;
-	    top: 80%;
-	    left: 50%;
+	    top: 45%;  /* Было 40 */
+	    left: 72%;
 	    transform: translate(-50%, -50%);  
-		
 	    width: 80%; /* Изображение занимает 80% ширины окна */
             height: auto; /* Сохраняет пропорции */
-            max-width: 600px; /* Ограничиваем максимальную ширину */
-            
-	    margin: 20px 0; /* Отступы сверху и снизу */
-            
+            max-width: 580px; /* Ограничиваем максимальную ширину */
+	    margin: 30px 0; /* Отступы сверху и снизу */
+            margin-left: 20px; /* Отступ слева от изображения */
 	    z-index: 1; /* Отображается под текстом */
         }
 
-        .cover h1,
+        .cover-image1 { /* Стили для изображения - ВЕКТОР */
+            position: absolute;
+	    top: 40%;
+	    left: 27%;
+	    transform: translate(-50%, -50%);  
+	    width: 50%; /* Изображение занимает 80% ширины окна. Было 80 */
+            height: auto; /* Сохраняет пропорции */
+            max-width: 400px; /* Ограничиваем максимальную ширину. Было 600 */
+	    /* margin: 20px 0; /* Отступы сверху и снизу */
+	    z-index: 1; /* Отображается под текстом */
+        }
+
+	.button1 { /* Кнопка */
+            position: absolute; 
+	    width: 15rem;
+            height: 3.31rem;
+            color: #fff;
+            background-color: rgba(217, 181, 113, 0.6);
+            border-radius: 5rem;
+            border: none;
+            text-align: center;
+            z-index: 1;
+            line-height: 3.31rem;
+            font-family: Cormorant Garamond;
+            font-size: 1.50rem;
+            font-weight: 400;
+	    top: 70%; /* Поднимаем кнопку выше (регулируйте это значение) */
+            left: 27%; /* Центрируем по горизонтали */
+            transform: translate(-50%, -50%);  /* Смещение для точного центрирования */     
+        }
+
+        .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
+        .button1:active {background-color: rgba(181, 152, 98, 0.6);}
+
+	.cover h1,
         .cover h2,
         .cover h3,
-        .cover h4 {
+        .cover h4 { /* Обобщенные стили для всех текстов */
             margin: 0; /* Убираем отступы */
             color: rgb(204, 204, 204); /* Цвет текста */
+	    z-index: 2;
         }
-
-        .cover h1 {
-            font-size: 1.88rem;
-            font-family: Cormorant Garamond;
-        }
-
-        .cover h2 {
-            font-size: 1.56rem;
-            font-family: Alice;
-            color: rgb(230, 204, 139);
-            margin-bottom: 289px;
-        }
-
-        .cover h3 {
-        	margin-top: 70px;
+   
+	.cover h1 { /* Красота в мелочах */
+	    margin-top: 70px; /* Было изменение: 70px */
             font-size: 1.88rem;
             font-family: Alice;
         }
 
-        .cover h4 {
-        	margin-top: 50px;
+        .cover h2 { /* Откройте для себя ... */
+	    margin-top: 50px; /* Было изменение: 50px */
             font-size: 1.56rem;
             font-family: Alegreya SC, serif;
-            text-align: center;
+            text-align: center;	    
+        }
+
+	.cover h3 { /* SIA_US_JEWERLY */
+	    font-size: 1.88rem;
+            font-family: Cormorant Garamond;
+	    margin-bottom: 20px;
+        }
+
+        .cover h4 { /* Укашения ручной работы */
+	    font-size: 1.56rem;
+            font-family: Alice;
+            color: rgb(230, 204, 139);
+            margin-bottom: 189px; /* Было изменение: 289px */
         }
 
 
-
-/* О СЕБЕ */
+/* Раздел: О СЕБЕ */
         .Testimonials  {
             position: relative;
             width: 100%; /* Подгоняем по ширине родительского контейнера */
@@ -116,11 +149,24 @@
             box-sizing: border-box; /* Учет отступов */
             order: 3;
         }
+	
+        .Testimonials .imagev { /* Стили для изображения - ВЕКТОР */
+            position: absolute;
+		
+	    top: 50%;
+	    left: 45%;
+	    transform: translate(-50%, -50%);  
+	    width: auto; /* Изображение занимает 80% ширины окна. Было 80 */
+            height: auto; /* Сохраняет пропорции */
+            max-width: 100px; /* Ограничиваем максимальную ширину. Было 600 */
+	    max-height: 100px;
+	    /* margin: 20px 0; /* Отступы сверху и снизу */    
+        }
 
-        .Testimonials h1 {
-        	/* О СЕБЕ */
+        .Testimonials h1 { /* О СЕБЕ */
             text-align: center;
-            margin-bottom: 20px; /* Добавили отступ снизу */
+            margin-bottom: 10px; /* Добавили отступ снизу */
+	    margin-top: 20px;
             color: rgb(199, 138, 23);
             font-family: "Cormorant Garamond", serif;
             font-size: 2.3rem;
@@ -128,14 +174,13 @@
             line-height: 3rem;
         }
 
-        .Testimonials h2 {
-        	/* Усова Анастасия */
-            margin-top: 110px;
-            position: relative;
+        .Testimonials h2 { /* Усова Анастасия */
+            margin-top: 10px;
+	    position: relative;
             text-align: right;
             margin-left: 0;
             padding-left: 10px;
-            margin-bottom: 20px; /* Добавили отступ снизу */
+            margin-bottom: 10px; /* Добавили отступ снизу */
             color: rgb(79, 57, 34);
             font-family: Alegreya SC;
             font-size: 2.0rem;
@@ -143,10 +188,8 @@
             line-height: 160%;
         }
 
-        .Testimonials h3 {
-         /* Занятие украшениями... */
-            margin-top: 110px;
-            margin-bottom: 70px;
+        .Testimonials h3 { /* Занятие украшениями... */
+            margin-top: 0;
             font-size: 1.35rem;
             font-weight: normal;
             color: rgb(79, 57, 34);
@@ -155,50 +198,43 @@
             z-index: 1;
             position: relative;
         }
-        .Testimonials-image1 {
+	    
+        .Testimonials-image1 { /* Фото */
             position: absolute; /* Позиционирование абсолютное, чтобы изображение можно было точно разместить относительно родительского контейнера */
-            top: 49%; /* Позиционирование изображения на 80% от верха родительского контейнера */
-            left: 19%; /* Позиционирование изображения на 50% от левого края родительского контейнера */
+            top: 39%; /* Позиционирование изображения на 80% от верха родительского контейнера */
+            left: 18%; /* Позиционирование изображения на 50% от левого края родительского контейнера */
             transform: translate(-50%, -50%); /* Смещение изображения на -50% по X и Y, чтобы центрировать его относительно указанных координат (top и left) */
-
             width: 80%; /* Изображение занимает 80% ширины родительского контейнера */
             height: auto; /* Высота изображения автоматически подстраивается под ширину, сохраняя пропорции */
-            max-width: 485px; /* Максимальная ширина изображения ограничена 600 пикселями, чтобы оно не становилось слишком большим на широких экранах */
-
+            max-width: 435px; /* Максимальная ширина изображения ограничена 600 пикселями, чтобы оно не становилось слишком большим на широких экранах */
             margin: 20px 0; /* Отступы сверху и снизу от изображения по 20 пикселей */
-
             z-index: 1; /* Уровень слоя изображения (1), чтобы оно отображалось под текстом, если текст имеет более высокий z-index */
         }
 
-          .Testimonials-image2 {
+        .Testimonials-image2 { /* Фото */
             position: absolute;
-            top: 49%;
-            left: 81%;
+            top: 39%;
+            left: 82%;
             transform: translate(-50%, -50%);
-
             width: 80%;
             height: auto;
-            max-width: 485px;
-
+            max-width: 435px;
             margin: 20px 0;
-
             z-index: 1;
         }
 
-
-
-/* Преимущества */
+	    
+/* Раздел: Преимущества */
         .Our_Success {
-            position: relative;
+	    position: relative;
             width: 100%; /* Подгоняем по ширине родительского контейнера */
             padding: 20px; /* Добавили отступы внутри блока */
             margin-top: 50px; /* Определяем отступ сверху от предыдущего блока */
             box-sizing: border-box; /* Учет отступов */
-            order: 4;
+	    order: 4;
         }
 
-        .Our_Success h1 {
-        /* SIA_US_JEWELRY */
+        .Our_Success h1 { /* SIA_US_JEWELRY */
             text-align: center;
             margin-bottom: 20px;
             color: rgb(199, 138, 23);
@@ -208,11 +244,77 @@
             line-height: 3rem;
          }
 
+	.Our_Success .squares-container {
+            display: flex; /* Flexbox для размещения квадратов */
+            flex-wrap: wrap; /* Разрешаем перенос строк */
+            gap: 10px; /* Расстояние между элементами */
+            justify-content: flex-start; /* Центрируем квадраты -было center */
+            align-items: flex-start;
+	    flex-direction: row;
+            width: 100%;
+        }
 
+	.Our_Success .square1,
+        .Our_Success .square2,
+        .Our_Success .square3,
+        .Our_Success .square4,
+	.Our_Success .square5 {
+            display: relative;
+            width: 100rem;
+    	    height: 19.81rem;
+            border-radius: 1.25rem;
+            box-shadow: 0rem 1.18rem 2.94rem 0rem rgba(47, 50, 125, 0.1);
+            background: rgb(0, 255, 255);
+            z-index: 1;
+        }
 
+	.Our_Success .square1 .text1,
+        .Our_Success .square2 .text2,
+        .Our_Success .square3 .text3,
+        .Our_Success .square4 .text4,
+        .Our_Success .square5 .text5{
+            position: absolute; /* Абсолютное позиционирование внутри родителя */
+            top: 89%; /* Центрирование по вертикали */
+            left: 50%; /* Центрирование по горизонтали */
+            transform: translate(-50%, -50%); /* Смещение для точного центрирования */
+            color: rgb(79, 57, 34);
+            font-family: Alegreya SC;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            white-space: normal; /* Разрешить перенос строк */
+            word-wrap: break-word; /* Переносить слова, если они длинные */
+            width: 80%; /* Задайте ширину текста */
+            line-height: 1.5; /* Интервал между строками */
+            z-index: 3;
+        }
 
+	.Our_Success .square1 {
+            width: 18.86rem;
+            height: 19.81rem;
+        }
 
- /* Бестселлеры */
+        .Our_Success .square2 {
+            width: 18.86rem;
+            height: 19.81rem;
+        }
+
+	.Our_Success .square3 {
+            width: 18.86rem;
+            height: 19.81rem;
+        }
+
+        .Our_Success .square4 {
+            width: 18.86rem;
+            height: 19.81rem;
+        }
+
+	.Our_Success .square5 {
+            width: 18.86rem;
+            height: 19.81rem;
+        }
+	    
+ /*  Раздел: Бестселлеры */
         .Bestsellers {
             display: flex;
             flex-direction: column;
@@ -223,13 +325,12 @@
             margin-top: 50px;
             box-sizing: border-box; /* Учет отступов */
             box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25),0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
-			background: rgba(229, 204, 139, 0.53);
+	    background: rgba(229, 204, 139, 0.53);
             order: 4;
         }
 
-        .Bestsellers h1{
-            /* Работы */
-			margin-top: 20;
+        .Bestsellers h1{ /* Работы */ 
+	    margin-top: 20;
             position: relative;
             text-align: right;
             margin-left: 0;
@@ -251,7 +352,7 @@
             align-items: center; /* Центрирование квадратов по вертикали */
             width: 100%; /* Занимает всю ширину родителя */
         }
-
+	    
         .Bestsellers .square1,
         .Bestsellers .square2,
         .Bestsellers .square3,
@@ -290,19 +391,16 @@
         .Bestsellers .square3 .image3,
         .Bestsellers .square4 .image4{
             position: absolute;
-            top: 80%;
+            top: 35%;
             left: 50%;
             transform: translate(-50%, -50%);
-
-            width: 80%;
-            height: auto;
-            max-width: 600px;
-
-            margin: 20px 0;
-
-            z-index: 3;
+            width: 90%; /* Изображение будет занимать всю ширину квадрата */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            max-width: 90%; /* Ограничение по ширине */
+	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
+            /* margin: 20px 0; */
+            z-index: 2;
         }
-
 
         .Bestsellers .square1 {
             width: 18.86rem;
@@ -327,8 +425,6 @@
             margin-top: 40px;
         }
 
-
-
         .Bestsellers .square5,
         .Bestsellers .square6,
         .Bestsellers .square7,
@@ -337,14 +433,59 @@
         .Bestsellers .square5 .text14,
         .Bestsellers .square6 .text15,
         .Bestsellers .square7 .text16,
-        .Bestsellers .square8 .text17{ display: none; }
+        .Bestsellers .square8 .text17 { display: none; }
 
         .Bestsellers .square5 .image5,
         .Bestsellers .square6 .image6,
         .Bestsellers .square7 .image7,
-        .Bestsellers .square8 .image8{ display: none;}
+        .Bestsellers .square8 .image8{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%; /* Изображение будет занимать всю ширину квадрата */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            max-width: 90%; /* Ограничение по ширине */
+	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
+            /* margin: 20px 0; */
+            z-index: 2;
+        }
 
-    /* ОТЗЫВЫ */
+        .Bestsellers-imagefon {
+            position: absolute;
+            top: 62.6%;
+            left: 88%;
+            transform: translate(-50%, -50%);
+
+            width: 80%;
+            height: auto;
+            max-width: 355px;
+
+            margin: 20px 0;
+
+            z-index: 0;
+        }
+
+        .Bestsellers-imagefon1 {
+            position: absolute;
+            top: 31%;
+            left: 16%;
+            transform: translate(-50%, -50%);
+
+            width: 80%;
+            height: auto;
+            max-width: 550px;
+
+            margin: 20px 0;
+
+            z-index: 0;
+        }
+
+
+
+
+	    
+/* Раздел: ОТЗЫВЫ */
         .reviews{
             display: flex; /* Устанавливает контейнер flex */
             flex-direction: column;
@@ -356,11 +497,9 @@
             margin-top: 50px; /* Отступ сверху */
             box-sizing: border-box; /* Учет отступов */
             order: 5;
-
         }
 
-        .reviews h1 {
-        	/* ОТЗЫВЫ */
+        .reviews h1 { /* ОТЗЫВЫ */	
             text-align: center;
             margin-bottom: 20px;
             color: rgb(199, 138, 23);
@@ -368,7 +507,6 @@
             font-size: 2.3rem;
             font-weight: 700;
             line-height: 3rem;
-
         }
 
        .reviews .square1,
@@ -387,7 +525,6 @@
             left: 0%;
             width: 32.44rem;
             height: 14.94rem;
-
           }
 
          .reviews .square2 {
@@ -418,13 +555,11 @@
             top: 87%;
             left: 81%;
             transform: translate(-50%, -50%);
-
             width: 28%; /* Изображение будет занимать всю ширину квадрата */
             height: auto; /* Автоматическая высота для сохранения пропорций */
             max-width: 90%; /* Ограничение по ширине */
 	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
             /* margin: 20px 0; */
-
             z-index: 2;
         }
 
@@ -438,9 +573,8 @@
             z-index: 2;
         }
 
-
-
-/* Контакты */
+	    
+/* Раздел: Контакты */
         .social {
             display: flex; /* Устанавливает контейнер flex */
             flex-direction: column;
@@ -491,6 +625,20 @@
               z-index: 2;
         }
 
+        .social .square1 .image1,
+        .social .square1 .image2{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%; /* Изображение будет занимать всю ширину квадрата */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            max-width: 90%; /* Ограничение по ширине */
+	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
+            /* margin: 20px 0; */
+            z-index: 2;
+        }
+
         .button2 {
             position: absolute;
             width: 15rem;
@@ -504,7 +652,6 @@
             border: none; /* Убирает границу */
             text-align: center; /* Для содержания кнопки */
             z-index: 2; /* Убедиться, что кнопка отображается поверх */
-
             line-height: 3.31rem; /* Вертикальное выравнивание текста */
             font-family: Cormorant Garamond;
             font-size: 1.50rem;
@@ -512,14 +659,14 @@
         }
 
         .button2:hover {background-color: rgba(181, 152, 98, 0.6);}
-
-        .button2:active {
-        	background-color: rgba(181, 152, 98, 0.6);
+        
+	.button2:active {
+            background-color: rgba(181, 152, 98, 0.6);
             transform: translateX(-50%);/* Убираем смещение */
         }
 
 
-/* Нижняя шапка */
+/* Раздел: Нижняя шапка */
         .footer {
           display: flex; /* Устанавливает контейнер flex */
           flex-direction: column;
@@ -533,7 +680,9 @@
           order: 7; /* Позиция относительно других элементов */
         }
 
-        .footer h1, .footer h2, .footer h3 {
+        .footer h1, 
+	.footer h2, 
+	.footer h3 {
           margin: 0; /* Убирает отступы */
           color: rgb(79, 57, 34);
           line-height: 2.25rem;
@@ -570,10 +719,11 @@
         .nav1 a {
           text-decoration: none;
           color: #4f3922;
-          font-size: 1rem;
+          font-size: 0.8rem;
           font-family: "Alegreya SC", serif;
         }
 
+	    
 
 /* Медиазапросы для разных экранов */
    /* Мобильные устройства (320px) */
@@ -616,59 +766,47 @@
             .cover-image {
                 width: 90%; /* Увеличиваем ширину для небольших экранов */
             }
-		
-	   .Bestsellers .squares-container {
-		display: flex; 
-	        flex-direction: column; 
-	        justify-content: center; 
-	        align-items: center;
-	         width: 100%; 
-	    }
+
+	.Bestsellers .squares-container {
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center;
+            width: 100%; 
+        }
     }
 
-	/*  Маленькие ноутбуки (1024px) */
-        @media screen and (min-width: 768px) and (max-width: 1400px) {
-           .logo {
-                font-size: 2.5rem;
-            }
+/* Маленькие ноутбуки (1024px) */
+        @media screen and (min-width: 768px) /* and (max-width: 1400px) */ {
+           .logo { font-size: 2.5rem; }
 
-           .nav { /* Добавила */
-                gap: 50px;
-            }
-		
-	    .nav a {
-                font-size: 1.8rem;
-            }
+           .nav { gap: 50px; }	
+	   .nav a { font-size: 1.8rem; }
 
-          .cover {
-            display: flex;
-            justify-content: space-between; /* Распределяет элементы по левому и правому краю */
-        	height: 60%; /* 100% от высоты окна */
-            width: 95%;
+/*  Раздел: ОБЛОЖКА */
+	.cover {
+            display: flex; 
+	    justify-content: space-between; /* Распределяет элементы по левому и правому краю */           
+	    height: 60vh; /* Увеличиваем высоту. Было 60vh*/
+            width: 95%; /* Уменьшаем ширину. Было 100% */
             position: relative;
             order: 2;
-            z-index: 0;
+            z-index: 0; 		  
           }
 
-
 	.cover-image {
-            /* position: absolute; */
 	    top: 40%;
 	    left: 72%;
 	    transform: translate(-50%, -50%);  
-		
 	    width: 80%; /* Изображение занимает 80% ширины окна */
             height: auto; /* Сохраняет пропорции */
             max-width: 580px; /* Ограничиваем максимальную ширину */
-            
 	    margin: 30px 0; /* Отступы сверху и снизу - было 20 */
             margin-left: 20px; /* Отступ слева от изображения */
-		
 	    z-index: 1; /* Отображается под текстом */
         }
 
-	/* Стили для изображения - ВЕКТОР */
-        .cover-image1 {
+        .cover-image1 { /* Стили для изображения - ВЕКТОР */
             position: absolute;
 	    top: 40%;
 	    left: 27%;
@@ -679,65 +817,77 @@
 	    /* margin: 20px 0; /* Отступы сверху и снизу */
 	    z-index: 1; /* Отображается под текстом */
         }
-		
-          /* Индивидуальные стили для заголовков */
-	  .cover h1 {  /*SIA_US_JEWELRY*/
-              font-size: 2.5rem;
-              margin-left: 50%;
-              margin-top: 150px;
-              font-family: Cormorant Garamond;
-		z-index: 3;
-          }
-		
-          .cover h2 {
-              font-size: 2rem;
-              margin-left: 50%;
-              font-family: Alice;
-              color: rgb(230, 204, 139);
-          	z-index: 3;
-	  }
 
-          .cover h3 {
-              margin-top: -100px;
-              margin-right: 50%;
-              font-size: 1.88rem;
-              font-family: Alice;
-          	z-index: 3;
-	  }
-
-          .cover h4 {
-              margin-top: -100px;
-              margin-right: 50%;
-              font-size: 1.56rem;
-              font-family: Alegreya SC, serif;
-              text-align: center;
-		  z-index: 3;
-          }
-
-          .button1 {
-            width: 15rem;
+	.button1 { /* Кнопка */
+            position: absolute; 
+	    width: 15rem;
             height: 3.31rem;
             color: #fff;
             background-color: rgba(217, 181, 113, 0.6);
             border-radius: 5rem;
             border: none;
             text-align: center;
-            z-index: 2;
+            z-index: 1;
             line-height: 3.31rem;
             font-family: Cormorant Garamond;
             font-size: 1.50rem;
             font-weight: 400;
-            margin-right: 50%;
-            margin-top: 5%;
-
+	    top: 70%; /* Поднимаем кнопку выше (регулируйте это значение) */
+            left: 27%; /* Центрируем по горизонтали */
+            transform: translate(-50%, -50%);  /* Смещение для точного центрирования */     
         }
 
         .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
-
         .button1:active {background-color: rgba(181, 152, 98, 0.6);}
 
-        .Testimonials h1 {
-        	/* О СЕБЕ */
+    /* Индивидуальные стили для заголовков */      		
+	.cover h3 { /*SIA_US_JEWERLY */ 
+              font-size: 2.5rem;
+              margin-left: 50%;
+              margin-top: -160px; /*Было 145*/
+              font-family: Cormorant Garamond;
+	      z-index: 2;   
+          }
+
+          .cover h4 { /* Украшения ручной работы */ 
+	      font-size: 2rem;
+	      margin-top: -50px;
+              margin-left: 50%;
+              font-family: Alice;
+              color: rgb(230, 204, 139);
+	      z-index: 2;
+          }
+		
+	.cover h1 {  /* Красота в мелочах */
+	     margin-top: 100px; /*Было 100 */
+              margin-right: 50%;  /*Было 50 */
+              font-size: 2.125rem; /* Было 1.88 rem */
+              font-family: Alice;
+	      z-index: 2;
+          }
+
+          .cover h2 {  /* Откройте для себя ... */
+	      margin-top: 20px; /*Было 50 */
+              margin-right: 50%;  /*Было 50 */
+              font-size: 1.56rem;
+              font-family: Alegreya SC, serif;
+              text-align: center;
+	      z-index: 2;
+          }
+
+/*  Раздел: О СЕБЕ */		
+	.Testimonials .imagev { /* Вектор */
+            position: absolute;
+	    top: 0;
+	    left: 49%; /* Было 50 */
+	    transform: translateX(-50%);  
+	    width: auto; 
+            height: auto; /* Сохраняет пропорции */
+            max-width: 600px; /* Ограничиваем максимальную ширину. Было 600 */
+	     margin: 0 20px; /* Отступы сверху и снизу */   
+        }
+
+        .Testimonials h1 { /* О СЕБЕ */
             text-align: center;
             color: rgb(199, 138, 23);
             font-family: "Cormorant Garamond", serif;
@@ -746,9 +896,8 @@
             line-height: 3rem;
         }
 
-        .Testimonials h2 {
-        	/* Усова Анастасия */
-            position: relative;
+        .Testimonials h2 { /* Усова Анастасия */
+	    position: relative;
             text-align: center;
             margin-left: 0;
             padding-left: 10px;
@@ -756,12 +905,10 @@
             font-family: Alegreya SC;
             font-size: 2.3rem;
             font-weight: 400;
-            line-height: 160%;
+            line-height: 160%;    
         }
 
-         .Testimonials h3 {
-         /* Занятие украшениями... */
-
+         .Testimonials h3 { /* Занятие украшениями... */
             font-size: 1.8rem;
             color: rgb(79, 57, 34);
             font-family: Alegreya SC;
@@ -770,8 +917,9 @@
             position: relative;
         }
 
-        .Bestsellers h1{
-            /* Работы */
+
+/*  Раздел: БЕСТСЕЛЛЕРЫ */		
+        .Bestsellers h1{ /* Работы */
             text-align: right;
             color: rgb(79, 57, 34);
             font-family: Cormorant Garamond;
@@ -785,13 +933,13 @@
         .Bestsellers .squares-container {
             display: flex; /* Flexbox для размещения квадратов */
             flex-wrap: wrap; /* Разрешаем перенос строк */
-            gap: 20px; /* Расстояние между элементами */
+            gap: 15px; /* Расстояние между элементами */
             justify-content: center; /* Центрируем квадраты */
             align-items: flex-start;
             width: 100%;
         }
 
-	    .Bestsellers .square1,
+	.Bestsellers .square1,
         .Bestsellers .square2,
         .Bestsellers .square3,
         .Bestsellers .square4,
@@ -801,19 +949,35 @@
         .Bestsellers .square8{
             display: block;
             width: 18.86rem;
-    		height: 19.81rem;
+    	    height: 19.81rem;
             border-radius: 1.25rem;
             box-shadow: 0rem 1.18rem 2.94rem 0rem rgba(47, 50, 125, 0.1);
             background: rgb(255, 255, 255);
             z-index: 1;
         }
 
+	    .Bestsellers .square5 .image5,
+        .Bestsellers .square6 .image6,
+        .Bestsellers .square7 .image7,
+        .Bestsellers .square8 .image8{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%; /* Изображение будет занимать всю ширину квадрата */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            max-width: 90%; /* Ограничение по ширине */
+	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
+            /* margin: 20px 0; */
+            z-index: 2;
+        }
+
          .Bestsellers .square5 .text14,
          .Bestsellers .square6 .text15,
          .Bestsellers .square7 .text16,
          .Bestsellers .square8 .text17{
-         	  display: block;
-          	  position: relative; /* Абсолютное позиционирование внутри родителя */
+              display: block;
+              position: relative; /* Абсолютное позиционирование внутри родителя */
               top: 89%; /* Центрирование по вертикали */
               left: 50%; /* Центрирование по горизонтали */
               transform: translate(-50%, -50%); /* Смещение для точного центрирования */
@@ -829,80 +993,73 @@
               z-index: 3;
           }
 
-          .Bestsellers .square1 {
-          /* Позолоченная фурнитура, сердолик */
+          .Bestsellers .square1 { /* Позолоченная фурнитура, сердолик */
               top: 20%; /* Положение сверху */
               left: 0%; /* Положение слева */
-              width: 18.86rem;
-              height: 19.81rem;
+              width: 18.70rem;
+              height: 22.81rem;
               margin-top: 70px;
           }
 
-          .Bestsellers .square2 {
-          /* Родированная фурнитура, майорка */
+          .Bestsellers .square2 { /* Родированная фурнитура, майорка */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
-              width: 18.86rem;
-              height: 19.81rem;
+              width: 18.70rem;
+              height: 22.81rem;
               margin-top: 70px;
           }
 
-		  .Bestsellers .square3 {
-          /* Позолоченная фурнитура, кошачий глаз */
+	   .Bestsellers .square3 { /* Позолоченная фурнитура, кошачий глаз */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
-              width: 18.86rem;
-              height: 19.81rem;
+              width: 18.70rem;
+              height: 22.81rem;
               margin-top: 70px;
           }
 
-          .Bestsellers .square4 {
-          /* Родированная фурнитура, белый агат, майорка */
+          .Bestsellers .square4 { /* Родированная фурнитура, белый агат, майорка */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
-              width: 18.86rem;
-              height: 19.81rem;
+              width: 18.70rem;
+              height: 22.81rem;
               margin-top: 70px;
           }
 
-          .Bestsellers .square5 {
-          /* Позолоченная фурнитура, сердолик */
+          .Bestsellers .square5 { /* Позолоченная фурнитура, сердолик */
               top: 20%; /* Положение сверху */
               left: 0%; /* Положение слева */
-              width: 18.86rem;
-              height: 19.81rem;
+              width: 18.70rem;
+              height: 22.81rem;
               margin-top: 70px;
           }
 
-          .Bestsellers .square6 {
-          /* Сатинированная позолота, майорка */
+          .Bestsellers .square6 { /* Сатинированная позолота, майорка */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
-              width: 18.86rem;
-              height: 19.81rem;
+              width: 18.70rem;
+              height: 22.81rem;
               margin-top: 70px;
           }
 
-		  .Bestsellers .square7 {
-          /* Чернённая фурнитура, шунгит */
+	   .Bestsellers .square7 { /* Чернённая фурнитура, шунгит */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
-              width: 18.86rem;
-              height: 19.81rem;
+              width: 18.70rem;
+              height: 22.81rem;
               margin-top: 70px;
           }
 
-          .Bestsellers .square8 {
-          /* Позолоченная фурнитура */
+          .Bestsellers .square8 { /* Позолоченная фурнитура */
               top: 20%; /* Измените по необходимости */
               left: 0%; /* Измените по необходимости */
-              width: 18.86rem;
-              height: 19.81rem;
+              width: 18.70rem;
+              height: 22.81rem;
               margin-top: 70px;
           }
 
+		
+/* Раздел: ОТЗЫВЫ */		
         .reviews h1 {
-        	/* ОТЗЫВЫ */
             text-align: center;
             margin-bottom: 20px; /* Добавили отступ снизу */
             color: rgb(199, 138, 23);
@@ -939,7 +1096,6 @@
               left: 0%;
               width: 32.44rem;
               height: 18.94rem;
-
           }
 
          .reviews .square2 {
@@ -973,7 +1129,8 @@
             z-index: 2;
         }
 
-        .social .square1{
+/* Раздел: Отзывы */        
+	.social .square1{
             position: relative; /* или absolute, если нужно */
             width: 60rem; /* Задайте нужную ширину */
             height: 33.88rem; /* Задайте нужную высоту */
@@ -1010,362 +1167,4 @@
               z-index: 2;
         }
 
-   }
-
-
-/* Большие экраны (1440px и выше) */
-      @media screen and (min-width: 1440px) {
-         .logo {
-             font-size: 4rem;
-         }
-
-         .nav a {
-             font-size: 2.8rem;
-         }
-
-         .nav {
-         	gap:30px;
-         }
-
-         .cover {
-             display: flex;
-             justify-content: space-between;
-             height: 70%; /* Увеличиваем высоту */
-             width: 100%;
-             position: relative;
-             order: 2;
-             z-index: 0;
-         }
-
-         .cover h1 {
-             font-size: 3.5rem; /* Увеличиваем размер заголовка */
-             margin-left: 40%;
-             margin-top: 120px;
-         }
-
-         .cover h2 {
-             font-size: 2.5rem;
-             margin-left: 40%;
-         }
-
-         .cover-image {
-             width: 60%; /* Уменьшаем ширину для больших экранов */
-         }
-
-         .cover h3 {
-             margin-top: -450px;
-             margin-right: 40%;
-             font-size: 2.2rem;
-         }
-
-         .cover h4 {
-             margin-top: 30px;
-             margin-right: 40%;
-             font-size: 1.9rem;
-         }
-
-  		.button1 {
-              width:20rem;
-              height: 5.31rem;
-              color: #fff;
-              background-color: rgba(217, 181, 113, 0.6);
-              border-radius: 5rem;
-              border: none;
-              text-align: center;
-              z-index: 2;
-              line-height: 3.31rem;
-              font-family: Cormorant Garamond;
-              font-size: 2.5rem;
-              font-weight: 400;
-              margin-right: 40%;
-              margin-top: 3%;
-
-          }
-
-          .button1:hover {background-color: rgba(181, 152, 98, 0.6);}
-
-          .button1:active {background-color: rgba(181, 152, 98, 0.6);}
-
-         .Testimonials h1 {
-             font-size: 3rem;
-             line-height: 3.5rem;
-         }
-
-         .Testimonials h2 {
-            position: relative;
-            text-align: center;
-            margin-left: 0;
-            padding-left: 10px;
-            color: rgb(79, 57, 34);
-            font-family: Alegreya SC;
-            font-weight: 400;
-            line-height: 160%;
-            font-size: 2.7rem;
-         }
-
-         .Testimonials h3 {
-             font-size: 2.2rem;
-         }
-
-         .Bestsellers h1 {
-             font-size: 3rem;
-         }
-
-        .Bestsellers .squares-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 25px;
-            justify-content: center;
-            align-items: flex-start;
-            width: 100%;
-        }
-
-	    .Bestsellers .square1,
-        .Bestsellers .square2,
-        .Bestsellers .square3,
-        .Bestsellers .square4,
-        .Bestsellers .square5,
-        .Bestsellers .square6,
-        .Bestsellers .square7,
-        .Bestsellers .square8{
-            display: block;
-            width: 30rem;
-            height: 31rem;
-            border-radius: 1.25rem;
-            box-shadow: 0rem 1.18rem 2.94rem 0rem rgba(47, 50, 125, 0.1);
-            background: rgb(255, 255, 255);
-            z-index: 1;
-        }
-
-         .Bestsellers .square1 .text10,
-         .Bestsellers .square2 .text11,
-         .Bestsellers .square3 .text12,
-         .Bestsellers .square4 .text13,
-         .Bestsellers .square5 .text14,
-         .Bestsellers .square6 .text15,
-         .Bestsellers .square7 .text16,
-         .Bestsellers .square8 .text17{
-         	  display: block;
-          	  position: relative; /* Абсолютное позиционирование внутри родителя */
-              top: 89%; /* Центрирование по вертикали */
-              left: 50%; /* Центрирование по горизонтали */
-              transform: translate(-50%, -50%); /* Смещение для точного центрирования */
-              color: rgb(79, 57, 34);
-              font-family: Alegreya SC;
-              font-size: 2rem;
-              font-weight: 500;
-              text-align: center;
-              white-space: normal; /* Разрешить перенос строк */
-              word-wrap: break-word; /* Переносить слова, если они длинные */
-              width: 80%; /* Задайте ширину текста */
-              line-height: 1.5; /* Интервал между строками */
-              z-index: 3;
-          }
-
-          .Bestsellers .square1 {
-          /* Позолоченная фурнитура, сердолик */
-              top: 20%; /* Положение сверху */
-              left: 0%; /* Положение слева */
-              width: 30rem;
-              height: 31rem;
-              margin-top: 70px;
-          }
-
-          .Bestsellers .square2 {
-          /* Родированная фурнитура, майорка */
-              top: 20%; /* Измените по необходимости */
-              left: 0%; /* Измените по необходимости */
-              width: 30rem;
-              height: 31rem;
-              margin-top: 70px;
-          }
-
-		  .Bestsellers .square3 {
-          /* Позолоченная фурнитура, кошачий глаз */
-              top: 20%; /* Измените по необходимости */
-              left: 0%; /* Измените по необходимости */
-              width: 30rem;
-              height: 31rem;
-              margin-top: 70px;
-          }
-
-          .Bestsellers .square4 {
-          /* Родированная фурнитура, белый агат, майорка */
-              top: 20%; /* Измените по необходимости */
-              left: 0%; /* Измените по необходимости */
-              width: 30rem;
-              height: 31rem;;
-              margin-top: 70px;
-          }
-
-          .Bestsellers .square5 {
-          /* Позолоченная фурнитура, сердолик */
-              top: 20%; /* Положение сверху */
-              left: 0%; /* Положение слева */
-              width: 30rem;
-              height: 31rem;
-              margin-top: 70px;
-          }
-
-          .Bestsellers .square6 {
-          /* Сатинированная позолота, майорка */
-              top: 20%; /* Измените по необходимости */
-              left: 0%; /* Измените по необходимости */
-              width: 30rem;
-              height: 31rem;
-              margin-top: 70px;
-          }
-
-
-		  .Bestsellers .square7 {
-          /* Чернённая фурнитура, шунгит */
-              top: 20%; /* Измените по необходимости */
-              left: 0%; /* Измените по необходимости */
-              width: 30rem;
-              height: 31rem;
-              margin-top: 70px;
-          }
-
-          .Bestsellers .square8 {
-          /* Позолоченная фурнитура */
-              top: 20%; /* Измените по необходимости */
-              left: 0%; /* Измените по необходимости */
-              width: 30rem;
-              height: 31rem;
-              margin-top: 70px;
-          }
-
-          .reviews {
-             margin-top: 70px;
-             gap: 50px;
-         }
-
-          .reviews h1 {
-        	/* ОТЗЫВЫ */
-            text-align: center;
-            margin-bottom: 20px; /* Добавили отступ снизу */
-            color: rgb(199, 138, 23);
-            font-family: "Cormorant Garamond", serif;
-            font-size: 2.8rem;
-            font-weight: 700;
-            line-height: 3rem;
-        }
-
-        .reviews .squares-container {
-            display: flex; /* Горизонтальное расположение */
-            gap: 20px; /* Отступ между квадратами */
-            flex-direction: row; /* Элементы располагаются в строку */
-            justify-content: center; /* Центрирование квадратов по горизонтали */
-            align-items: center; /* Центрирование квадратов по вертикали */
-            width: 100%; /* Занимает всю ширину родителя */
-        }
-
-          .reviews .square1,
-          .reviews .square2 {
-              margin: 0; /* Убираем любые отступы */
-    	      padding: 0;
-              position: relative;
-              width: 80rem;
-              height: 40rem;
-              border-radius: 1.25rem;
-              box-shadow: 0.13rem 0.25rem 3.75rem 0rem rgba(41, 44, 124, 0.1);
-              background: rgb(255, 255, 255);
-              z-index: 1;
-          }
-
-          .reviews .square1 {
-              width: 80rem;
-              height: 40rem;
-          }
-
-         .reviews .square2 {
-              width: 80rem;
-              height: 40rem;
-          }
-
-          .reviews .square1 .text1,
-          .reviews .square2 .text2{
-              position: absolute;
-              width: 100%;
-              top: 50%; /* Центр по вертикали */
-              left: 60%; /* Центр по горизонтали */
-              transform: translate(-50%, -50%); /* Корректировка центрирования */
-              font-family: "Alegreya SC", serif;
-              font-size: 2.3rem;
-              color: rgba(79, 57, 34, 0.7);
-              text-align: left;
-              z-index: 3;
-          }
-
-         .reviews .square3{
-            height: 40rem;
-        }
-
-        .social .square1{
-            position: relative; /* или absolute, если нужно */
-            width: 80rem;
-            height: 50rem; /* Задайте нужную высоту */
-            border-radius: 2.31rem;
-            background: rgba(229, 204, 139, 0.53);
-            z-index: 1;
-        }
-
-        .social .square1 .text1{
-              position: absolute;
-              width: 100%;
-              top: 11%; /* Центр по вертикали */
-              left: 50%; /* Центр по горизонтали */
-              transform: translate(-50%, -50%); /* Корректировка центрирования */
-              font-family: Alice;
-              font-size: 3rem;
-              color: rgb(79, 57, 34);
-              text-align: center;
-              line-height: 2.13rem;
-              z-index: 2;
-        }
-
-        .social .square1 .text2{
-              font-size: 3rem;
-        }
-
-        .button2 {
-            width: 30rem;
-            height: 7.31rem;
-            font-size: 2.5rem;;
-        }
-
-        .footer h1 {
-          font-family: "Cormorant Garamond", serif;
-          font-size: 3rem;
-          font-weight: 600;
-        }
-
-        .footer h2 {
-          font-family: Alice;
-          font-size: 2rem;
-          font-weight: 400;
-          left: 60%;
-          line-height: 1.5rem;
-        }
-
-        .footer h3 {
-          font-family: Poppins;
-          font-size: 2rem;
-          font-weight: 600;
-          left: 50%;
-          line-height: 1.5rem;
-        }
-
-        .nav1 {
-            display: flex;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .nav1 a {
-            text-decoration: none;
-            color: #4f3922;
-            font-size: 2rem;
-            font-family: "Alegreya SC", serif;
-        }
    }
