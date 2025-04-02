@@ -257,8 +257,12 @@
             flex-wrap: wrap; /* Разрешаем перенос строк */
             gap: 50px; /* Расстояние между элементами */
             justify-content: center; /* Центрируем квадраты -было center */
-            align-items: flex-start;
+            align-items: center;
             width: 100%;
+
+	    max-width: 1200px; /* Ограничивает максимальную ширину контейнера */
+    	    margin: 0 auto; /* Автоматические отступы по бокам для центрирования */
+   	    padding: 20px 0; /* Добавил отступы сверху и снизу */
         }
 
 	.Our_Success .square1,
@@ -273,6 +277,7 @@
             border-radius: 1.25rem;
             box-shadow: 0rem 1.18rem 2.94rem 0rem rgba(47, 50, 125, 0.1);
             background: rgb(0, 255, 255);
+	    flex-shrink: 0;
             z-index: 1;
         }
 
