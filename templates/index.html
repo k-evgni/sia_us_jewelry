@@ -298,6 +298,23 @@
             z-index: 3;
         }
 
+        .Our_Success  .square1 .image1,
+        .Our_Success  .square2 .image2,
+        .Our_Success  .square3 .image3,
+        .Our_Success  .square4 .image4,
+	    .Our_Success  .square5 .image5{
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%; /* Изображение будет занимать всю ширину квадрата */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            max-width: 90%; /* Ограничение по ширине */
+	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
+            /* margin: 20px 0; */
+            z-index: 2;
+        }
+
 	.Our_Success .square1 {
             width: 230px;
             height: 203px;
@@ -408,11 +425,18 @@
         .Bestsellers .square2 .image2,
         .Bestsellers .square3 .image3,
         .Bestsellers .square4 .image4,
+<<<<<<< Updated upstream
 	.Bestsellers .square5 .image5,
 	.Bestsellers .square6 .image6,
 	.Bestsellers .square7 .image7,
 	.Bestsellers .square8 .image8
 	    {
+=======
+	    .Bestsellers .square5 .image5,
+        .Bestsellers .square6 .image6,
+        .Bestsellers .square7 .image7,
+        .Bestsellers .square8 .image8{
+>>>>>>> Stashed changes
             position: absolute;
             top: 35%;
             left: 50%;
@@ -1577,11 +1601,11 @@
     <div class="Our_Success" id="advantages">
    	<h1>SIA_US_JEWELRY</h1>
 	<div class="squares-container">
-	  <div class="square1"> <div class="text1">Ручная работа</div></div>
-          <div class="square2"> <div class="text2">Гипоаллергенные материалы</div> </div>
-          <div class="square3"> <div class="text3">Персонализация изделий</div></div>
-          <div class="square4"> <div class="text4">Доставка по  всей стране</div> </div>
-	  <div class="square5"> <div class="text5">Индивидуальный подход</div> </div>
+	  <div class="square1"> <div class="text1">Ручная работа</div><img src="static/hand-made.png" alt="Jewelry Image" class="image1"></div>
+          <div class="square2"> <div class="text2">Гипоаллергенные материалы</div> <img src="static/gippoalergen-material.png" alt="Jewelry Image" class="image2"></div>
+          <div class="square3"> <div class="text3">Персонализация изделий</div><img src="static/personalizacia-izdeliy.png" alt="Jewelry Image" class="image3"></div>
+          <div class="square4"> <div class="text4">Доставка по  всей стране</div><img src="static/dostavka-po-vsey-strane.png" alt="Jewelry Image" class="image4"> </div>
+	  <div class="square5"> <div class="text5">Индивидуальный подход</div><img src="static/individyal-podxod.png" alt="Jewelry Image" class="image5"> </div>
     	</div>
      </div>
 
