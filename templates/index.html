@@ -356,10 +356,13 @@
 
 	.Bestsellers .squares-container {
             display: flex; /* Горизонтальное расположение */
-            gap: 20px; /* Отступ между квадратами */
+		
+            flex-wrap: wrap;
+	    
+	    gap: 15px; /* Отступ между квадратами - было 20px*/
 	    row-gap: 20px; /* Уменьшаем расстояние между строками (было больше) */
             flex-direction: colum; /* Элементы располагаются в строку */
-            justify-content: center; /* Центрирование квадратов по горизонтали */
+            justify-content: center;  Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
             width: 100%; /* Занимает всю ширину родителя */
         }
@@ -367,7 +370,11 @@
         .Bestsellers .square1,
         .Bestsellers .square2,
         .Bestsellers .square3,
-        .Bestsellers .square4{
+        .Bestsellers .square4,
+	.Bestsellers .square5,
+	.Bestsellers .square6,
+	.Bestsellers .square7,
+	.Bestsellers .square8{
             position: relative;
             width: 100px; /* Задайте нужную ширину */
             height: 100px; /* Задайте нужную высоту */
@@ -400,7 +407,12 @@
         .Bestsellers .square1 .image1,
         .Bestsellers .square2 .image2,
         .Bestsellers .square3 .image3,
-        .Bestsellers .square4 .image4{
+        .Bestsellers .square4 .image4,
+	.Bestsellers .square5 .image5,
+	.Bestsellers .square6 .image6,
+	.Bestsellers .square7 .image7,
+	.Bestsellers .square8 .image8
+	    {
             position: absolute;
             top: 35%;
             left: 50%;
@@ -949,7 +961,7 @@
         .Bestsellers .square6,
         .Bestsellers .square7,
         .Bestsellers .square8{
-            display: block !important;
+            display: block;
             width: 18.86rem;
     	    height: 19.81rem;
             border-radius: 1.25rem;
@@ -963,14 +975,6 @@
         .Bestsellers .square7 .image7,
         .Bestsellers .square8 .image8{
 	    display: block;
-            position: absolute;
-            top: 35%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 90%;
-            height: auto;
-            max-width: 90%;
-            z-index: 2;
         }
 
          .Bestsellers .square5 .text14,
