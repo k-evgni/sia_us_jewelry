@@ -664,7 +664,7 @@
 	    border-radius: 37px;
         }
 
-	.social h1{ /* Следите за новинками в наших социальных сетях */
+	.social text1{ /* Следите за новинками в наших социальных сетях */
               position: absolute;
               width: 100%;
               top: 11%; /* Центр по вертикали */
@@ -680,22 +680,24 @@
 
         .social .squares-container {
             display: flex; /* Горизонтальное расположение */
-            gap: 50px; /* Отступ между квадратами */
-            flex-direction: row; /* Элементы располагаются в строку */
+            flex-direction: colum; /* Элементы располагаются в строку */
             justify-content: center; /* Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
+	    flex-wrap: wrap;
+	    gap: 10px; /* Отступ между квадратами */
             width: 100%; /* Занимает всю ширину родителя */
+	    margin: 0 auto; /* Центрирование контейнера */
         }
 	    
 	.social .square1 .squares-container1 {
             display: flex; /* Горизонтальное расположение */
-            flex-wrap: wrap;
-	    gap: 15px; /* Отступ между квадратами - было 20px*/
-	    row-gap: 10px; /* Уменьшаем расстояние между строками (было больше) */
             flex-direction: colum; /* Элементы располагаются в строку */
-            justify-content: center;  Центрирование квадратов по горизонтали */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
+	    flex-wrap: wrap;
+	    gap: 100px; /* Отступ между квадратами */
             width: 100%; /* Занимает всю ширину родителя */
+	    margin: 0 auto; /* Центрирование контейнера */
 		
         }
 
@@ -1283,13 +1285,13 @@
 
 	.social .square1 .squares-container1 {
             display: flex; /* Горизонтальное расположение */
-            flex-wrap: wrap;
-	    gap: 15px; /* Отступ между квадратами - было 20px*/
-	    row-gap: 10px; /* Уменьшаем расстояние между строками (было больше) */
             flex-direction: colum; /* Элементы располагаются в строку */
-            justify-content: center;  Центрирование квадратов по горизонтали */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
+	    flex-wrap: wrap;
+	    gap: 100px; /* Отступ между квадратами */
             width: 100%; /* Занимает всю ширину родителя */
+	    margin: 0 auto; /* Центрирование контейнера */
 		
         }
 
@@ -1779,7 +1781,7 @@
      </div>
 
  	<div class="social" id="social">
-            <h1>Следите за новинками в наших социальных сетях</h1>
+            <div class="text1">Следите за новинками в наших социальных сетях</div>
 	    <div class="squares-container">
 		<div class="square1">
              	    <div class="squares-container">
