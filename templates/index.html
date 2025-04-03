@@ -1223,7 +1223,27 @@
             z-index: 2;
         }
 
-/* Раздел: Контакты */        
+/* Раздел: Контакты */
+        .social {
+            display: flex; /* Устанавливает контейнер flex */
+            flex-direction: column;
+	    justify-content: center;
+            align-items: center; /* Выравнивание элементов по вертикали */
+            justify-content: space-between;
+            position: relative;
+            width: 60rem;
+	    height: 33.88rem;
+            padding: 20px;
+            margin-top: 50px; /* Отступ сверху */
+            box-sizing: border-box; /* Учет отступов */
+            order: 6;
+	    z-index: 0;
+		
+	    background: rgba(229, 204, 139, 0.53);
+	    border-radius: 2.31rem;
+        }
+
+
 	.social .square1{
             position: relative; /* или absolute, если нужно */
             width: 60rem; /* Задайте нужную ширину */
