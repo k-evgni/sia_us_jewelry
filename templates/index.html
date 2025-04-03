@@ -653,7 +653,7 @@
 	    justify-content: center;
             align-items: center; /* Выравнивание элементов по вертикали */
             position: relative;
-            width: 73%; /*Было 33rem */
+            width: 75%; /*Было 33rem */
 	    padding: 20px;
             margin: 50px auto; /* Отступ сверху */
             box-sizing: border-box; /* Учет отступов */
@@ -673,6 +673,7 @@
               color: rgb(79, 57, 34);
               text-align: center;
               line-height: 2.13rem;
+	      margin-top: 20px; /* Отступ сверху */
         }
 
         .social .squares-container {
@@ -683,14 +684,13 @@
 	    flex-wrap: wrap;
 	    gap: 10px; /* Отступ между квадратами */
             width: 100%; /* Занимает всю ширину родителя */
-	    margin: 20 auto; /* Центрирование контейнера */
+	    margin: 20px auto; /* Центрирование контейнера */
         }
 
 	.social .square1,
 	.social .square2{
-	    width: 150px;
-	    height: 150px;
-	    background: white;
+	    width: 163px;
+	    height: auto;
 	    border-radius: 10px;
 	    display: flex;
 	    justify-content: center;
@@ -700,7 +700,7 @@
 
         .social .square1 .image1,
 	.social .square2 .image2{
-            max-width: 50%;
+            max-width: 100%;
     	    height: auto;
         }
 
@@ -1753,8 +1753,8 @@
 		<div class="square1"> 
 			<img src="static/QR-vk.png" alt="QR-VK.com" class="image1"> 
 		</div>
-		<div class="square12">
-		    <div class="square12"><img src="static/QR-tg.png" alt="QR-Telegramm" class="image2"> </div> 
+		<div class="square2">
+		    <img src="static/QR-tg.png" alt="QR-Telegramm" class="image2"> 
 		</div>
 	     </div>
 		
