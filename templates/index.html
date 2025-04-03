@@ -701,12 +701,28 @@
 	.social .square1 .square11,
 	.social .square1 .square12{
             position: relative; /* или absolute, если нужно */
-            width: 295px; /* Задайте нужную ширину */
+            width: auto; /* Задайте нужную ширину */
             height: auto; /* Задайте нужную высоту */
             margin: 20px auto;
 	    z-index: 1;
 		 background: rgba(0, 0, 37);
         }
+
+        .Bestsellers .square11 .image1,
+	.Bestsellers .square12 .image2{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 274px; /* Изображение будет занимать всю ширину квадрата */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+            max-width: 190%; /* Ограничение по ширине */
+	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
+            /* margin: 20px 0; */
+            z-index: 2;
+        }
+
+	
 	
 	/*.social .square2{
             position: relative; /* или absolute, если нужно 
@@ -1753,9 +1769,9 @@
             <div class="text1">Следите за новинками в наших социальных сетях</div>
 	    <div class="squares-container">
 		<div class="square1">
-             	    <div class="squares-container">
-		    	<div class="square11"></div>
-			<div class="square12"></div> 
+             	    <div class="squares-container1">
+		    	<div class="square11"> <img src="static/QR-vk.png" alt="QR-VK.com" class="image1"> </div>
+			<div class="square12"><img src="static/QR-tg.png" alt="QR-Telegramm" class="image1"> </div> 
 		    </div>
 		</div>
       		
