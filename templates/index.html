@@ -256,20 +256,23 @@
 	.Our_Success .imagev-right {
 	    position: absolute;
 	    z-index: 0; /* Размещаем под основным контентом */
-	    width: 120px; /* Настройте по размеру ваших векторов */
+	    width: 378.2px; /* Настройте по размеру ваших векторов */
 	    height: auto;
+	    max-width: 90%; /* Ограничение по ширине */
 	}
 
 	.Our_Success .imagev-left {
-	    top: 50%;
+	    top: 0%;
 	    left: 10%;
 	    transform: translateY(-50%);
+	    
 	}
 
 	.Our_Success .imagev-right {
-	    top: 50%;
+	    top: 0%;
 	    right: 10%;
 	    transform: translateY(-50%) scaleX(-1); /* Отражаем по горизонтали если нужно */
+	    max-width: 90%; /* Ограничение по ширине */
 	}
 
 	.Our_Success .squares-container {
@@ -408,6 +411,7 @@
             padding-left: 10px;
             margin-bottom: 10px; /* Добавили отступ снизу */
 	    left: 50%; /* Центрирование по горизонтали */
+            transform: translateY(-50%); /* Смещение для точного центрирования */
             color: rgb(79, 57, 34);
             font-family: Cormorant Garamond;
             font-size: 2.3rem;
