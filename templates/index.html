@@ -489,7 +489,7 @@
         .Bestsellers .square6 .image6,
         .Bestsellers .square7 .image7,
         .Bestsellers .square8 .image8{
-           /* top: 40%; */
+            top: 40%;
         }
 
         .Bestsellers .square1 {
@@ -580,6 +580,15 @@
             font-size: 2.3rem;
             font-weight: 700;
             line-height: 3rem;
+        }
+
+	.reviews .squares-container {
+            display: flex; /* Горизонтальное расположение */
+            gap: 20px; /* Отступ между квадратами */
+            flex-direction: row; /* Элементы располагаются в строку */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
         }
 
        .reviews .square1,
@@ -1094,7 +1103,7 @@
               left: 0%; /* Положение слева */
               width: 18.70rem;
               height: 22.81rem;
-              margin-top: 50px;
+              margin-top: 30px;
           }
 
           .Bestsellers .square6 { /* Сатинированная позолота, майорка */
@@ -1102,7 +1111,7 @@
               left: 0%; /* Измените по необходимости */
               width: 18.70rem;
               height: 22.81rem;
-              margin-top: 50px;
+              margin-top: 30px;
           }
 
 	   .Bestsellers .square7 { /* Чернённая фурнитура, шунгит */
@@ -1110,7 +1119,7 @@
               left: 0%; /* Измените по необходимости */
               width: 18.70rem;
               height: 22.81rem;
-              margin-top: 50px;
+              margin-top: 30px;
           }
 
           .Bestsellers .square8 { /* Позолоченная фурнитура */
@@ -1118,7 +1127,7 @@
               left: 0%; /* Измените по необходимости */
               width: 18.70rem;
               height: 22.81rem;
-              margin-top: 50px;
+              margin-top: 30px;
           }
 
 		
@@ -1137,7 +1146,7 @@
             display: flex; /* Горизонтальное расположение */
             gap: 20px; /* Отступ между квадратами */
             flex-direction: row; /* Элементы располагаются в строку */
-            justify-content: center; /* Центрирование квадратов по горизонтали */
+            justify-content: space-between; /* Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
             width: 100%; /* Занимает всю ширину родителя */
         }
