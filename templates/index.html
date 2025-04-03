@@ -653,13 +653,12 @@
 	    justify-content: center;
             align-items: center; /* Выравнивание элементов по вертикали */
             position: relative;
-            width: 75%; /*Было 33rem */
+            width: 73%; /*Было 33rem */
 	    padding: 20px;
             margin: 50px auto; /* Отступ сверху */
             box-sizing: border-box; /* Учет отступов */
             order: 6;
 	    z-index: 0;
-		
 	    background: rgba(229, 204, 139, 0.53);
 	    border-radius: 37px;
         }
@@ -695,7 +694,7 @@
             justify-content: center; /* Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
 	    flex-wrap: wrap;
-	    gap: 100px; /* Отступ между квадратами */
+	    gap: 159px; /* Отступ между квадратами */
             width: 100%; /* Занимает всю ширину родителя */
 	    margin: 0 auto; /* Центрирование контейнера */
 		
@@ -704,66 +703,39 @@
 	.social .square1 .square11,
 	.social .square1 .square12{
             position: relative; /* или absolute, если нужно */
-            width: 3rem; /* Задайте нужную ширину */
-            height: 3.31rem; /* Задайте нужную высоту */
-            border-radius: 2.31rem;
-            z-index: 1;
+            width: 295px; /* Задайте нужную ширину */
+            height: auto; /* Задайте нужную высоту */
+            margin: 20px auto;
+	    z-index: 1;
 		 background: rgba(0, 0, 37);
         }
 	
-	.social .square2{
-            position: relative; /* или absolute, если нужно */
-            width: 33rem; /* Задайте нужную ширину */
-            height: 37.31rem; /* Задайте нужную высоту */
+	/*.social .square2{
+            position: relative; /* или absolute, если нужно 
+            width: 33rem; /* Задайте нужную ширину 
+            height: 37.31rem; /* Задайте нужную высоту 
             border-radius: 2.31rem;
             z-index: 1;
         }
 
-	
 
-        .social .square2 .text1{ /* Следите за новинками в наших социальных сетях */
+        .social .square2 .text2{ /*Сделать заказ прямо сейчас 
               position: absolute;
               width: 100%;
-              top: 11%; /* Центр по вертикали */
-              left: 50%; /* Центр по горизонтали */
-              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              top: 75%; /* Центр по вертикали 
+              left: 50%; /* Центр по горизонтали 
+              transform: translate(-50%, -50%); /* Корректировка центрирования 
               font-family: Alice;
               font-size: 1.88rem;
               color: rgb(79, 57, 34);
               text-align: center;
               line-height: 2.13rem;
               z-index: 2;
-        }
-
-        .social .square2 .text2{ /*Сделать заказ прямо сейчас */
-              position: absolute;
-              width: 100%;
-              top: 75%; /* Центр по вертикали */
-              left: 50%; /* Центр по горизонтали */
-              transform: translate(-50%, -50%); /* Корректировка центрирования */
-              font-family: Alice;
-              font-size: 1.88rem;
-              color: rgb(79, 57, 34);
-              text-align: center;
-              line-height: 2.13rem;
-              z-index: 2;
-        }
+        }*/
 
 	
 
-        .social .square2 .image1,
-        .social .square2 .image2{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 75%; /* Изображение будет занимать всю ширину квадрата */
-            height: auto; /* Автоматическая высота для сохранения пропорций */
-            max-width: 90%; /* Ограничение по ширине */
-	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
-            /* margin: 20px 0; */
-            z-index: 2;
-        }
+
 
         .button2 {
             position: absolute;
