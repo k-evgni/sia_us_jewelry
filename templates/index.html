@@ -559,7 +559,7 @@
 /* Раздел: ОТЗЫВЫ */
         .reviews{
             display: flex; /* Устанавливает контейнер flex */
-            flex-direction: row;
+            flex-direction: column;
 	    flex-wrap: wrap;
             align-items: center; /* Выравнивание элементов по вертикали */
             justify-content: space-between;
@@ -1153,29 +1153,14 @@
 
           .reviews .square1,
           .reviews .square2 {
-              margin: 0; /* Убираем любые отступы */
-    	      padding: 0;
               position: relative;
               width: 32.44rem;
-              height: 20.94rem;
+              height: 18.94rem;
               border-radius: 1.25rem;
               box-shadow: 0.13rem 0.25rem 3.75rem 0rem rgba(41, 44, 124, 0.1);
               background: rgb(255, 255, 255);
               z-index: 1;
-          }
-
-          .reviews .square1 {
-              top: 0%; /* Положение сверху */
-              left: 0%;
-              width: 32.44rem;
-              height: 18.94rem;
-          }
-
-         .reviews .square2 {
-              top: 0%; /* Положение сверху */
-              left: 0%;
-              width: 32.44rem;
-              height: 18.94rem;
+	      flex-shrink: 0; /* Предотвращает сжатие блоков */
           }
 
           .reviews .square1 .text1,
