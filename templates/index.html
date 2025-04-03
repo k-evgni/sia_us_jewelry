@@ -302,7 +302,7 @@
         .Our_Success  .square2 .image2,
         .Our_Success  .square3 .image3,
         .Our_Success  .square4 .image4,
-	    .Our_Success  .square5 .image5{
+	.Our_Success  .square5 .image5{
             position: absolute;
             top: 35%;
             left: 50%;
@@ -311,7 +311,7 @@
             height: auto; /* Автоматическая высота для сохранения пропорций */
             max-width: 90%; /* Ограничение по ширине */
 	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
-            /* margin: 20px 0; */
+            margin: 14px 0; 
             z-index: 2;
         }
 
@@ -398,9 +398,7 @@
 
 	.Bestsellers .squares-container {
             display: flex; /* Горизонтальное расположение */
-		
             flex-wrap: wrap;
-	    
 	    gap: 15px; /* Отступ между квадратами - было 20px*/
 	    row-gap: 20px; /* Уменьшаем расстояние между строками (было больше) */
             flex-direction: colum; /* Элементы располагаются в строку */
@@ -511,13 +509,10 @@
             top: 62.6%;
             left: 88%;
             transform: translate(-50%, -50%);
-
             width: 80%;
             height: auto;
             max-width: 355px;
-
             margin: 20px 0;
-
             z-index: 0;
         }
 
@@ -526,18 +521,12 @@
             top: 31%;
             left: 16%;
             transform: translate(-50%, -50%);
-
             width: 80%;
             height: auto;
             max-width: 550px;
-
             margin: 20px 0;
-
             z-index: 0;
         }
-
-
-
 
 	    
 /* Раздел: ОТЗЫВЫ */
@@ -818,9 +807,7 @@
                 transform: translateX(-50%);/* Убираем смещение */
             }
 
-            .cover-image {
-                width: 90%; /* Увеличиваем ширину для небольших экранов */
-            }
+            .cover-image { width: 90%; /* Увеличиваем ширину для небольших экранов */ }
 
 	.Bestsellers .squares-container {
             display: flex; 
