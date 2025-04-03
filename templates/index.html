@@ -664,26 +664,7 @@
 	    border-radius: 37px;
         }
 
-        .social .squares-container {
-            display: flex; /* Горизонтальное расположение */
-            gap: 50px; /* Отступ между квадратами */
-            flex-direction: row; /* Элементы располагаются в строку */
-            justify-content: center; /* Центрирование квадратов по горизонтали */
-            align-items: center; /* Центрирование квадратов по вертикали */
-            width: 100%; /* Занимает всю ширину родителя */
-        }
-	    
-	.social .square1,
-	.social .square2,{
-            position: relative; /* или absolute, если нужно */
-            width: 33rem; /* Задайте нужную ширину */
-            height: 37.31rem; /* Задайте нужную высоту */
-            border-radius: 2.31rem;
-	    background: rgba(0, 0, 139);
-            z-index: 1;
-        }
-
-        .social .square1 .text1{ /* Следите за новинками в наших социальных сетях */
+	.social h1{ /* Следите за новинками в наших социальных сетях */
               position: absolute;
               width: 100%;
               top: 11%; /* Центр по вертикали */
@@ -697,7 +678,62 @@
               z-index: 2;
         }
 
-        .social .square1 .text2{ /*Сделать заказ прямо сейчас */
+        .social .squares-container {
+            display: flex; /* Горизонтальное расположение */
+            gap: 50px; /* Отступ между квадратами */
+            flex-direction: row; /* Элементы располагаются в строку */
+            justify-content: center; /* Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
+        }
+	    
+	.social .square1 .squares-container1 {
+            display: flex; /* Горизонтальное расположение */
+            flex-wrap: wrap;
+	    gap: 15px; /* Отступ между квадратами - было 20px*/
+	    row-gap: 10px; /* Уменьшаем расстояние между строками (было больше) */
+            flex-direction: colum; /* Элементы располагаются в строку */
+            justify-content: center;  Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
+		
+        }
+
+	.social .square1 .square11,
+	.social .square1 .square12{
+            position: relative; /* или absolute, если нужно */
+            width: 3rem; /* Задайте нужную ширину */
+            height: 3.31rem; /* Задайте нужную высоту */
+            border-radius: 2.31rem;
+            z-index: 1;
+		 background: rgba(0, 0, 37);
+        }
+	
+	.social .square2{
+            position: relative; /* или absolute, если нужно */
+            width: 33rem; /* Задайте нужную ширину */
+            height: 37.31rem; /* Задайте нужную высоту */
+            border-radius: 2.31rem;
+            z-index: 1;
+        }
+
+	
+
+        .social .square2 .text1{ /* Следите за новинками в наших социальных сетях */
+              position: absolute;
+              width: 100%;
+              top: 11%; /* Центр по вертикали */
+              left: 50%; /* Центр по горизонтали */
+              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              font-family: Alice;
+              font-size: 1.88rem;
+              color: rgb(79, 57, 34);
+              text-align: center;
+              line-height: 2.13rem;
+              z-index: 2;
+        }
+
+        .social .square2 .text2{ /*Сделать заказ прямо сейчас */
               position: absolute;
               width: 100%;
               top: 75%; /* Центр по вертикали */
@@ -711,19 +747,10 @@
               z-index: 2;
         }
 
-	.social .square1 .squares-container {
-            display: flex; /* Горизонтальное расположение */
-            flex-wrap: wrap;
-	    gap: 15px; /* Отступ между квадратами - было 20px*/
-	    row-gap: 20px; /* Уменьшаем расстояние между строками (было больше) */
-            flex-direction: colum; /* Элементы располагаются в строку */
-            justify-content: center;  Центрирование квадратов по горизонтали */
-            align-items: center; /* Центрирование квадратов по вертикали */
-            width: 100%; /* Занимает всю ширину родителя */
-        }
+	
 
-        .social .square1 .image1,
-        .social .square1 .image2{
+        .social .square2 .image1,
+        .social .square2 .image2{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -1240,17 +1267,7 @@
 	    border-radius: 2.31rem;
         }
 
-
-	.social .square1{
-            position: relative; /* или absolute, если нужно */
-            width: 60rem; /* Задайте нужную ширину */
-            height: 33.88rem; /* Задайте нужную высоту */
-            border-radius: 2.31rem;
-            background: rgba(0, 0, 0);
-            z-index: 1;
-        }
-
-        .social .square1 .text1{
+	.social h1{
               position: absolute;
               width: 100%;
               top: 11%; /* Центр по вертикали */
@@ -1264,7 +1281,38 @@
               z-index: 2;
         }
 
-        .social .square1 .text2{
+	.social .square1 .squares-container1 {
+            display: flex; /* Горизонтальное расположение */
+            flex-wrap: wrap;
+	    gap: 15px; /* Отступ между квадратами - было 20px*/
+	    row-gap: 10px; /* Уменьшаем расстояние между строками (было больше) */
+            flex-direction: colum; /* Элементы располагаются в строку */
+            justify-content: center;  Центрирование квадратов по горизонтали */
+            align-items: center; /* Центрирование квадратов по вертикали */
+            width: 100%; /* Занимает всю ширину родителя */
+		
+        }
+
+	.social .square1 .square11,
+	.social .square1 .square12{
+            position: relative; /* или absolute, если нужно */
+            width: 20rem; /* Задайте нужную ширину */
+            height: 32.31rem; /* Задайте нужную высоту */
+            border-radius: 2.31rem;
+            z-index: 1;
+		 background: rgba(0, 0, 37);
+        }
+
+	.social .square2{
+            position: relative; /* или absolute, если нужно */
+            width: 60rem; /* Задайте нужную ширину */
+            height: 33.88rem; /* Задайте нужную высоту */
+            border-radius: 2.31rem;
+            z-index: 1;
+        }
+
+
+        .social .square2 .text2{
               position: absolute;
               width: 100%;
               top: 70%; /* Центр по вертикали */
@@ -1731,12 +1779,19 @@
      </div>
 
  	<div class="social" id="social">
-          <div class="square1">
-            <div class="text1">Следите за новинками в наших социальных сетях</div> 
-            <div class="text2">Сделать заказ прямо сейчас</div>
-            <button class="button2" onclick="redirectToForm()">Заказать</button>
-      	  </div>
- 	</div>
+            <h1>Следите за новинками в наших социальных сетях</h1>
+	    <div class="squares-container">
+		<div class="square1">
+             	    <div class="squares-container">
+		    	<div class="square11"></div>
+			<div class="square12"></div> 
+		    </div>
+		</div>
+            	<div class="text2">Сделать заказ прямо сейчас</div>
+            	<button class="button2" onclick="redirectToForm()">Заказать</button>
+      		
+ 	     </div>
+	</div>
 
 	<div class="footer">
 	   <h1>SIA_US_JEWELRY</h1>
