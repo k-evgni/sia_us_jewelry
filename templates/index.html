@@ -63,6 +63,7 @@
             padding: 1cm; /* Добавляем отступ в 1 сантиметр */
             box-sizing: border-box;
 	    margin: 0 auto; /* Центрируем по горизонтали */
+	    overflow: hidden; /* Добавлено для обрезки выходящих за границы элементов */
         }
         
         .cover-image { /* Стили для изображения */
@@ -156,6 +157,7 @@
             margin-top: 50px; /* Определяем отступ сверху от предыдущего блока */
             box-sizing: border-box; /* Учет отступов */
             order: 3;
+	    overflow: hidden; /* Добавлено для обрезки выходящих за границы элементов */
         }
 	
         .Testimonials .imagev { /* Стили для изображения - ВЕКТОР */
@@ -239,6 +241,7 @@
             margin-top: 0; /* Определяем отступ сверху от предыдущего блока */
             box-sizing: border-box; /* Учет отступов */
 	    order: 4;
+	    overflow: hidden; /* Добавлено для обрезки выходящих за границы элементов */
         }
 
         .Our_Success h1 { /* SIA_US_JEWELRY */
@@ -262,14 +265,14 @@
 	}
 
 	.Our_Success .imagev-left {
-	    top: 0%;
+	    top: 10%;
 	    left: 10%;
 	    transform: translateY(-50%);
 	    
 	}
 
 	.Our_Success .imagev-right {
-	    top: 0%;
+	    top: 10%;
 	    right: 10%;
 	    transform: translateY(-50%) scaleX(-1); /* Отражаем по горизонтали если нужно */
 	    max-width: 90%; /* Ограничение по ширине */
