@@ -155,7 +155,8 @@
             width: 100%; /* Подгоняем по ширине родительского контейнера */
             padding: 20px; /* Добавили отступы внутри блока */
             margin-top: 50px; /* Определяем отступ сверху от предыдущего блока */
-            box-sizing: border-box; /* Учет отступов */
+            margin-bottom: 20px;
+	    box-sizing: border-box; /* Учет отступов */
             order: 3;
 	    overflow: hidden; /* Добавлено для обрезки выходящих за границы элементов */
         }
@@ -976,6 +977,7 @@
             font-size: 2.5rem;
             font-weight: 700;
             line-height: 3rem;
+	    margin-top: 10px; /* Отступы сверху и снизу */
         }
 
         .Testimonials h2 { /* Усова Анастасия */
@@ -1145,14 +1147,15 @@
 
         .reviews .squares-container {
             display: flex; /* Горизонтальное расположение */
-            flex-direction: row; /* Элементы располагаются в строку */
+            flex-direction: colum; /* Элементы располагаются в строку */
             justify-content: center; /* Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
+	    flex-wrap: wrap;
 	    gap: 20px; /* Отступ между квадратами */
             width: 100%; /* Занимает всю ширину родителя */
 	    margin: 0 auto; /* Центрирование контейнера */
     	    max-width: 1200px; /* Максимальная ширина контейнера (можно изменить) */
-        }
+        }    
 
           .reviews .square1,
           .reviews .square2 {
