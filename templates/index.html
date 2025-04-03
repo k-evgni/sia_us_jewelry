@@ -239,7 +239,7 @@
 	    position: relative;
             width: 100%; /* Подгоняем по ширине родительского контейнера */
             padding: 20px; /* Добавили отступы внутри блока */
-            margin-top: 0; /* Определяем отступ сверху от предыдущего блока */
+            margin-top: 3px; /* Определяем отступ сверху от предыдущего блока */
             box-sizing: border-box; /* Учет отступов */
 	    order: 4;
 	    overflow: hidden; /* Добавлено для обрезки выходящих за границы элементов */
@@ -366,27 +366,27 @@
 	    
 	.Our_Success .square1 {
             width: 230px;
-            height: 140px;
+            height: 120px;
         }
 
         .Our_Success .square2 {
             width: 230px;
-            height: 140px;
+            height: 120px;
         }
 
 	.Our_Success .square3 {
             width: 259px;
-            height: 140px;
+            height: 120px;
         }
 
         .Our_Success .square4 {
             width: 230px;
-            height: 140px;
+            height: 120px;
         }
 
 	.Our_Success .square5 {
             width: 230px;
-            height: 140px;
+            height: 120px;
         }
 	    
  /*  Раздел: Бестселлеры */
@@ -490,7 +490,7 @@
         .Bestsellers .square6 .image6,
         .Bestsellers .square7 .image7,
         .Bestsellers .square8 .image8{
-            top: 40%;
+           /* top: 40%; */
         }
 
         .Bestsellers .square1 {
@@ -635,7 +635,8 @@
             z-index: 2;
         }
 
-         .reviews .square3{
+	 .reviews .square1 .square3,
+         .reviews .square2 .square3{
             position: relative; /* или absolute, если нужно */
             width: 1rem; /* Задайте нужную ширину */
             height: 14.94rem; /* Задайте нужную высоту */
@@ -1662,13 +1663,24 @@
     	<h1>ОТЗЫВЫ</h1>
         <div class="squares-container">
           <div class="square1">
-              <div class="text1">“Здравствуйте!<br> Серёжки очень понравились!!<br> Они невероятно красивые и аккуратные)<br>Качество материалов на высшем уровне!<br>Что особенно порадовало, так это их<br> лёгкость-совершенно не чувствуются на ушах!<br>Спасибо большое!” </div> <img src="static/zvezdi1.png" alt="Jewelry Image" class="image1"> </div>
-              <div class="square3"></div>
+              <div class="text1">“Здравствуйте!<br> Серёжки очень понравились!!<br> Они невероятно красивые и аккуратные)
+		      <br>Качество материалов на высшем уровне!<br>Что особенно порадовало, так это их<br> лёгкость-совершенно не чувствуются на ушах!
+		      <br>Спасибо большое!” 
+	      </div> 
+	      <img src="static/zvezdi1.png" alt="Jewelry Image" class="image1">
+	      <div class="square3"></div>
+	  </div>
+              
           </div>
           <div class="square2">
-              <div class="text2">“Добрый вечер<br>Да, всë понравилось, сережки классные,<br>на фотке крупнее было, думала большие такие,<br>оказывается нормально<br>И застежка вообще кайфовая, не надо 5 минут<br>зацеплять что-то куда-то!<br>Кстати, длина тоже хорошая)” </div> <img src="static/zvezdi2.png" alt="Jewelry Image" class="image2"> </div>
-              <div class="square3"></div>
-     		</div>
+              <div class="text2">“Добрый вечер<br>Да, всë понравилось, сережки классные,<br>на фотке крупнее было, думала большие такие,
+		      <br>оказывается нормально<br>И застежка вообще кайфовая, не надо 5 минут<br>зацеплять что-то куда-то!
+		      <br>Кстати, длина тоже хорошая)” 
+	      </div> 
+	      <img src="static/zvezdi2.png" alt="Jewelry Image" class="image2"> 
+	      <div class="square3"></div>
+	  </div>
+              	
      </div>
 
  	<div class="social" id="social">
