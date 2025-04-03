@@ -298,7 +298,6 @@
 	    flex-shrink: 0;
             z-index: 1;
 	    margin: 5px;
-	    background-color: rgba(181, 152, 98)
         }
 
 	.Our_Success .square1 .text1,
@@ -560,9 +559,11 @@
 /* Раздел: ОТЗЫВЫ */
         .reviews{
             display: flex; /* Устанавливает контейнер flex */
-            flex-direction: column;
+            flex-direction: row;
+	    flex-wrap: wrap;
             align-items: center; /* Выравнивание элементов по вертикали */
-            justify-content: space-between;
+            justify-content: center;
+	    gap: 20px;
             position: relative;
             width: 100%;
             padding: 20px;
