@@ -661,6 +661,7 @@
             /* order: 6; */
 	    background: rgba(229, 204, 139, 0.53);
 	    border-radius: 37px;
+	     min-height: 500px; /* Фиксированная минимальная высота */
         }
 
 	.social .text1{ /* Следите за новинками в наших социальных сетях */
@@ -755,11 +756,12 @@
 	/* Контейнер для нижних элементов */
 	.social .bottom-content {
 	    margin-top: auto; /* Прижимаем к низу .social */
+	    width: 100%;
 	    display: flex;
 	    flex-direction: column;
 	    align-items: center;
-	    gap: 20px; /* Отступ между текстом и кнопкой */
-	    width: 100%;
+	    gap: 25px; /* Отступ между текстом и кнопкой */
+	    
 	    padding-bottom: 30px; /* Отступ от нижнего края */
 	}
 	    
@@ -767,7 +769,8 @@
 	    font-family: Alice;
 	    font-size: 20px;
 	    color: rgb(79, 57, 34);
-	    text-align: center; /* Выравнивание по центру */    
+	    text-align: center; /* Выравнивание по центру */
+	    order: 1; /* Текст выше кнопки */
 	}
 	
         .button2 {
@@ -781,6 +784,8 @@
             line-height: 3.31rem; /* Вертикальное выравнивание текста */
             font-family: Cormorant Garamond;
             font-size: 1.50rem;
+	    order: 2; /* Кнопка под текстом */
+	    cursor: pointer;
             font-weight: 400; /* Толщина текста */
         }
 
