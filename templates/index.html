@@ -650,33 +650,32 @@
         .social {
             display: flex; /* Устанавливает контейнер flex */
             flex-direction: column;
-	    /* justify-content: center; */
+	    justify-content: center;
             align-items: center; /* Выравнивание элементов по вертикали */
             position: relative;
             width: 75%; /*Было 33rem */
 	    height: auto;
-	    padding: 70px 20px 30px; /*Было 20px */
+	    padding: 20px; /*Было 20px */
             margin: 50px auto; /* Отступ сверху */
-            /* box-sizing: border-box;  Учет отступов */
+            box-sizing: border-box;  /*Учет отступов */
             /* order: 6; */
 	    background: rgba(229, 204, 139, 0.53);
 	    border-radius: 37px;
-	     min-height: 500px; /* Фиксированная минимальная высота */
+	    /* min-height: 500px; Фиксированная минимальная высота */
         }
 
 	.social .text1{ /* Следите за новинками в наших социальных сетях */
               position: absolute;
               width: 100%;
-              top: 30px;  /*Центр по вертикали - было 11% */
+              top: 11%;   /*Центр по вертикали - было 11% */
               left: 50%; /* Центр по горизонтали */
-              transform: translateX(-50%); /* Корректировка центрирования */
+               transform: translate(-50%, -50%); /* Корректировка центрирования */
               font-family: Alice;
               font-size: 20px;
               color: rgb(79, 57, 34);
               text-align: center;
               line-height: 2.13rem;
-	      margin: 0;
-		/* margin-top: 10px; /* Отступ сверху 
+		 margin-top: 10px; /* Отступ сверху 
 		margin-bottom: 10px; */
         }
 
@@ -752,19 +751,7 @@
     	     height: auto;
     	     margin: 20px auto 10px; /* Отступ сверху и центрирование */   
         }
-
-	/* Контейнер для нижних элементов */
-	.social .bottom-content {
-	    margin-top: auto; /* Прижимаем к низу .social */
-	    width: 100%;
-	    display: flex;
-	    flex-direction: column;
-	    align-items: center;
-	    gap: 25px; /* Отступ между текстом и кнопкой */
-	    
-	    padding-bottom: 30px; /* Отступ от нижнего края */
-	}
-	    
+    
 	.social .text2 { /*Сделать заказ прямо сейчас */
 	    font-family: Alice;
 	    font-size: 20px;
@@ -772,7 +759,7 @@
 	    text-align: center; /* Выравнивание по центру */
 	    margin-top: 20px; /* Отступ от квадратов */
 	    padding: 0 15px; /* Отступы по бокам (опционально) */
-	    order: 1; /* Текст выше кнопки */
+	    /* order: 1; Текст выше кнопки */
 	}
 	
 	.social .button2 { /* Кнопка */
