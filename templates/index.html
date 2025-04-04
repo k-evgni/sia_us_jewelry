@@ -654,7 +654,8 @@
             align-items: center; /* Выравнивание элементов по вертикали */
             position: relative;
             width: 75%; /*Было 33rem */
-	    padding: 60px 20px 30px; /*Было 20px */
+	    height: auto;
+	    padding: 70px 20px 30px; /*Было 20px */
             margin: 50px auto; /* Отступ сверху */
             /* box-sizing: border-box;  Учет отступов */
             /* order: 6; */
@@ -750,23 +751,28 @@
     	     height: auto;
     	     margin: 20px auto 10px; /* Отступ сверху и центрирование */   
         }
+
+	/* Контейнер для нижних элементов */
+	.social .bottom-content {
+	    margin-top: auto; /* Прижимаем к низу .social */
+	    display: flex;
+	    flex-direction: column;
+	    align-items: center;
+	    gap: 20px; /* Отступ между текстом и кнопкой */
+	    width: 100%;
+	    padding-bottom: 30px; /* Отступ от нижнего края */
+	}
 	    
 	.social .text2 { /*Сделать заказ прямо сейчас */
 	    font-family: Alice;
 	    font-size: 20px;
 	    color: rgb(79, 57, 34);
-	    text-align: center; /* Выравнивание по центру */
-	    margin-top: 20px; /* Отступ от квадратов */
-	    /* padding: 0 15px;  Отступы по бокам (опционально) */
-	    order: 3; /* Если используется flex/grid, можно управлять порядком */
-	    
+	    text-align: center; /* Выравнивание по центру */    
 	}
 	
         .button2 {
-            position: block;
             width: 15rem;
             height: 3.31rem;
-            margin: 0 auto 20px; /* Центрирование и отступы */
             color: #fff;
             background-color: rgba(217, 181, 113, 0.6);
             border-radius: 5rem;
