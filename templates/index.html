@@ -665,7 +665,7 @@
 	.social .text1{ /* Следите за новинками в наших социальных сетях */
               position: absolute;
               width: 100%;
-              top: 11%; /* Центр по вертикали */
+              /* top: 11%;  Центр по вертикали */
               left: 50%; /* Центр по горизонтали */
               transform: translate(-50%, -50%); /* Корректировка центрирования */
               font-family: Alice;
@@ -673,7 +673,7 @@
               color: rgb(79, 57, 34);
               text-align: center;
               line-height: 2.13rem;
-	      margin-top: 20px; /* Отступ сверху */
+	      margin-top: 15px; /* Отступ сверху */
         }
 
         .social .squares-container {
@@ -682,8 +682,8 @@
             justify-content: center; /* Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
 	    flex-wrap: wrap;
-	    gap: 10px; /* Отступ между квадратами */
-            width: 100%; /* Занимает всю ширину родителя */
+	    gap: 8px; /* Отступ между квадратами */
+            width: 80%; /* Занимает всю ширину родителя */
 	    margin: 20px auto; /* Центрирование контейнера */
 	    padding: 20px 0;
         }
@@ -717,14 +717,15 @@
 	    align-items: center; /* Выравнивание по вертикали */
 	    width: 100%;
 	    margin-top: 2px;
+	    justify-content: center;
 	}
 	    
 	/* Иконки слева */
 	.social .image3,
 	.social .image4 {
-	    width: 10%;
+	    width: 15%;
 	    height: auto;
-	    max-width: 10%;
+	    max-width: 15%;
 	    margin-right: 5px; /* Отступ между иконкой и текстом */
 	}
 	
