@@ -715,9 +715,12 @@
 	.social .icon-text-container {
 	    display: flex;
 	    align-items: center; /* Выравнивание по вертикали */
-	    width: 100%;
+	    position: relative; /* Относительное позиционирование */
+    	    left: 50%; /* Смещаем контейнер вправо на 50% ширины родителя */
+   	    transform: translateX(-50%); /* Возвращаем назад на 50% своей ширины */
+	    width: 90%;
 	    margin-top: 2px;
-	    justify-content: center;
+	    
 	}
 	    
 	/* Иконки слева */
@@ -736,6 +739,7 @@
 	    font-size: 14px; /* размер по вашему выбору */
 	    color:  rgb(0, 0, 0);; /* цвет как в дизайне */
 	    flex-grow: 1; /* Текст занимает оставшееся пространство */
+	    white-space: nowrap;
 	}
 
 	
