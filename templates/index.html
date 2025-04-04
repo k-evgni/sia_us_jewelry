@@ -665,7 +665,7 @@
 	.social .text1{ /* Следите за новинками в наших социальных сетях */
               position: absolute;
               width: 100%;
-              /* top: 11%;  Центр по вертикали */
+              top: 11%;  /*Центр по вертикали */
               left: 50%; /* Центр по горизонтали */
               transform: translate(-50%, -50%); /* Корректировка центрирования */
               font-family: Alice;
@@ -742,34 +742,25 @@
 	    white-space: nowrap;
 	}
 
-	
-	
-	/*.social .square2{
-            position: relative; /* или absolute, если нужно 
-            width: 33rem; /* Задайте нужную ширину 
-            height: 37.31rem; /* Задайте нужную высоту 
-            border-radius: 2.31rem;
-            z-index: 1;
+	.social .imagev { /* Стили для изображения - ВЕКТОР */
+            display: block;
+	     width: 50%; /* Настройте по вашему макету */
+    	     height: auto;
+    	     margin: 30px auto 10px; /* Отступ сверху и центрирование */   
         }
-
-
-        .social .square2 .text2{ /*Сделать заказ прямо сейчас 
-              position: absolute;
-              width: 100%;
-              top: 75%; /* Центр по вертикали 
-              left: 50%; /* Центр по горизонтали 
-              transform: translate(-50%, -50%); /* Корректировка центрирования 
-              font-family: Alice;
-              font-size: 1.88rem;
-              color: rgb(79, 57, 34);
-              text-align: center;
-              line-height: 2.13rem;
-              z-index: 2;
-        }
-
+	    
+	.social .text2 { /*Сделать заказ прямо сейчас */
+	    font-family: Alice;
+	    font-size: 20px;
+	    color: rgb(79, 57, 34);
+	    text-align: center; /* Выравнивание по центру */
+	    margin-top: 20px; /* Отступ от квадратов */
+	    padding: 0 15px; /* Отступы по бокам (опционально) */
+	    order: 3; /* Если используется flex/grid, можно управлять порядком */
+	}
 	
 
-
+/*
 
         .button2 {
             position: absolute;
@@ -1803,7 +1794,8 @@
 		    </div>
 		</div>
 	     </div>
-		
+	     <img src="static/Vector-pered-o-cebe.png" alt="Vector" class="imagev">
+	     <div class="text2">Сделать заказ прямо сейчас</div>
  	</div>
 
 	<div class="footer">
