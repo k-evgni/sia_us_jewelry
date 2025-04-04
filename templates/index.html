@@ -711,14 +711,30 @@
 	     align-self: center; /* Центрируем по горизонтали */
         }
 
-	.social .square1 .image3
-	.social .square2 .image4{
-           width: 10%;
-	   height: auto;
-	   margin-top: 5px; /* Отступ сверху для иконки */
-	   align-self: flex-start; /* Выравниваем по левому краю */
-   	   margin-left: 15px; /* Добавляем отступ слева */
-        }
+	/* Контейнер для иконки и текста */
+	.social .icon-text-container {
+	    display: flex;
+	    align-items: center; /* Выравнивание по вертикали */
+	    width: 100%;
+	    margin-top: 5px;
+	}
+	    
+	/* Иконки слева */
+	.social .image3,
+	.social .image4 {
+	    width: 20%;
+	    height: auto;
+	    margin-right: 10px; /* Отступ между иконкой и текстом */
+	}
+	
+	/* Текст справа от иконки */
+	.social .text21,
+	.social .text22 {
+	    font-family: Alice; /* или ваш шрифт */
+	    font-size: 14px; /* размер по вашему выбору */
+	    color: rgb(79, 57, 34); /* цвет как в дизайне */
+	    flex-grow: 1; /* Текст занимает оставшееся пространство */
+	}
 
 	
 	
@@ -1768,11 +1784,17 @@
 	    <div class="squares-container">
 		<div class="square1"> 
 			<img src="static/QR-vk.png" alt="QR-VK" class="image1">
-			<img src="static/vk-ikonka.png" alt="Icon-VK" class="image3">
+			<div class="icon-text-container">
+				<img src="static/vk-ikonka.png" alt="Icon-VK" class="image3">
+				<div class="text21">sia_us_jewelry</div>
+			</div>
 		</div>
 		<div class="square2">
 		    <img src="static/QR-tg.png" alt="QR-Telegramm" class="image2">
-		    <img src="static/tg-ikonka.png" alt="Icon-Telegramm" class="image4">
+		    <div class="icon-text-container">
+			<img src="static/tg-ikonka.png" alt="Icon-Telegramm" class="image4">
+			<div class="text21">Sia.us.jewerly</div>
+		    </div>
 		</div>
 	     </div>
 		
