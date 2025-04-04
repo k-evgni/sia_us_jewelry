@@ -650,14 +650,14 @@
         .social {
             display: flex; /* Устанавливает контейнер flex */
             flex-direction: column;
-	    justify-content: center;
+	    /* justify-content: center; */
             align-items: center; /* Выравнивание элементов по вертикали */
             position: relative;
             width: 75%; /*Было 33rem */
-	    padding: 20px;
+	    padding: 60px 20px 30px; /*Было 20px */
             margin: 50px auto; /* Отступ сверху */
-            box-sizing: border-box; /* Учет отступов */
-            order: 6;
+            /* box-sizing: border-box;  Учет отступов */
+            /* order: 6; */
 	    background: rgba(229, 204, 139, 0.53);
 	    border-radius: 37px;
         }
@@ -665,16 +665,17 @@
 	.social .text1{ /* Следите за новинками в наших социальных сетях */
               position: absolute;
               width: 100%;
-              top: 11%;  /*Центр по вертикали */
+              top: 30px;  /*Центр по вертикали - было 11% */
               left: 50%; /* Центр по горизонтали */
-              transform: translate(-50%, -50%); /* Корректировка центрирования */
+              transform: translateX(-50%); /* Корректировка центрирования */
               font-family: Alice;
               font-size: 20px;
               color: rgb(79, 57, 34);
               text-align: center;
               line-height: 2.13rem;
-	      margin-top: 10px; /* Отступ сверху */
-		margin-bottom: 10px;
+	      margin: 0;
+		/* margin-top: 10px; /* Отступ сверху 
+		margin-bottom: 10px; */
         }
 
         .social .squares-container {
@@ -756,15 +757,16 @@
 	    color: rgb(79, 57, 34);
 	    text-align: center; /* Выравнивание по центру */
 	    margin-top: 20px; /* Отступ от квадратов */
-	    padding: 0 15px; /* Отступы по бокам (опционально) */
+	    /* padding: 0 15px;  Отступы по бокам (опционально) */
 	    order: 3; /* Если используется flex/grid, можно управлять порядком */
+	    
 	}
 	
         .button2 {
             position: block;
             width: 15rem;
             height: 3.31rem;
-            margin: 20px auto; /* Центрирование и отступы */
+            margin: 0 auto 20px; /* Центрирование и отступы */
             color: #fff;
             background-color: rgba(217, 181, 113, 0.6);
             border-radius: 5rem;
