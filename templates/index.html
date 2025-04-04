@@ -678,13 +678,14 @@
 
         .social .squares-container {
             display: flex; /* Горизонтальное расположение */
-            flex-direction: colum; /* Элементы располагаются в строку */
+            flex-direction: row; /* Элементы располагаются в строку */
             justify-content: center; /* Центрирование квадратов по горизонтали */
             align-items: center; /* Центрирование квадратов по вертикали */
 	    flex-wrap: wrap;
 	    gap: 10px; /* Отступ между квадратами */
             width: 100%; /* Занимает всю ширину родителя */
-	    margin: 60px auto; /* Центрирование контейнера */
+	    margin: 20px auto; /* Центрирование контейнера */
+	    padding: 20px 0;
         }
 
 	.social .square1,
@@ -693,35 +694,28 @@
 	    height: auto;
 	    border-radius: 10px;
 	    display: flex;
+	    flex-direction: column;
 	    justify-content: center;
 	    align-items: center;
 	    background: rgba(229, 204, 139, 0.53);
-	    padding: 10px;
-	    margin: 50px auto;
+	    padding: 15px;
+	    margin: 10px auto;
+	    position: relative; /* Добавлено для позиционирования дочерних элементов */
         }
 
         .social .square1 .image1,
 	.social .square2 .image2{
-	    position: absolute;
-            top: 35%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 90%; /* Изображение будет занимать всю ширину квадрата */
-            height: auto; /* Автоматическая высота для сохранения пропорций */
-            max-width: 100%; /* Ограничение по ширине */
-	    /* object-fit: contain; /* Сохраняем пропорции без искажений */
-            /* margin: 20px 0; */
-            z-index: 2;
+	     width: 90%;
+    	     height: auto;
+    	     max-width: 100%;
+    	     margin-bottom: 10px;
         }
 
 	.social .square1 .image3
 	/*.social .square2 .image4*/{
-            position: absolute;
-	    max-width: 20%;
-    	    height: auto;
-            top: 89%; /* Центрирование по вертикали */
-            left: 50%; /* Центрирование по горизонтали */
-            transform: translate(-50%, -50%); /* Смещение для точного центрирования */	
+           width: 20%;
+	   height: auto;
+	   margin-top: 10px; /* Отступ сверху для иконки */	
         }
 
 	
