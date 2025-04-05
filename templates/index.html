@@ -584,6 +584,30 @@
             line-height: 3rem;
         }
 
+    .reviews .imagev-left {
+	    position: absolute;
+	    z-index: 0; /* Размещаем под основным контентом */
+	    width: 378.2px; /* Настройте по размеру ваших векторов */
+	    height: auto;
+	    max-width: 90%; /* Ограничение по ширине */
+	    top: 15%;
+	    left: 10%;
+	    transform: translateY(-50%);
+	}
+
+	.reviews .imagev-right {
+	    position: absolute;
+	    z-index: 0; /* Размещаем под основным контентом */
+	    width: 378.2px; /* Настройте по размеру ваших векторов */
+	    height: auto;
+	    max-width: 90%; /* Ограничение по ширине */
+	    top: 15%;
+	    right: 10%;
+	    transform: translateY(-50%) scaleX(-1); /* Отражаем по горизонтали если нужно */
+	    max-width: 90%; /* Ограничение по ширине */
+	}
+
+
 	.reviews .squares-container {
             display: flex; /* Горизонтальное расположение */
             gap: 20px; /* Отступ между квадратами */
@@ -1723,7 +1747,7 @@
     <div class="Our_Success" id="advantages">
    	<h1>SIA_US_JEWELRY</h1>
 	<img src="static/Vector-sleva-pered-preimycth.png" alt="Vector Left" class="imagev-left">
-        <img src="static/Vector-sprava-otzivi.png" alt="Vector Right" class="imagev-right">
+        <img src="static/Vector-sprava-pered-preimytch.png" alt="Vector Right" class="imagev-right">
 	<div class="squares-container">
 	  <div class="square1"> <div class="text1">Ручная работа</div><img src="static/hand-made.png" alt="Jewelry Image" class="image1"></div>
           <div class="square2"> <div class="text2">Гипоаллергенные материалы</div> <img src="static/gippoalergen-material.png" alt="Jewelry Image" class="image2"></div>
@@ -1751,6 +1775,8 @@
 
     <div class="reviews" id="review">
     	<h1>ОТЗЫВЫ</h1>
+        <img src="static/Vector-sleva-otzivi.png" alt="Vector Left" class="imagev-left">
+        <img src="static/Vector-sprava-otzivi.png" alt="Vector Right" class="imagev-right">
         <div class="squares-container">
           <div class="square1">
               <div class="text1">“Здравствуйте!<br> Серёжки очень понравились!!<br> Они невероятно красивые и аккуратные)
