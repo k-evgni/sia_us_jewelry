@@ -418,6 +418,17 @@
             z-index: 3;
         }
 
+    .Bestsellers .imagev {
+	    position: absolute;
+	    z-index: 0; /* Размещаем под основным контентом */
+	    width: 378.2px; /* Настройте по размеру ваших векторов */
+	    height: auto;
+	    max-width: 90%; /* Ограничение по ширине */
+	    top: 15%;
+	    left: 10%;
+	    transform: translateY(-50%);
+	}
+
 	.Bestsellers .squares-container {
             display: flex; /* Горизонтальное расположение */
             flex-wrap: wrap;
@@ -1759,6 +1770,7 @@
 
     <div class="Bestsellers" id="bestsellers">
    	<h1>Работы</h1>
+    <img src="static/Vector-raboti.png" alt="Vector" class="imagev">
         <div class="squares-container">
           <div class="square1"> <div class="text10">Позолоченная фурнитура, сердолик </div> <img src="static/pozoloth-furnityra-serdolik.png" alt="Jewelry Image" class="image1"> </div>
           <div class="square2"> <div class="text11">Родированная фурнитура, майорка</div> <img src="static/rodir-furnityra-maiorka.png" alt="Jewelry Image" class="image2"> </div>
