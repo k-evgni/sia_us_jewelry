@@ -794,7 +794,7 @@
 	    color: rgb(79, 57, 34);
 	    text-align: center; /* Выравнивание по центру */
 	    margin-top: 10px; /* Отступ от квадратов */
-		margin-bottom: 80px;
+		margin-bottom: 100px;
 	    padding: 0 15px; /* Отступы по бокам (опционально) */
 	    /* order: 1; Текст выше кнопки */
 	}
@@ -1298,13 +1298,31 @@
     	      padding: 0;
         }
 
+	.social .text2 {
+	        position: absolute;
+	        right: 10%;
+	        top: 50%;
+	        transform: translateY(-50%);
+	        width: 30%;
+	        text-align: center;
+	        margin: 0;
+	    }
+
+	.social .button2 {
+	        position: absolute;
+	        right: 10%;
+	        top: calc(50% + 50px); /* 50px ниже текста */
+	        transform: translateX(50%);
+	        margin: 0;
+	    }	
+		
 	.social .imagev {
 	        position: absolute;
 	        top: 50%;
 	        left: 50%;
 	        transform: translate(-50%, -50%) rotate(90deg);
 	        transform-origin: center center;
-		width: 40%;
+		width: 30%;
 	        margin: 0;
 	        z-index: 1;
 	    }
@@ -1833,10 +1851,11 @@
 			    </div>
 			</div>
 		     </div>
+		</div>
 	     	<img src="static/Vector-pered-o-cebe.png" alt="Vector" class="imagev">
 	     	<div class="text2">Сделайте заказ прямо сейчас</div>
 	     	<button class="button2" onclick="redirectToForm()">Заказать</button>
- 	    </div>
+ 	    
 	</div>
 
 	<div class="footer">
