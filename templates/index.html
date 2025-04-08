@@ -813,7 +813,7 @@
             font-family: Cormorant Garamond;
             font-size: 1.50rem;
             font-weight: 400;
-	      margin-top: 15px; /* Отступ от квадратов */
+	      margin-top: 20px; /* Отступ от квадратов */
 	    padding: 0 15px; /* Отступы по бокам (опционально) */ 
         }
 
@@ -1302,8 +1302,9 @@
 	        position: absolute;
 	        top: 50%;
 	        left: 50%;
-	        transform: translate(-50%, -50%);
-	        width: 60%;
+	        transform: translate(-50%, -50%) rotate(90deg);
+	        transform-origin: center center;
+		width: 60%;
 	        margin: 0;
 	        z-index: 1;
 	    }
