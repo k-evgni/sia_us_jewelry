@@ -1427,7 +1427,6 @@
         }
 
 	.social .button2 { /* Кнопка */
-            display: block;
 	    position: relative;
 	    width: 15rem;
             height: 3.31rem;
@@ -1436,9 +1435,9 @@
             border-radius: 5rem;
             border: none;
             text-align: center;
-	    margin-top: -40px; /* Поднимаем выше */
-    	    margin-left: 100px; 
-            z-index: 3;
+	    display: block;
+	    margin: -40px 0 0 auto; /* Поднимаем выше и смещаем вправо */ 
+            z-index: 10;
             line-height: 1.1rem;
             font-family: Cormorant Garamond;
             font-size: 1.50rem;
