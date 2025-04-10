@@ -398,7 +398,7 @@
             position: relative;
             width: 100%;
             padding: 20px;
-            margin-top: 50px;
+            margin-top: 30px;
             box-sizing: border-box; /* Учет отступов */
             box-shadow: inset 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25),0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);
 	    background: rgba(229, 204, 139, 0.53);
@@ -1090,14 +1090,16 @@
 
 /*  Раздел: БЕСТСЕЛЛЕРЫ */		
         .Bestsellers h1{ /* Работы */
-            text-align: right;
+            text-align: left;
             color: rgb(79, 57, 34);
             font-family: Cormorant Garamond;
             font-size: 2.5rem;
             font-weight: 700;
             line-height: 160%;
             z-index: 3;
-            margin: 10px 0 0 20px;
+            margin: 10px 0 10px 20px;
+	    padding: 0;
+            align-self: flex-start; /* Выравниваем по левому краю */
         }
 
         .Bestsellers .squares-container {
@@ -1108,6 +1110,7 @@
 	    justify-content: center; /* Центрируем квадраты */
             align-items: flex-start;
             width: 100%;
+		margin-top: 20px; /* Уменьшили отступ сверху */
         }
 
 	.Bestsellers .square1,
