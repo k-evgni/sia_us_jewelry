@@ -1398,15 +1398,6 @@
 	        margin: 0;
 		font-size: 1.35rem;
 	    }
-
-	/*.social .button2 {
-	        position: absolute;
-	        right: 15%;
-	        top: calc(45% + 35px); /* 50px ниже текста 
-	        transform: translateX(50%);
-		text-align: center;
-	        margin: 0;
-	    }*/
 		
 	.social .imagev {
 	        position: absolute;
@@ -1434,6 +1425,30 @@
 	    margin: 0; /* Центрирование контейнера */
 	    width: auto;
         }
+
+	.social .button2 { /* Кнопка */
+            display: block;
+	    position: relative;
+	    width: 15rem;
+            height: 3.31rem;
+            color: #fff;
+            background-color: rgba(217, 181, 113, 0.6);
+            border-radius: 5rem;
+            border: none;
+            text-align: center;
+	    margin: 20px auto;
+	    justify-content: center;
+	    align-items: center;
+            z-index: 10;
+            line-height: 1.1rem;
+            font-family: Cormorant Garamond;
+            font-size: 1.50rem;
+            font-weight: 400;
+	    padding: 10px 15px; /* Отступы по бокам (опционально) */
+        }
+
+        .social .button2:hover {background-color: rgba(181, 152, 98, 0.6);}
+        .social .button2:active {background-color: rgba(181, 152, 98, 0.6); transform: translateX(-50%);/* Убираем смещение */}
 }
 
 </style>
