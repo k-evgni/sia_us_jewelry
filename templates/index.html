@@ -884,27 +884,27 @@
 /* Медиазапросы для разных экранов */
    /* Мобильные устройства (320px) */
         @media screen and (max-width: 768px) {
-	   .logo {
-                font-size: 1.2rem;
-            }
+		.logo {
+                	font-size: 1.2rem;
+            	}
 
-            .nav {
-                flex-direction: column;
-                gap: 10px;
-            }
+	        .nav {
+	                flex-direction: column;
+	                gap: 10px;
+	        }
 
 /*  Раздел: ОБЛОЖКА */
-	.cover-image {
-	    top: 20%;
-	    left: 50%;
-	    transform: translate(-50%, -50%);  
-	    width: 80%; /* Изображение занимает 80% ширины окна */
-            height: auto; /* Сохраняет пропорции */
-            max-width: 650px; /* Ограничиваем максимальную ширину */
-	    margin: 30px 0; /* Отступы сверху и снизу - было 20 */
-            margin-left: 20px; /* Отступ слева от изображения */
-	    z-index: 1; /* Отображается под текстом */
-        }
+		.cover-image {
+		    top: 20%;
+		    left: 50%;
+		    transform: translate(-50%, -50%);  
+		    width: 90%; /* Изображение занимает 80% ширины окна */
+	            height: auto; /* Сохраняет пропорции */
+	            max-width: 650px; /* Ограничиваем максимальную ширину */
+		    margin: 30px 0; /* Отступы сверху и снизу - было 20 */
+	            margin-left: 20px; /* Отступ слева от изображения */
+		    z-index: 1; /* Отображается под текстом */
+	        }
 
         /*.cover-image1 {  Стили для изображения - ВЕКТОР 
             position: absolute;
@@ -1031,21 +1031,21 @@
 
 /* Маленькие ноутбуки (1024px) */
         @media screen and (min-width: 768px) /* and (max-width: 1400px) */ {
-           .logo { font-size: 2.5rem; }
+		.logo { font-size: 2.5rem; }
 
-           .nav { gap: 50px; }	
-	   .nav a { font-size: 1.8rem; }
+		.nav { gap: 50px; }	
+		.nav a { font-size: 1.8rem; }
 
 /*  Раздел: ОБЛОЖКА */
-	.cover {
-            display: flex; 
-	    justify-content: space-between; /* Распределяет элементы по левому и правому краю */           
-	    height: 70vh; /* Увеличиваем высоту. Было 60vh*/
-            width: 95%; /* Уменьшаем ширину. Было 100% */
-            position: relative;
-            order: 2;
-            z-index: 0; 		  
-          }
+		.cover {
+	            display: flex; 
+		    justify-content: space-between; /* Распределяет элементы по левому и правому краю */           
+		    height: 70vh; /* Увеличиваем высоту. Было 60vh*/
+	            width: 95%; /* Уменьшаем ширину. Было 100% */
+	            position: relative;
+	            order: 2;
+	            z-index: 0; 		  
+	          }
 
 	.cover-image {
 	    top: 40%;
