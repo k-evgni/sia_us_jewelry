@@ -1400,13 +1400,17 @@
 	    }
 
 	.social .button2 {
-	        position: relative;
+	        position: absolute;
 	        right: 15%;
 	        top: calc(45% + 35px); /* 50px ниже текста */
 	        transform: translateX(50%);
 		text-align: center;
 	        margin: 0;
-	    }	
+	    }
+
+	.social .button2:hover {background-color: rgba(181, 152, 98, 0.6);}
+        .social .button2:active {background-color: rgba(181, 152, 98, 0.6); transform: translateX(-50%);
+	
 		
 	.social .imagev {
 	        position: absolute;
