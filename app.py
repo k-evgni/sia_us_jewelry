@@ -9,7 +9,7 @@ def add_cache_control(response):
         response.headers['Cache-Control'] = 'public, max-age=31536000, immutable'
     # HTML и API — не кешировать
     else:
-        response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+        response.headers['Cache-Control'] = 'no-cache'
     return response
 
 @app.route('/')
