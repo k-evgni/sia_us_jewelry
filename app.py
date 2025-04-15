@@ -5,7 +5,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return Response(
+        render_template('index.html'),
+        content_type='text/html; charset=utf-8'
+    )
 
 
 if __name__ == '__main__':
