@@ -43,7 +43,7 @@ header {
 	flex-direction: column; /* Расположить элементы в колонку */
 	justify-content: center;
 	align-items: center;
-	background: url('{{ url_for('static', filename='fon_dla_texta_ryka.png') }}') no-repeat center center/cover; 
+	background: url('/static/fon_dla_texta_ryka.png') no-repeat center center/cover; 
 	background-size: cover;
 	border-radius: 50px;
 	height: 100vh;
