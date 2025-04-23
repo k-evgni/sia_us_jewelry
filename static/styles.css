@@ -1338,7 +1338,7 @@ header {
             border: none;
             text-align: center;
 	    display: block;
-	    margin: -150px 0 0 470px; /* Поднимаем выше и смещаем вправо */ 
+	    margin: -170px 0 0 470px; /* Поднимаем выше и смещаем вправо */ 
             z-index: 1;
             line-height: 1.1rem;
             font-family: Cormorant Garamond;
