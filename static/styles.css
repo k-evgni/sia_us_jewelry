@@ -787,7 +787,7 @@ header {
 }
 
 .button2:hover {background-color: rgba(181, 152, 98, 0.6);}
-.button2:active {background-color: rgba(181, 152, 98, 0.6); transform: translateX(-50%);}
+.button2:active {background-color: rgba(181, 152, 98, 0.6);}
 
 
 /* Раздел: Нижняя шапка */
@@ -1348,5 +1348,5 @@ header {
         }
 
         .button2:hover {background-color: rgba(181, 152, 98, 0.6);}
-        .button2:active {background-color: rgba(181, 152, 98, 0.6); transform: translateX(-50%);/* Убираем смещение */}
+        .button2:active {background-color: rgba(181, 152, 98, 0.6); }
 }
