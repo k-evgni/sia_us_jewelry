@@ -469,7 +469,7 @@ header {
 .Bestsellers .square7 .image7,
 .Bestsellers .square8 .image8{
 	position: absolute;
-	top: 35%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 90%; /* Изображение будет занимать всю ширину квадрата */
